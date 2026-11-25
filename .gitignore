@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.libs/
+reference/orig/
+reference/assets/
+reference/screenshots/
+reference/shots/
+reference/original.html
+tests/verify/debug-*.mjs

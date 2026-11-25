@@ -1,0 +1,1 @@
+import{t as e}from"./component.Dd4g_vYV.js";import{t}from"./slider.CmLRuZco.js";var n=class extends e{slider=null;init(){super.init(),this.slider=new t({container:this,autoplay:5,loop:!0,breakpoints:{768:{count:1,gap:0}}})}destroy(){}};export{n as MistralBlockSliderMedia};

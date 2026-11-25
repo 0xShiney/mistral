@@ -1,0 +1,137 @@
+{
+  "source": "https://mistral.ai",
+  "captured": "2026-11-25T09:46:03.109Z",
+  "mechanisms": [
+    {
+      "library": "GSAP 3 + ScrollTrigger + SplitText",
+      "evidence": "chunk ScrollTrigger.*.js (42.7 kB), SplitText.*.js, gsap.*.js imported by text-hero-title and layout entry",
+      "usedFor": [
+        "hero title per-character intro",
+        "footer wordmark scrub + cat wink",
+        "nav dropdown height morph",
+        "mobile menu (power3 in/out, 0.35s)",
+        "feature progress bars",
+        "customer slideshow"
+      ]
+    },
+    {
+      "library": "Matter.js",
+      "evidence": "matter.*.js chunk (physics engine, rigid bodies) imported by section-strings",
+      "usedFor": [
+        "\"strings\" tag cloud: every word is a draggable rigid body with pointer constraint"
+      ]
+    },
+    {
+      "library": "Swiper",
+      "evidence": "swiper.*.js + slider.CmLRuZco.js imported by slider/carousel components",
+      "usedFor": [
+        "logo marquee track and card sliders"
+      ]
+    },
+    {
+      "library": "CSS animations",
+      "evidence": "only 1 CSS animation running at rest in both sites",
+      "usedFor": [
+        "small looping indicators"
+      ]
+    },
+    {
+      "library": "Animated GIF",
+      "evidence": "sovereign-flag.gif, cat-sitting-{black,white}.gif",
+      "usedFor": [
+        "hero flag, footer cat"
+      ]
+    }
+  ],
+  "measurements": {
+    "heroTitle": {
+      "font": "ALTMistral, sans-serif",
+      "size": "96px",
+      "lineHeight": "96px",
+      "letterSpacing": "-1.92px",
+      "charCount": 0,
+      "lines": 0
+    },
+    "marquee": {
+      "pxPerSecond": 60,
+      "itemCount": 60
+    },
+    "runningAnimations": [
+      {
+        "name": "animate-pop-in",
+        "duration": 500,
+        "iterations": 1
+      }
+    ],
+    "stringsPointer": {
+      "box": {
+        "x": 0,
+        "y": 1132,
+        "w": 1440,
+        "h": 640
+      },
+      "tags": [
+        {
+          "text": "Process knowledge",
+          "x": 379.9,
+          "y": 1325.4
+        },
+        {
+          "text": "Intellectual property",
+          "x": 722.4,
+          "y": 1334.8
+        },
+        {
+          "text": "Invention",
+          "x": 1026,
+          "y": 1344
+        },
+        {
+          "text": "Data",
+          "x": 461,
+          "y": 1416
+        },
+        {
+          "text": "Core product development",
+          "x": 744,
+          "y": 1416
+        },
+        {
+          "text": "Quality standards",
+          "x": 1075,
+          "y": 1416
+        },
+        {
+          "text": "Discovery",
+          "x": 363,
+          "y": 1488
+        },
+        {
+          "text": "Proprietary AI",
+          "x": 585,
+          "y": 1488
+        },
+        {
+          "text": "Private code base",
+          "x": 870,
+          "y": 1488
+        },
+        {
+          "text": "Decision logic",
+          "x": 514,
+          "y": 1560
+        },
+        {
+          "text": "Engineering practices",
+          "x": 776,
+          "y": 1560
+        },
+        {
+          "text": "Design tradeoffs",
+          "x": 1054,
+          "y": 1560
+        }
+      ]
+    }
+  }
+}

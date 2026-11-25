@@ -1,0 +1,1 @@
+import{t as e}from"./slideshow-media-feature.DTq-kYxQ.js";var t=class extends e{items=Array.from(this.querySelectorAll(`.js-desktop .js-tab`));progressbar=Array.from(this.querySelectorAll(`.js-desktop .js-progressbar`))};export{t as MistralBlockSlideshowDemo};

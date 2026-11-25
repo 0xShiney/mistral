@@ -1,0 +1,1 @@
+export{t as MistralAtomNavigationTabs}from"./navigation-tabs.B5THEF6Q.js";

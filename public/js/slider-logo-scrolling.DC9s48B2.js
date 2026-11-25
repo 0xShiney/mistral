@@ -1,0 +1,1 @@
+import{t as e}from"./component.Dd4g_vYV.js";var t=class extends e{};export{t as MistralBlockSliderLogoScrolling};

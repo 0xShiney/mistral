@@ -1,0 +1,1 @@
+import{t as e}from"./component.Dd4g_vYV.js";import{t}from"./slider.CmLRuZco.js";var n=class extends e{slider;init(){super.init(),this.slider=new t({container:this,wheel:!0,breakpoints:{768:{count:1.5},1024:{count:2.5},1280:{count:3},1600:{count:3.5}}})}};export{n as MistralBlockSliderCards};

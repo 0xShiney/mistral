@@ -1,0 +1,1 @@
+import{t as e}from"./component.Dd4g_vYV.js";import{t}from"./slider.CmLRuZco.js";var n=class extends e{slider=null;init(){this.slider=new t({container:this,loop:!0,breakpoints:{1:{gap:0,count:1},768:{gap:-300,count:1}}})}};export{n as MistralSectionCarouselCollection};

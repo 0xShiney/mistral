@@ -1,0 +1,1 @@
+var e=()=>window.innerWidth<=768;export{e as t};

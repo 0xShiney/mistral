@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro'
+import GlobalFooter from '../components/GlobalFooter.astro'
+import Hero from '../components/sections/Hero.astro'
+import VibeBar from '../components/sections/VibeBar.astro'
+import LogoMarquee from '../components/sections/LogoMarquee.astro'
+import Strings from '../components/sections/Strings.astro'
+import FeatureHeadline from '../components/sections/FeatureHeadline.astro'
+import FeatureBody from '../components/sections/FeatureBody.astro'
+import CustomersHeadline from '../components/sections/CustomersHeadline.astro'
+import CustomersTabs from '../components/sections/CustomersTabs.astro'
+import DeeperHeadline from '../components/sections/DeeperHeadline.astro'
+import DeeperCards from '../components/sections/DeeperCards.astro'
+---
+
+<Base>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <Hero />
+      <VibeBar />
+      <LogoMarquee />
+      <Strings />
+      <FeatureHeadline />
+      <FeatureBody />
+      <CustomersHeadline />
+      <CustomersTabs />
+      <DeeperHeadline />
+      <DeeperCards />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

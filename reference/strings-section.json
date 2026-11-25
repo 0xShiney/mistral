@@ -1,0 +1,288 @@
+{
+  "source": "https://mistral.ai",
+  "note": "Matter.js rigid bodies: coordinates are one sampled frame, not static layout",
+  "widths": {
+    "390": {
+      "box": {
+        "x": 0,
+        "y": 1081,
+        "w": 390,
+        "h": 840
+      },
+      "tags": [
+        {
+          "text": "Process knowledge",
+          "x": 74,
+          "y": 1113,
+          "w": 242,
+          "h": 50
+        },
+        {
+          "text": "Intellectual property",
+          "x": 50,
+          "y": 1179,
+          "w": 290,
+          "h": 50
+        },
+        {
+          "text": "Invention",
+          "x": 130,
+          "y": 1245,
+          "w": 130,
+          "h": 50
+        },
+        {
+          "text": "Data",
+          "x": 133.5,
+          "y": 1311,
+          "w": 123,
+          "h": 50
+        },
+        {
+          "text": "Core product development",
+          "x": 13.5,
+          "y": 1377,
+          "w": 363,
+          "h": 50
+        },
+        {
+          "text": "Quality standards",
+          "x": 85.5,
+          "y": 1443,
+          "w": 219,
+          "h": 50
+        },
+        {
+          "text": "Discovery",
+          "x": 125,
+          "y": 1509,
+          "w": 140,
+          "h": 50
+        },
+        {
+          "text": "Proprietary AI",
+          "x": 83,
+          "y": 1575,
+          "w": 224,
+          "h": 50
+        },
+        {
+          "text": "Private code base",
+          "x": 62,
+          "y": 1641,
+          "w": 266,
+          "h": 50
+        },
+        {
+          "text": "Decision logic",
+          "x": 104.5,
+          "y": 1707,
+          "w": 181,
+          "h": 50
+        },
+        {
+          "text": "Engineering practices",
+          "x": 63.5,
+          "y": 1773,
+          "w": 263,
+          "h": 50
+        },
+        {
+          "text": "Design tradeoffs",
+          "x": 88.5,
+          "y": 1839,
+          "w": 213,
+          "h": 50
+        }
+      ]
+    },
+    "768": {
+      "box": {
+        "x": 0,
+        "y": 1193,
+        "w": 768,
+        "h": 640
+      },
+      "tags": [
+        {
+          "text": "Process knowledge",
+          "x": 0,
+          "y": 1193,
+          "w": 242,
+          "h": 50
+        },
+        {
+          "text": "Intellectual property",
+          "x": 0,
+          "y": 1193,
+          "w": 290,
+          "h": 50
+        },
+        {
+          "text": "Invention",
+          "x": 0,
+          "y": 1193,
+          "w": 130,
+          "h": 50
+        },
+        {
+          "text": "Data",
+          "x": 0,
+          "y": 1193,
+          "w": 123,
+          "h": 50
+        },
+        {
+          "text": "Core product development",
+          "x": 0,
+          "y": 1193,
+          "w": 363,
+          "h": 50
+        },
+        {
+          "text": "Quality standards",
+          "x": 0,
+          "y": 1193,
+          "w": 219,
+          "h": 50
+        },
+        {
+          "text": "Discovery",
+          "x": 0,
+          "y": 1193,
+          "w": 140,
+          "h": 50
+        },
+        {
+          "text": "Proprietary AI",
+          "x": 0,
+          "y": 1193,
+          "w": 224,
+          "h": 50
+        },
+        {
+          "text": "Private code base",
+          "x": 0,
+          "y": 1193,
+          "w": 266,
+          "h": 50
+        },
+        {
+          "text": "Decision logic",
+          "x": 0,
+          "y": 1193,
+          "w": 181,
+          "h": 50
+        },
+        {
+          "text": "Engineering practices",
+          "x": 0,
+          "y": 1193,
+          "w": 263,
+          "h": 50
+        },
+        {
+          "text": "Design tradeoffs",
+          "x": 0,
+          "y": 1193,
+          "w": 213,
+          "h": 50
+        }
+      ]
+    },
+    "1440": {
+      "box": {
+        "x": 0,
+        "y": 1132,
+        "w": 1440,
+        "h": 640
+      },
+      "tags": [
+        {
+          "text": "Process knowledge",
+          "x": 0,
+          "y": 1132,
+          "w": 242,
+          "h": 50
+        },
+        {
+          "text": "Intellectual property",
+          "x": 0,
+          "y": 1132,
+          "w": 290,
+          "h": 50
+        },
+        {
+          "text": "Invention",
+          "x": 0,
+          "y": 1132,
+          "w": 130,
+          "h": 50
+        },
+        {
+          "text": "Data",
+          "x": 0,
+          "y": 1132,
+          "w": 123,
+          "h": 50
+        },
+        {
+          "text": "Core product development",
+          "x": 0,
+          "y": 1132,
+          "w": 363,
+          "h": 50
+        },
+        {
+          "text": "Quality standards",
+          "x": 0,
+          "y": 1132,
+          "w": 219,
+          "h": 50
+        },
+        {
+          "text": "Discovery",
+          "x": 0,
+          "y": 1132,
+          "w": 140,
+          "h": 50
+        },
+        {
+          "text": "Proprietary AI",
+          "x": 0,
+          "y": 1132,
+          "w": 224,
+          "h": 50
+        },
+        {
+          "text": "Private code base",
+          "x": 0,
+          "y": 1132,
+          "w": 266,
+          "h": 50
+        },
+        {
+          "text": "Decision logic",
+          "x": 0,
+          "y": 1132,
+          "w": 181,
+          "h": 50
+        },
+        {
+          "text": "Engineering practices",
+          "x": 0,
+          "y": 1132,
+          "w": 263,
+          "h": 50
+        },
+        {
+          "text": "Design tradeoffs",
+          "x": 0,
+          "y": 1132,
+          "w": 213,
+          "h": 50
+        }
+      ]
+    }
+  }
+}

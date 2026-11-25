@@ -1,0 +1,1 @@
+import{t as e}from"./component.Dd4g_vYV.js";import"./gsap.BZ_pcBaV.js";var t=class extends e{static EVENT_ACTIVATE=`activate`;items=Array.from(this.querySelectorAll(`.js-dot`));container=null;content=null;contentWidth=0;index=0};export{t as MistralAtomNavigationDots};

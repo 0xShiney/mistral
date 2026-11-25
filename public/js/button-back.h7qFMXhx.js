@@ -1,0 +1,1 @@
+import{l as e,t}from"./component.Dd4g_vYV.js";var n=class extends t{link=this.querySelector(`a`);onClick=e=>{e.preventDefault(),history.length>1?history.back():this.link?.href?window.location.href=this.link?.href:window.location.href=window.location.origin};init(){this.link&&e.on(`click`,this.link,this.onClick)}};export{n as MistralAtomButtonBack};

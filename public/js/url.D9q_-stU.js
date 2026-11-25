@@ -1,0 +1,1 @@
+var e=e=>{let t=new URL(window.location.href),n=t.searchParams;Object.keys(e).forEach(t=>{let r=e[t];r==null?n.delete(t):n.set(t,r)}),history.replaceState(null,``,t)},t=e=>new URL(window.location.href).searchParams.get(e)||null;export{e as n,t};

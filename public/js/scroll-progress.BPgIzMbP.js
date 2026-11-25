@@ -1,0 +1,1 @@
+import{c as e,o as t}from"./component.Dd4g_vYV.js";var n=n=>{let r=t.getCurrentScroll()||0,i=n.offsetTop,a=n.offsetHeight,o=window.innerHeight;return e.utils.clamp(0,1,(r-i)/(a-o))};export{n as t};

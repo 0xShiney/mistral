@@ -1,0 +1,479 @@
+{
+  "source": "https://mistral.ai",
+  "sticky": {
+    "wrapperTop": 4121,
+    "wrapperHeight": 691,
+    "sectionHeight": 691,
+    "position": "static",
+    "top": "auto",
+    "overflow": "visible",
+    "scrollSnap": "none"
+  },
+  "nav": [
+    {
+      "text": "Frontier open models",
+      "href": "#6abbda1b4494917285a08749"
+    },
+    {
+      "text": "Proprietary intelligence",
+      "href": "#6abbdc0f4494917285a08752"
+    },
+    {
+      "text": "AI operations",
+      "href": "#6abbdc514494917285a08756"
+    },
+    {
+      "text": "Flexible compute",
+      "href": "#6abbdcb94494917285a0875b"
+    }
+  ],
+  "activeStates": [
+    {
+      "y": 3680,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        50,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 3780,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        54,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 3880,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        57,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 3980,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        60,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4080,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        62,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4180,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        65,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4280,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        67,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4380,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        69,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4480,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        72,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4580,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        74,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4680,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        76,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4780,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        79,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4880,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        79,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 4975,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        78,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5077,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        79,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5179,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        81,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5279,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        83,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        85,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        87,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        89,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        91,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        93,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        95,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        98,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        100,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "y": 5374,
+      "open": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "barH": [
+        102,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "featureBlock": {
+    "note": "The \"Mistral lets you decide how AI works\" block is a sticky sub-navigation + anchor scroll-spy, not a tab switcher and not a pinned/scrubbed section.",
+    "stickyNavClass": "md:max-w-57 sticky top-12 md:top-11 z-10 w-full md:w-1/4 bg-surface-brand-primary md:border-0 border-b border-border-primary py-4 md:py-10",
+    "anchors": [
+      {
+        "id": "6abbda1b4494917285a08749",
+        "label": "Frontier open models"
+      },
+      {
+        "id": "6abbdc0f4494917285a08752",
+        "label": "Proprietary intelligence"
+      },
+      {
+        "id": "6abbdc514494917285a08756",
+        "label": "AI operations"
+      },
+      {
+        "id": "6abbdcb94494917285a0875b",
+        "label": "Flexible compute"
+      }
+    ],
+    "items": [
+      {
+        "index": 0,
+        "dataOpen": "false",
+        "dataLoaded": "false",
+        "dataActive": "true"
+      }
+    ],
+    "scrollSpy": "mistral-atom-navigation-summary marks the active anchor (see activeStates in this file for the tabbed customers slideshow)"
+  },
+  "customersTabsSource": [
+    {
+      "text": "Energy and utilities",
+      "y": 4121,
+      "h": 172,
+      "open": "false"
+    },
+    {
+      "text": "Manufacturing",
+      "y": 4294,
+      "h": 172,
+      "open": "false"
+    },
+    {
+      "text": "Financial services",
+      "y": 4467,
+      "h": 172,
+      "open": "false"
+    },
+    {
+      "text": "Public sector",
+      "y": 4640,
+      "h": 172,
+      "open": "false"
+    }
+  ]
+}
