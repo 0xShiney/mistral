@@ -1,6 +1,6 @@
 # Verification report
 
-Generated 2026-11-25T10:06:17.281Z by `pnpm verify` (Playwright + Chromium 159.0.8154.6).
+Generated 2026-11-25T12:23:17.587Z by `pnpm verify` (Playwright + Chromium).
 
 - original: https://mistral.ai
 - clone: http://127.0.0.1:4322
@@ -10,147 +10,17 @@ Generated 2026-11-25T10:06:17.281Z by `pnpm verify` (Playwright + Chromium 159.0
 
 **111/111 checks passed.**
 
+> Collected in five batched invocations of the same harness (per width group / colour scheme) and merged; `WIDTHS`/`SCHEMES` only select the viewports, the code path is identical. This run is the homepage regression gate after adding /research/.
+
 ## light@390
 
 | check | result | evidence |
 | --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.361%  (390x7204 vs 390x7204) |
+| full-page pixel diff < 1% | PASS | 0.200%  (390x7204 vs 390x7204) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
 | header metrics | PASS | 49px vs 49px |
 | JS weight within 15% | PASS | 82.3kB vs 84.3kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## light@768
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.279%  (768x6552 vs 768x6552) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## light@1024
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.237%  (1024x6855 vs 1024x6855) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## light@1440
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.428%  (1440x6274 vs 1440x6274) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## light@1920
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.191%  (1920x6709 vs 1920x6709) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## light@2560
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.196%  (2560x6709 vs 2560x6709) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@390
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.107%  (390x7204 vs 390x7204) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@768
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.153%  (768x6552 vs 768x6552) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@1024
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.121%  (1024x6855 vs 1024x6855) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@1440
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.294%  (1440x6274 vs 1440x6274) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@1920
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.119%  (1920x6709 vs 1920x6709) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
-| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
-| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
-
-## dark@2560
-
-| check | result | evidence |
-| --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.170%  (2560x6709 vs 2560x6709) |
-| page height identical | PASS | equal |
-| geometry + computed style (1px) | PASS | all matched |
-| header metrics | PASS | 49px vs 49px |
-| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | islands match (count/framework/directive) | PASS | orig 0, clone 0 |
 
@@ -171,7 +41,7 @@ Generated 2026-11-25T10:06:17.281Z by `pnpm verify` (Playwright + Chromium 159.0
 | check | result | evidence |
 | --- | --- | --- |
 | hero is animated (frame delta) | PASS | orig true, clone true |
-| logo marquee speed within 2% | PASS | 61.0px/s vs 60.0px/s |
+| logo marquee speed within 2% | PASS | 60.0px/s vs 60.0px/s |
 | CSS animation count | PASS | orig 1, clone 1 |
 
 ## interaction
@@ -220,6 +90,138 @@ Generated 2026-11-25T10:06:17.281Z by `pnpm verify` (Playwright + Chromium 159.0
 | --- | --- | --- |
 | first Tab reaches the skip link visibly | PASS | orig {"tag":"A","text":"Skip to content","w":144,"h":40,"outline":"solid"} · clone {"tag":"A","text":"Skip to content","w":144,"h":40,"outline":"solid"} |
 | reduced-motion renders identically | PASS | height 6274 vs 6274, title opacity 1 vs 1 |
+
+## light@768
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.280%  (768x6552 vs 768x6552) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## light@1024
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.508%  (1024x6855 vs 1024x6855) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## light@1440
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.108%  (1440x6274 vs 1440x6274) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## light@1920
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.119%  (1920x6709 vs 1920x6709) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## light@2560
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.410%  (2560x6709 vs 2560x6709) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@390
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.179%  (390x7204 vs 390x7204) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@768
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.199%  (768x6552 vs 768x6552) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 82.3kB vs 84.3kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@1024
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.313%  (1024x6855 vs 1024x6855) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@1440
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.275%  (1440x6274 vs 1440x6274) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@1920
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.104%  (1920x6709 vs 1920x6709) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
+
+## dark@2560
+
+| check | result | evidence |
+| --- | --- | --- |
+| full-page pixel diff < 1% | PASS | 0.040%  (2560x6709 vs 2560x6709) |
+| page height identical | PASS | equal |
+| geometry + computed style (1px) | PASS | all matched |
+| header metrics | PASS | 49px vs 49px |
+| JS weight within 15% | PASS | 106.8kB vs 109.7kB |
+| CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
+| islands match (count/framework/directive) | PASS | orig 0, clone 0 |
 
 ## Method
 

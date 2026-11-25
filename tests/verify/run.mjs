@@ -633,7 +633,13 @@ async function main() {
   process.exit(failures === 0 ? 0 : 1)
 }
 
-main().catch(async (e) => {
-  console.error(e)
-  process.exit(1)
-})
+// `pnpm verify --page research` runs the /research/ harness instead of the homepage one.
+const pageArg = process.argv.includes('--page') ? process.argv[process.argv.indexOf('--page') + 1] : null
+if (pageArg === 'research') {
+  await import('./research.mjs')
+} else {
+  main().catch(async (e) => {
+    console.error(e)
+    process.exit(1)
+  })
+}

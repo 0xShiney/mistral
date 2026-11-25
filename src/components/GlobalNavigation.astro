@@ -1,9 +1,26 @@
 ---
 // Static section markup, rendered on the server exactly as the original does.
 // Behaviour comes from the vanilla-TS/GSAP modules loaded in Base.astro.
+//
+// The original marks the current section in two places: the header surface
+// (`bg-surface-brand-secondary` on /research/, `…-primary` on /) and the active
+// nav item (`bg-surface-brand-primary` added to its class list). Both are
+// server-rendered, so they are props here rather than JS.
+interface Props {
+  active?: string
+  surface?: 'primary' | 'secondary'
+}
+
+const { active = '', surface = 'primary' } = Astro.props
+const headerClass = `fixed z-50 flex items-center justify-between dark:text-white transition-colors top-0 w-full left-0 border-b border-border-primary divide-x divide-border-primary bg-surface-brand-${surface}`
+const navItemClass = (path: string) =>
+  `nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary${
+    active === path ? ' bg-surface-brand-primary' : ''
+  }`
+import { route } from '../content/routes'
 ---
 
-<global-navigation><header class="fixed z-50 flex items-center justify-between dark:text-white transition-colors top-0 w-full left-0 border-b border-border-primary divide-x divide-border-primary bg-surface-brand-primary" data-header><div class="max-w-432 mx-auto relative h-auto flex items-center justify-between w-full divide-x divide-border-primary"><a href="/" rel="home" aria-label="Go to homepage" class="w-12 h-12 md:w-30 nav-item-home shrink-0 grid place-content-center overflow-hidden hover:bg-surface-brand-primary 2xl:border-l border-border-primary" data-interactive data-mobile-logo><span class="relative w-24 hidden md:block" aria-hidden="true"><svg  viewBox="0 0 98 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<global-navigation><header class={headerClass} data-header><div class="max-w-432 mx-auto relative h-auto flex items-center justify-between w-full divide-x divide-border-primary"><a href="/" rel="home" aria-label="Go to homepage" class="w-12 h-12 md:w-30 nav-item-home shrink-0 grid place-content-center overflow-hidden hover:bg-surface-brand-primary 2xl:border-l border-border-primary" data-interactive data-mobile-logo><span class="relative w-24 hidden md:block" aria-hidden="true"><svg  viewBox="0 0 98 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="6.28577" y="3.14307" width="3.14286" height="3.14286" fill="#FFAF01"/>
 <rect x="6.28577" y="6.28564" width="6.28571" height="3.14286" fill="#FF8204"/>
 <rect x="6.28577" y="9.42871" width="15.7143" height="3.14286" fill="#FA500F"/>
@@ -42,7 +59,7 @@
 <path d="M12.9995 17H16.9995L16.9995 21H12.9995L12.9995 17Z" fill="currentColor"/>
 <path d="M16.9995 21H20.9995L20.9995 25H16.9995V21Z" fill="currentColor"/>
 </svg>
-</span></a><div class="flex lg:hidden items-center w-full divide-x divide-border-primary"><div class="relative overflow-hidden flex items-center justify-center w-full h-12" id="mobile-cta"><div class="flex items-center justify-center gap-2" id="mobile-cta-default"><a href="/contact/" class="flex items-center gap-2"><p class="text-body-large text-current">Get in touch</p><span class="relative inline-block w-5 shrink-0" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><div class="flex lg:hidden items-center w-full divide-x divide-border-primary"><div class="relative overflow-hidden flex items-center justify-center w-full h-12" id="mobile-cta"><div class="flex items-center justify-center gap-2" id="mobile-cta-default"><a href={route('/contact/')} class="flex items-center gap-2"><p class="text-body-large text-current">Get in touch</p><span class="relative inline-block w-5 shrink-0" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -71,7 +88,7 @@
 <path d="M8.4 8.4H4V4H8.4V8.4Z" fill="currentColor"/>
 <path d="M26 8.4H21.6V4H26V8.4Z" fill="currentColor"/>
 </svg>
-</span></button></div><div id="mobile-nav-panel" class="fixed top-12 left-0 w-full h-[calc(100dvh-3rem)] bg-surface-brand-primary z-40 overflow-hidden border-t border-border-primary" style="transform: translateX(100%); will-change: transform;" inert><div id="mobile-panel-1" class="absolute inset-0 flex flex-col" style="will-change: transform;"><div class="flex-1 overflow-y-auto divide-y divide-border-primary"><a href="/research/" class="flex items-center p-4 hover:bg-surface-brand-secondary transition-colors last:border-b border-border-primary"><p class="text-h4 font-mistral text-current">Research</p></a><button type="button" data-mobile-nav-index="1" data-mobile-nav-label="Sovereign AI" class="w-full flex items-center justify-between p-4 hover:bg-surface-brand-secondary transition-colors text-left last:border-b border-border-primary"><p class="text-h4 font-mistral text-current">Sovereign AI</p><span class="relative inline-block w-5 shrink-0" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></button></div><div id="mobile-nav-panel" class="fixed top-12 left-0 w-full h-[calc(100dvh-3rem)] bg-surface-brand-primary z-40 overflow-hidden border-t border-border-primary" style="transform: translateX(100%); will-change: transform;" inert><div id="mobile-panel-1" class="absolute inset-0 flex flex-col" style="will-change: transform;"><div class="flex-1 overflow-y-auto divide-y divide-border-primary"><a href={route('/research/')} class="flex items-center p-4 hover:bg-surface-brand-secondary transition-colors last:border-b border-border-primary"><p class="text-h4 font-mistral text-current">Research</p></a><button type="button" data-mobile-nav-index="1" data-mobile-nav-label="Sovereign AI" class="w-full flex items-center justify-between p-4 hover:bg-surface-brand-secondary transition-colors text-left last:border-b border-border-primary"><p class="text-h4 font-mistral text-current">Sovereign AI</p><span class="relative inline-block w-5 shrink-0" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -99,7 +116,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></button></div><div class="p-4 flex flex-col gap-2 border-t border-border-primary shrink-0"><a class="select-none flex relative items-center justify-center disabled:text-text-muted overflow-hidden disabled:pointer-events-none h-10 min-w-10 py-2 px-3 bg-action-ghost-1 hover:bg-action-ghost-2 text-text-primary disabled:bg-action-ghost-2 rounded-md group/button w-full" href="/contact"><div class="relative flex w-full items-center gap-2 justify-between" style="--icon-left-x:-30px;--text-x:24px;--icon-right-x:30px;"><span class="inline-block translate-x-(--icon-left-x) group-hover/button:translate-x-0 group-hover/button:delay-100 absolute transition-all duration-300 will-change-transform w-5" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></button></div><div class="p-4 flex flex-col gap-2 border-t border-border-primary shrink-0"><a class="select-none flex relative items-center justify-center disabled:text-text-muted overflow-hidden disabled:pointer-events-none h-10 min-w-10 py-2 px-3 bg-action-ghost-1 hover:bg-action-ghost-2 text-text-primary disabled:bg-action-ghost-2 rounded-md group/button w-full" href={route('/contact')}><div class="relative flex w-full items-center gap-2 justify-between" style="--icon-left-x:-30px;--text-x:24px;--icon-right-x:30px;"><span class="inline-block translate-x-(--icon-left-x) group-hover/button:translate-x-0 group-hover/button:delay-100 absolute transition-all duration-300 will-change-transform w-5" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -127,7 +144,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></div></a></div></div><div id="mobile-subpanel-1" data-mobile-subpanel="1" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href="/sovereign-ai/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></div></a></div></div><div id="mobile-subpanel-1" data-mobile-subpanel="1" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href={route('/sovereign-ai/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -141,7 +158,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/products/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/products/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -155,7 +172,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/our-method/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/our-method/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -169,7 +186,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/use-cases/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/use-cases/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -183,7 +200,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div><div id="mobile-subpanel-2" data-mobile-subpanel="2" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href="/cloud/inference/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div><div id="mobile-subpanel-2" data-mobile-subpanel="2" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href={route('/cloud/inference/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -197,7 +214,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/cloud/compute/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/cloud/compute/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -211,7 +228,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div><div id="mobile-subpanel-3" data-mobile-subpanel="3" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href="/industry/energy/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div><div id="mobile-subpanel-3" data-mobile-subpanel="3" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href={route('/industry/energy/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -225,7 +242,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/manufacturing/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/manufacturing/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -239,7 +256,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/financial-services/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/financial-services/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -253,7 +270,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/public-sector/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/public-sector/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -267,7 +284,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/cybersecurity/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/cybersecurity/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -281,7 +298,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/customers/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/customers/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -295,7 +312,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div><div id="mobile-subpanel-4" data-mobile-subpanel="4" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href="/news/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div><div id="mobile-subpanel-4" data-mobile-subpanel="4" class="absolute inset-0 overflow-y-auto divide-y divide-border-primary bg-surface-brand-primary" style="transform: translateX(100%); will-change: transform;" inert><div><a href={route('/news/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -323,7 +340,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/about/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/about/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -337,7 +354,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/careers/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/careers/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -351,7 +368,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div></div><global-dropdown class="relative hidden lg:flex flex-col justify-center self-stretch w-full" data-interactive="true"><nav aria-label="Main" class="flex items-stretch divide-x divide-border-primary transition-colors h-full"><a href="/research/" class="nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary" data-nav-index="0">Research</a><a href="/sovereign-ai/" class="nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary" data-nav-index="1">Sovereign AI</a><a href="/cloud/inference/" class="nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary" data-nav-index="2">Cloud</a><a href="/customers/" class="nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary" data-nav-index="3">Customers</a><a href="/about/" class="nav-item-parent px-4 text-button-large h-12 flex items-center hover:bg-surface-brand-primary font-mistral transition-colors last:border-r border-border-primary" data-nav-index="4">Company</a></nav><div id="nav-dropdown" class="absolute rounded-b-lg shadow-nav top-full -left-px overflow-hidden border border-border-primary bg-surface-brand-primary z-50" style="height:0;visibility:hidden"><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="1" style="display:none"><div class="w-86"><div><a href="/sovereign-ai/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div></div><global-dropdown class="relative hidden lg:flex flex-col justify-center self-stretch w-full" data-interactive="true"><nav aria-label="Main" class="flex items-stretch divide-x divide-border-primary transition-colors h-full"><a href={route('/research/')} class={navItemClass('/research/')} data-nav-index="0">Research</a><a href={route('/sovereign-ai/')} class={navItemClass('/sovereign-ai/')} data-nav-index="1">Sovereign AI</a><a href={route('/cloud/inference/')} class={navItemClass('/cloud/inference/')} data-nav-index="2">Cloud</a><a href={route('/customers/')} class={navItemClass('/customers/')} data-nav-index="3">Customers</a><a href={route('/about/')} class={navItemClass('/about/')} data-nav-index="4">Company</a></nav><div id="nav-dropdown" class="absolute rounded-b-lg shadow-nav top-full -left-px overflow-hidden border border-border-primary bg-surface-brand-primary z-50" style="height:0;visibility:hidden"><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="1" style="display:none"><div class="w-86"><div><a href={route('/sovereign-ai/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -365,7 +382,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/products/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/products/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -379,7 +396,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/our-method/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/our-method/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -393,7 +410,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/use-cases/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/use-cases/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -407,7 +424,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="2" style="display:none"><div class="w-60"><div><a href="/cloud/inference/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="2" style="display:none"><div class="w-60"><div><a href={route('/cloud/inference/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -421,7 +438,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/cloud/compute/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/cloud/compute/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -435,7 +452,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="3" style="display:none"><div class="w-60"><div><a href="/industry/energy/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="3" style="display:none"><div class="w-60"><div><a href={route('/industry/energy/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -449,7 +466,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/manufacturing/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/manufacturing/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -463,7 +480,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/financial-services/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/financial-services/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -477,7 +494,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/public-sector/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/public-sector/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -491,7 +508,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/industry/cybersecurity/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/industry/cybersecurity/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -505,7 +522,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/customers/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/customers/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -519,7 +536,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="4" style="display:none"><div class="w-60"><div><a href="/news/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div></div><div class="flex flex-nowrap divide-x divide-border-primary w-fit" data-dropdown-index="4" style="display:none"><div class="w-60"><div><a href={route('/news/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -547,7 +564,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/about/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/about/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -561,7 +578,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a><a href="/careers/" class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a><a href={route('/careers/')} class="group/link nav-item-children relative overflow-hidden flex items-center gap-4 transition-colors p-4 hover:bg-surface-brand-secondary border-t border-border-primary first:border-t-0"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-transform duration-300 delay-50" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>
@@ -575,7 +592,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div></div></div></div></global-dropdown><div class="hidden lg:flex items-center justify-end shrink-0" data-interactive><a href="/contact/" class="nav-item-contact h-12 relative px-4 text-button-large flex items-center gap-2 hover:bg-surface-brand-secondary"><p class="text-button-large font-mistral text-current">Get in touch</p></a><div class="group/product-dropdown relative h-12 border-l border-border-primary"><button type="button" aria-haspopup="true" class="h-full px-4 text-button-large flex items-center gap-2 bg-action-primary group-hover/product-dropdown:bg-action-secondary group-focus-within/product-dropdown:bg-action-secondary dark:bg-surface-brand-primary dark:group-hover/product-dropdown:bg-surface-brand-secondary dark:group-focus-within/product-dropdown:bg-surface-brand-secondary text-white focus-visible:-outline-offset-4 focus-visible:outline-white"><span class="text-button-large font-mistral text-current">Start building</span><span class="size-5 overflow-hidden relative flex items-center justify-center"><span class="inline-block w-5 rotate-180 absolute translate-y-10 group-hover/product-dropdown:translate-y-0 group-focus-within/product-dropdown:translate-y-0 transition-all duration-300" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div></div></div></div></global-dropdown><div class="hidden lg:flex items-center justify-end shrink-0" data-interactive><a href={route('/contact/')} class="nav-item-contact h-12 relative px-4 text-button-large flex items-center gap-2 hover:bg-surface-brand-secondary"><p class="text-button-large font-mistral text-current">Get in touch</p></a><div class="group/product-dropdown relative h-12 border-l border-border-primary"><button type="button" aria-haspopup="true" class="h-full px-4 text-button-large flex items-center gap-2 bg-action-primary group-hover/product-dropdown:bg-action-secondary group-focus-within/product-dropdown:bg-action-secondary dark:bg-surface-brand-primary dark:group-hover/product-dropdown:bg-surface-brand-secondary dark:group-focus-within/product-dropdown:bg-surface-brand-secondary text-white focus-visible:-outline-offset-4 focus-visible:outline-white"><span class="text-button-large font-mistral text-current">Start building</span><span class="size-5 overflow-hidden relative flex items-center justify-center"><span class="inline-block w-5 rotate-180 absolute translate-y-10 group-hover/product-dropdown:translate-y-0 group-focus-within/product-dropdown:translate-y-0 transition-all duration-300" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.99951 13L4.99951 9L8.99951 9L8.99951 13L4.99951 13Z" fill="currentColor"/>
 <path d="M8.99951 17L8.99951 13H12.9995V17L8.99951 17Z" fill="currentColor"/>
 <path d="M12.9995 21L12.9995 17H16.9995V21H12.9995Z" fill="currentColor"/>
@@ -643,7 +660,7 @@
 <path d="M16.9995 13H12.9995V9H16.9995V13Z" fill="currentColor"/>
 <path d="M12.9995 9H8.99951V5H12.9995V9Z" fill="currentColor"/>
 </svg>
-</span></a></div><div class="p-1 border-b border-border-primary"><a class="group/link nav-item-start relative overflow-hidden flex items-center justify-between gap-2 p-2 rounded hover:bg-surface-brand-secondary focus-visible:bg-surface-brand-secondary focus-visible:-outline-offset-2" href="/pricing/"><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-all duration-300 delay-50 will-change-transform" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</span></a></div><div class="p-1 border-b border-border-primary"><a class="group/link nav-item-start relative overflow-hidden flex items-center justify-between gap-2 p-2 rounded hover:bg-surface-brand-secondary focus-visible:bg-surface-brand-secondary focus-visible:-outline-offset-2" href={route('/pricing/')}><span class="inline-block w-5 shrink-0 absolute -translate-x-10 group-hover/link:translate-x-0 transition-all duration-300 delay-50 will-change-transform" aria-hidden="true"><svg  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9995 25H8.99951V21H12.9995V25Z" fill="currentColor"/>
 <path d="M16.9995 21H12.9995V17H16.9995V21Z" fill="currentColor"/>
 <path d="M20.9995 17H16.9995V13H20.9995V17Z" fill="currentColor"/>

@@ -4,16 +4,30 @@ import '../styles/base.css'
 import '../styles/page.css'
 import GlobalNavigation from '../components/GlobalNavigation.astro'
 
+import { ORIGIN } from '../content/routes'
+
 interface Props {
   title?: string
   description?: string
+  /** Route path of this page, used for canonical/alternate/og:url. */
+  path?: string
+  /** Page-level structured data; defaults to the homepage's organization graph. */
+  jsonLd?: Record<string, unknown>
+  /** Route path of the nav item that is current on this page. */
+  navActive?: string
+  /** Header surface; the original uses `secondary` on /research/. */
+  navSurface?: 'primary' | 'secondary'
 }
 
 const {
   title = 'Mistral | #1 in Sovereign AI: Frontier Open Models You Own',
   description = 'Mistral AI builds frontier open-weight models you own. Customize with Forge, deploy agents with Studio, run on-prem, your VPC, or our European sovereign cloud.',
+  path = '/',
+  jsonLd,
+  navActive = '',
+  navSurface = 'primary',
 } = Astro.props
-const canonical = 'https://mistral.ai/'
+const canonical = ORIGIN + path
 ---
 
 <!doctype html>
@@ -24,10 +38,11 @@ const canonical = 'https://mistral.ai/'
     <meta name="description" content={description} />
     <link rel="preload" href="/fonts/alt-mistral/ALTMistral-Medium.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href="https://mistral.ai/" />
-    <link rel="alternate" hreflang="fr" href="https://mistral.ai/fr/" />
-    <link rel="alternate" hreflang="it" href="https://mistral.ai/it/" />
-    <link rel="alternate" hreflang="x-default" href="https://mistral.ai/" />
+    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="alternate" hreflang="fr" href={ORIGIN + '/fr' + path} />
+    <link rel="alternate" hreflang="it" href={ORIGIN + '/it' + path} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title="Mistral" href="https://mistral.ai/news/rss" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -42,7 +57,7 @@ const canonical = 'https://mistral.ai/'
     <meta name="twitter:image" content="https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd ?? {
       "@graph": [
         {
           "@id": "https://mistral.ai/#organization",
@@ -116,7 +131,7 @@ const canonical = 'https://mistral.ai/'
       class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-100 focus:px-4 focus:py-2 focus:rounded-md focus:bg-surface-brand-primary focus:text-text-primary focus:shadow-box"
       >Skip to content</a
     >
-    <GlobalNavigation />
+    <GlobalNavigation active={navActive} surface={navSurface} />
     <slot />
     <script type="module" src="/js/layout.astro_astro_type_script_index_0_lang.RiVFrrwj.js"></script>
   </body>

@@ -86,7 +86,9 @@ export const GEOMETRY = [
   ['hero', 'mistral-section-hero-home-sentence-center'],
   ['hero-title', '.js-title'],
   ['hero-flag', '.js-title img'],
-  ['vibe-pill', 'a[href="/products/vibe"]'],
+  // The route registry points uncloned routes at https://mistral.ai, so the
+  // link is matched by its tail rather than an exact root-relative href.
+  ['vibe-pill', 'a[href$="/products/vibe"]'],
   ['logo-strip', 'mistral-section-slider-logo-scrolling'],
   ['logo-item', 'mistral-block-slider-infinite-scrolling img'],
   ['strings-section', 'mistral-section-strings'],

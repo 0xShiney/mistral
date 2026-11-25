@@ -56,3 +56,35 @@ No three.js/WebGL, no Lenis, no Motion/Framer, no smooth-scroll hijacking (nativ
 Deviation: the Astro asset pipeline hashes WebP output under `/_astro/`, which collides with Astro's
 own build directory, so transformed WebP files are served from `/media/` with the original hashed
 filenames. Everything else keeps the original path.
+
+---
+
+# Stack report — `/research/` (route recon)
+
+Captured 2026-11-25 from `https://mistral.ai/research/` (raw capture: `reference/original-research.html`).
+
+| signal | value |
+| --- | --- |
+| HTML | 539,396 bytes, fully server-rendered |
+| Stylesheets | the **same two files** as the homepage (`astro.Bi199NJX.css` 238,545 B, `_..DNmhDKbx.css` 17,343 B — byte-identical md5 to `src/styles/base.css` / `page.css`) |
+| JS | the **same single entry** as the homepage (`layout.astro…RiVFrrwj.js`) plus lazily imported component chunks; no route-specific bundle |
+| Islands | **0** `<astro-island>` |
+| Custom elements on the route | `mistral-block-hero-research`, `mistral-atom-text-hero-title`, `mistral-section-models-dock`, `mistral-section-editorial-headline` ×5, `mistral-section-posts`, `mistral-atom-input-tag-filter` ×9, `mistral-section-cards-service` ×2, `mistral-block-tabs`, `mistral-atom-navigation-dots`, `mistral-atom-progressbar`, `mistral-atom-button-link-action`, `global-navigation`, `global-footer`, `global-language-switcher`, `mistral-atom-button-darkmode` |
+| Lazy chunks used by this route | `hero-research`, `text-hero-title`, `models-dock`, `posts`, `input-tag-filter` (+ `url` helper), `editorial-headline`, `cards-service`, `navigation-dots`, `progressbar`, `dropdown`, `SplitText`, `ScrollTrigger`, `gsap` — all already self-hosted in `public/js/` |
+| Transferred weight (measured, 1440 px light) | JS 103.3 kB (original) / 105.6–106.0 kB (clone) · CSS 37.5 kB / 40.1 kB — inside ±15 % |
+| Libraries not seen on the homepage | **none** — no list-animation library (no Motion/Framer/GSAP-Flip), no new vendor bundle. The list filtering is hand-written in `posts.*.js` (`display:none` toggling) |
+| Content | 21 publications (`data-title` / `data-description` / `data-categories` on each row), 12 model cards in 2 tab panels (4 + 8), 6 research areas, 7 “Inside the work” cards, 2 build cards |
+| DOM duplication | hero h1 appears twice (accessible + visual `p.js-title`), only one real `<h1>`; desktop/mobile nav duplicated as on the homepage |
+
+## What the clone does with that
+
+- Reuses the homepage stack verbatim: same stylesheets, same runtime, same ClientRouter, same tokens.
+  Nothing new was added to `src/styles/`.
+- The route is composed of the original's 12 top-level `#page-path` blocks, captured byte-for-byte into
+  `src/markup/research/markup/*.html` (`reference/research-split.py`) and emitted through thin
+  `.astro` wrappers in `src/components/research/` with `set:html`.
+- The navbar gets two server-rendered props (`active`, `surface`) because the original marks the
+  current section in the markup; all links go through `route()` in `src/content/routes.ts`.
+- All assets were downloaded: 80 WebP variants (model thumbnails, article thumbnails, HF/GitHub
+  logos, OG covers) into `public/media/`, 15 CMS SVGs, hero/gradient/arc PNGs, `cat-chilling-black.gif`
+  and the OG image. GIFs are served untouched.

@@ -1,0 +1,851 @@
+{
+  "generated": "2026-11-25T12:34:55.488Z",
+  "widths": [
+    390,
+    768,
+    1024,
+    1440,
+    1920,
+    2560
+  ],
+  "schemes": [
+    "light",
+    "dark"
+  ],
+  "results": [
+    {
+      "group": "light@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (390x8394 vs 390x8394)"
+    },
+    {
+      "group": "light@390",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (768x7843 vs 768x7843)"
+    },
+    {
+      "group": "light@768",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1112x7876 vs 1112x7876)"
+    },
+    {
+      "group": "light@1024",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "navbar@light",
+      "name": "25px scroll sweep (79 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "light@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1440x6816 vs 1440x6816)"
+    },
+    {
+      "group": "light@1440",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1920x6689 vs 1920x6689)"
+    },
+    {
+      "group": "light@1920",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.003%  (2560x6689 vs 2560x6689)"
+    },
+    {
+      "group": "light@2560",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (390x8394 vs 390x8394)"
+    },
+    {
+      "group": "dark@390",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (768x7843 vs 768x7843)"
+    },
+    {
+      "group": "dark@768",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1112x7876 vs 1112x7876)"
+    },
+    {
+      "group": "dark@1024",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1440x6816 vs 1440x6816)"
+    },
+    {
+      "group": "dark@1440",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000%  (1920x6689 vs 1920x6689)"
+    },
+    {
+      "group": "dark@1920",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.001%  (2560x6689 vs 2560x6689)"
+    },
+    {
+      "group": "dark@2560",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "103.3kB vs 106.0kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "navbar@dark",
+      "name": "25px scroll sweep (79 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "motion",
+      "name": "hero moves identically",
+      "pass": true,
+      "detail": "moving orig true/clone true · Δpixels 0%/0.005% · running animations [\"fading-arrow-scroll\",\"fading-arrow-scroll\",\"fading-arrow-scroll\"]"
+    },
+    {
+      "group": "motion",
+      "name": "models-dock moves identically",
+      "pass": true,
+      "detail": "moving orig false/clone false · Δpixels 0%/0% · running animations []"
+    },
+    {
+      "group": "motion",
+      "name": "publications moves identically",
+      "pass": true,
+      "detail": "moving orig false/clone false · Δpixels 0%/0% · running animations []"
+    },
+    {
+      "group": "motion",
+      "name": "areas moves identically",
+      "pass": true,
+      "detail": "moving orig false/clone false · Δpixels 0%/0% · running animations []"
+    },
+    {
+      "group": "motion",
+      "name": "work moves identically",
+      "pass": true,
+      "detail": "moving orig false/clone false · Δpixels 0%/0% · running animations []"
+    },
+    {
+      "group": "motion",
+      "name": "footer moves identically",
+      "pass": true,
+      "detail": "moving orig false/clone false · Δpixels 0%/0% · running animations []"
+    },
+    {
+      "group": "motion",
+      "name": "model dock trigger idle/hover transform amplitude within 20%",
+      "pass": true,
+      "detail": "orig Δy 0px, clone Δy 0px"
+    },
+    {
+      "group": "models",
+      "name": "group switch (click) state",
+      "pass": true,
+      "detail": "{\"tabs\":[{\"bg\":\"rgb(245, 244, 239)\"},{\"active\":\"true\",\"bg\":\"rgb(251, 251, 248)\"}],\"activeTab\":1,\"panels\":[{\"h\":0},{\"active\":\"true\",\"h\":724}],\"visiblePanelIndex\":1,\"visiblePanelH\":724,\"cards\":12,\"visib"
+    },
+    {
+      "group": "models",
+      "name": "dock card switch state",
+      "pass": true,
+      "detail": "{\"tabs\":[{\"bg\":\"rgb(245, 244, 239)\"},{\"active\":\"true\",\"bg\":\"rgb(251, 251, 248)\"}],\"activeTab\":1,\"panels\":[{\"h\":0},{\"active\":\"true\",\"h\":724}],\"visiblePanelIndex\":1,\"visiblePanelH\":724,\"cards\":12,\"visib"
+    },
+    {
+      "group": "models",
+      "name": "keyboard switch state",
+      "pass": true,
+      "detail": "{\"tabs\":[{\"bg\":\"rgb(245, 244, 239)\"},{\"active\":\"true\",\"bg\":\"rgb(251, 251, 248)\"}],\"activeTab\":1,\"panels\":[{\"h\":0},{\"active\":\"true\",\"h\":724}],\"visiblePanelIndex\":1,\"visiblePanelH\":724,\"cards\":12,\"visib"
+    },
+    {
+      "group": "models",
+      "name": "no scroll jump on switch",
+      "pass": true,
+      "detail": "orig {\"y0\":513,\"y1\":513} · clone {\"y0\":513,\"y1\":513}"
+    },
+    {
+      "group": "filter",
+      "name": "initial list + counter",
+      "pass": true,
+      "detail": "21 · 6 rows · more=true"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"foundation-models\"",
+      "pass": true,
+      "detail": "5 · 5 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"safety\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"robotics\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"applied-ai\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"audio\"",
+      "pass": true,
+      "detail": "3 · 3 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"physical-ai\"",
+      "pass": true,
+      "detail": "7 · 7 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"coding\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"reasoning\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "topic \"vision\"",
+      "pass": true,
+      "detail": "1 · 1 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"audio+vision\"",
+      "pass": true,
+      "detail": "4 · 4 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"safety+robotics\"",
+      "pass": true,
+      "detail": "2 · 2 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"coding+reasoning\"",
+      "pass": true,
+      "detail": "2 · 2 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"foundation-models+physical-ai\"",
+      "pass": true,
+      "detail": "12 · 12 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"applied-ai+audio\"",
+      "pass": true,
+      "detail": "4 · 4 rows"
+    },
+    {
+      "group": "filter",
+      "name": "combo \"physical-ai+vision+audio\"",
+      "pass": true,
+      "detail": "11 · 11 rows"
+    },
+    {
+      "group": "filter",
+      "name": "clear all restores initial state",
+      "pass": true,
+      "detail": "21 · 6 rows"
+    },
+    {
+      "group": "filter",
+      "name": "filter change scrolls to the listing top + syncs ?categories=",
+      "pass": true,
+      "detail": "orig {\"before\":2642,\"after\":1994,\"search\":\"?categories=audio\"} · clone {\"before\":2642,\"after\":1994,\"search\":\"?categories=audio\"}"
+    },
+    {
+      "group": "filter",
+      "name": "load more / show less → more1",
+      "pass": true,
+      "detail": "21 · 21 rows · less=true"
+    },
+    {
+      "group": "filter",
+      "name": "load more / show less → less",
+      "pass": true,
+      "detail": "21 · 6 rows · less=false"
+    },
+    {
+      "group": "filter",
+      "name": "empty state markup present",
+      "pass": true,
+      "detail": "true · <div class=\"flex flex-col items-center justify-center gap-4 text-center p-10\"><i"
+    },
+    {
+      "group": "filter",
+      "name": "loading more keeps the control under the pointer",
+      "pass": true,
+      "detail": "orig {\"before\":2306,\"after\":2306,\"boxY\":430} · clone {\"before\":2306,\"after\":2306,\"boxY\":430}"
+    },
+    {
+      "group": "content",
+      "name": "every text node matches",
+      "pass": true,
+      "detail": "193 vs 193 text nodes"
+    },
+    {
+      "group": "content",
+      "name": "footer text matches",
+      "pass": true,
+      "detail": "2 nodes"
+    },
+    {
+      "group": "content",
+      "name": "link targets match",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "group": "content",
+      "name": "image sources/alt match",
+      "pass": true,
+      "detail": "69 vs 69 images"
+    },
+    {
+      "group": "meta",
+      "name": "title",
+      "pass": true,
+      "detail": "Mistral Models & AI Research | Open-Weight Frontier Models"
+    },
+    {
+      "group": "meta",
+      "name": "canonical + hreflang",
+      "pass": true,
+      "detail": "[\"canonical:null=https://mistral.ai/research/\",\"alternate:en=https://mistral.ai/research/\",\"alternate:fr=https://mistral.ai/fr/research/\",\"alternate:it=https://mistral.ai/it/research/\",\"alternate:x-default=https://mistral.ai/research/\",\"alternate:null=https://mistral.ai/news/rss\"]"
+    },
+    {
+      "group": "meta",
+      "name": "structured data",
+      "pass": true,
+      "detail": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://mistral.ai/res"
+    },
+    {
+      "group": "meta",
+      "name": "single h1 + lang",
+      "pass": true,
+      "detail": "We advance the open frontier. · en"
+    },
+    {
+      "group": "meta",
+      "name": "description / og / twitter / viewport",
+      "pass": true,
+      "detail": "[\"description=Meet Mistral models, from open-weight Large 4 to Voxtral and OCR, and read the frontier AI research, papers, and benchmarks behind them.\",\"og:titl"
+    },
+    {
+      "group": "architecture",
+      "name": "islands (count/framework)",
+      "pass": true,
+      "detail": "orig 0, clone 0"
+    },
+    {
+      "group": "architecture",
+      "name": "no-JS markup + styled state",
+      "pass": true,
+      "detail": "hero=true cards=12 visible=2 rows=21 header=rgb(245, 244, 239)"
+    },
+    {
+      "group": "transitions",
+      "name": "research → home swap",
+      "pass": true,
+      "detail": "{\"url\":\"/\",\"headerBg\":\"rgb(251, 251, 248)\",\"active\":true,\"h1\":\"Mistral is #1 in Sovereign AI.\"}"
+    },
+    {
+      "group": "transitions",
+      "name": "home → research swap",
+      "pass": true,
+      "detail": "{\"url\":\"/research/\",\"headerBg\":\"rgb(245, 244, 239)\",\"active\":true,\"h1\":\"We advance the open frontier.\"}"
+    },
+    {
+      "group": "transitions",
+      "name": "back navigation restores research",
+      "pass": true,
+      "detail": "{\"url\":\"/\",\"headerBg\":\"rgb(251, 251, 248)\",\"active\":true,\"h1\":\"Mistral is #1 in Sovereign AI.\"}"
+    },
+    {
+      "group": "transitions",
+      "name": "after 3 swaps every control still works",
+      "pass": true,
+      "detail": "{\"url\":\"/research/\",\"tabActive\":\"true\",\"animations\":3,\"filterCount\":\"21\",\"headerBg\":\"rgb(245, 244, 239)\",\"active\":true}"
+    },
+    {
+      "group": "transitions",
+      "name": "filter state after round trip matches",
+      "pass": true,
+      "detail": "orig \"3\" · clone \"3\""
+    },
+    {
+      "group": "hover",
+      "name": "dockHover",
+      "pass": true,
+      "detail": "{\"before\":[[\"none\",\"auto\"],[\"none\",\"auto\"],[\"none\",\"auto\"],[\"none\",\"auto\"]],\"after\":[[\"matrix(1.13045, 0, 0, 1.13045, 0, -4.47273)\",\"auto\"],[\"matrix(1.34682, 0,"
+    },
+    {
+      "group": "hover",
+      "name": "modelCard",
+      "pass": true,
+      "detail": "{\"before\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transform\":\"none\",\"color\":\"oklch(0.21 0.006 285.885)\"},\"after\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transfo"
+    },
+    {
+      "group": "hover",
+      "name": "publication",
+      "pass": true,
+      "detail": "{\"before\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transform\":\"none\",\"color\":\"oklch(0.21 0.006 285.885)\"},\"after\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transfo"
+    },
+    {
+      "group": "hover",
+      "name": "areaCard",
+      "pass": true,
+      "detail": "{\"before\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transform\":\"none\",\"color\":\"oklch(0.21 0.006 285.885)\"},\"after\":{\"bg\":\"rgba(0, 0, 0, 0)\",\"opacity\":\"1\",\"transfo"
+    },
+    {
+      "group": "hover",
+      "name": "joinCta",
+      "pass": true,
+      "detail": "{\"before\":{\"bg\":\"oklch(0.141 0.005 285.823)\",\"opacity\":\"1\",\"transform\":\"none\",\"color\":\"oklch(0.985 0 0)\"},\"after\":{\"bg\":\"oklch(0.21 0.006 285.885)\",\"opacity\":\"1"
+    },
+    {
+      "group": "hover",
+      "name": "buildCard",
+      "pass": true,
+      "detail": "null"
+    },
+    {
+      "group": "mobile@390",
+      "name": "menu + models/publications layout",
+      "pass": true,
+      "detail": "{\"menu\":{\"expanded\":\"true\",\"panel\":0,\"label\":\"Menu\"},\"layout\":{\"docks\":254,\"dockWrap\":\"wrap\",\"postsW\":390,\"filterW\":135,\"overflowX\":0}}"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (light)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "no hydration/console noise (light)",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 (light)",
+      "pass": true,
+      "detail": "0.0000 (orig 0.0000)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (light)",
+      "pass": true,
+      "detail": "orig \"\" rgb(245, 244, 239) · clone \"\" rgb(245, 244, 239)"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (dark)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "no hydration/console noise (dark)",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 (dark)",
+      "pass": true,
+      "detail": "0.0000 (orig 0.0000)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (dark)",
+      "pass": true,
+      "detail": "orig \"dark\" rgb(26, 26, 30) · clone \"dark\" rgb(26, 26, 30)"
+    },
+    {
+      "group": "quality",
+      "name": "prefers-reduced-motion parity",
+      "pass": true,
+      "detail": "height 6816 vs 6816, title opacity 1 vs 1"
+    }
+  ]
+}

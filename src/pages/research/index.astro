@@ -1,0 +1,54 @@
+---
+// /research/ — composition of the 12 top-level blocks of #page-path, in the
+// original order. Markup for each block lives verbatim in
+// src/content/research/markup/ (see reference/research-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import ResearchHero from '../../components/research/ResearchHero.astro'
+import ModelsHeadline from '../../components/research/ModelsHeadline.astro'
+import ModelsDock from '../../components/research/ModelsDock.astro'
+import PublicationsHeadline from '../../components/research/PublicationsHeadline.astro'
+import Publications from '../../components/research/Publications.astro'
+import ResearchAreasHeadline from '../../components/research/ResearchAreasHeadline.astro'
+import ResearchAreas from '../../components/research/ResearchAreas.astro'
+import WorkHeadline from '../../components/research/WorkHeadline.astro'
+import InsideTheWork from '../../components/research/InsideTheWork.astro'
+import BuildHeadline from '../../components/research/BuildHeadline.astro'
+import BuildCards from '../../components/research/BuildCards.astro'
+import JoinUs from '../../components/research/JoinUs.astro'
+---
+
+<Base
+  title="Mistral Models & AI Research | Open-Weight Frontier Models"
+  description="Meet Mistral models, from open-weight Large 4 to Voxtral and OCR, and read the frontier AI research, papers, and benchmarks behind them."
+  path="/research/"
+  navActive="/research/"
+  navSurface="secondary"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://mistral.ai/research/',
+    name: 'Research',
+    mainEntityOfPage: 'https://mistral.ai/research/',
+    datePublished: '2026-09-22T15:47:21.787Z',
+    dateModified: '2026-11-22T10:35:29.376Z',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <ResearchHero />
+      <ModelsHeadline />
+      <ModelsDock />
+      <PublicationsHeadline />
+      <Publications />
+      <ResearchAreasHeadline />
+      <ResearchAreas />
+      <WorkHeadline />
+      <InsideTheWork />
+      <BuildHeadline />
+      <BuildCards />
+      <JoinUs />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

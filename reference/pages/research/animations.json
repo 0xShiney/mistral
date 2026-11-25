@@ -1,0 +1,222 @@
+{
+  "motion": {
+    "orig": {
+      "regions": {
+        "hero": {
+          "moving": true,
+          "pct": 0,
+          "anims": [
+            "fading-arrow-scroll",
+            "fading-arrow-scroll",
+            "fading-arrow-scroll"
+          ]
+        },
+        "models-dock": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "publications": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "areas": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "work": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "footer": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        }
+      },
+      "dockTrace": {
+        "samples": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "ampX": 0,
+        "ampY": 0,
+        "ampA": 0,
+        "ampB": 0
+      },
+      "fin": {
+        "hero": 702
+      }
+    },
+    "clone": {
+      "regions": {
+        "hero": {
+          "moving": true,
+          "pct": 0.005,
+          "anims": [
+            "fading-arrow-scroll",
+            "fading-arrow-scroll",
+            "fading-arrow-scroll"
+          ]
+        },
+        "models-dock": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "publications": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "areas": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "work": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        },
+        "footer": {
+          "moving": false,
+          "pct": 0,
+          "anims": []
+        }
+      },
+      "dockTrace": {
+        "samples": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "ampX": 0,
+        "ampY": 0,
+        "ampA": 0,
+        "ampB": 0
+      },
+      "fin": {
+        "hero": 702
+      }
+    }
+  }
+}

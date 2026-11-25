@@ -1,0 +1,282 @@
+{
+  "orig": {
+    "before": {
+      "tabs": [
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        },
+        {
+          "active": "false",
+          "bg": "rgb(245, 244, 239)"
+        }
+      ],
+      "activeTab": 0,
+      "panels": [
+        {
+          "active": "true",
+          "h": 755
+        },
+        {
+          "active": "false",
+          "h": 0
+        }
+      ],
+      "visiblePanelIndex": 0,
+      "visiblePanelH": 755,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Mistral Large 4",
+      "visibleCardChips": [
+        "1.05T",
+        "52 Active"
+      ],
+      "visibleCardHref": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "dockTriggers": 4,
+      "dockActive": 0,
+      "hash": ""
+    },
+    "after": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "OCR 4.1",
+      "visibleCardChips": [],
+      "visibleCardHref": "https://docs.mistral.ai/models/ocr-4-1",
+      "dockTriggers": 8,
+      "dockActive": 0,
+      "hash": ""
+    },
+    "docked": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Voxtral Mini Transcribe 3",
+      "visibleCardChips": [
+        "4B"
+      ],
+      "visibleCardHref": null,
+      "dockTriggers": 8,
+      "dockActive": 3,
+      "hash": ""
+    },
+    "keyboard": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Voxtral Mini Transcribe 3",
+      "visibleCardChips": [
+        "4B"
+      ],
+      "visibleCardHref": null,
+      "dockTriggers": 8,
+      "dockActive": 3,
+      "hash": "",
+      "focusable": false
+    },
+    "scroll": {
+      "y0": 513,
+      "y1": 513
+    }
+  },
+  "clone": {
+    "before": {
+      "tabs": [
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        },
+        {
+          "active": "false",
+          "bg": "rgb(245, 244, 239)"
+        }
+      ],
+      "activeTab": 0,
+      "panels": [
+        {
+          "active": "true",
+          "h": 755
+        },
+        {
+          "active": "false",
+          "h": 0
+        }
+      ],
+      "visiblePanelIndex": 0,
+      "visiblePanelH": 755,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Mistral Large 4",
+      "visibleCardChips": [
+        "1.05T",
+        "52 Active"
+      ],
+      "visibleCardHref": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "dockTriggers": 4,
+      "dockActive": 0,
+      "hash": ""
+    },
+    "after": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "OCR 4.1",
+      "visibleCardChips": [],
+      "visibleCardHref": "https://docs.mistral.ai/models/ocr-4-1",
+      "dockTriggers": 8,
+      "dockActive": 0,
+      "hash": ""
+    },
+    "docked": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Voxtral Mini Transcribe 3",
+      "visibleCardChips": [
+        "4B"
+      ],
+      "visibleCardHref": null,
+      "dockTriggers": 8,
+      "dockActive": 3,
+      "hash": ""
+    },
+    "keyboard": {
+      "tabs": [
+        {
+          "bg": "rgb(245, 244, 239)"
+        },
+        {
+          "active": "true",
+          "bg": "rgb(251, 251, 248)"
+        }
+      ],
+      "activeTab": 1,
+      "panels": [
+        {
+          "h": 0
+        },
+        {
+          "active": "true",
+          "h": 724
+        }
+      ],
+      "visiblePanelIndex": 1,
+      "visiblePanelH": 724,
+      "cards": 12,
+      "visibleCards": 1,
+      "visibleCardTitle": "Voxtral Mini Transcribe 3",
+      "visibleCardChips": [
+        "4B"
+      ],
+      "visibleCardHref": null,
+      "dockTriggers": 8,
+      "dockActive": 3,
+      "hash": "",
+      "focusable": false
+    },
+    "scroll": {
+      "y0": 513,
+      "y1": 513
+    }
+  }
+}

@@ -1,0 +1,9 @@
+---
+// Section markup captured verbatim from https://mistral.ai/research/ .
+// Behaviour (models dock, filter, reveals, sliders) comes from the original
+// client runtime in public/js/ — this component only emits the DOM.
+import markup from '../../markup/research/markup/publications-headline.html?raw'
+import { rewriteHrefs } from '../../content/routes'
+---
+
+<Fragment set:html={rewriteHrefs(markup)} />

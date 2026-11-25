@@ -1,0 +1,60 @@
+{
+  "orig": {
+    "afterFilter": "3",
+    "toHome": {
+      "url": "/",
+      "headerBg": "rgb(251, 251, 248)",
+      "active": true,
+      "h1": "Mistral is #1 in Sovereign AI."
+    },
+    "backToResearch": {
+      "url": "/research/",
+      "headerBg": "rgb(245, 244, 239)",
+      "active": true,
+      "h1": "We advance the open frontier."
+    },
+    "back": {
+      "url": "/",
+      "headerBg": "rgb(251, 251, 248)",
+      "active": true,
+      "h1": "Mistral is #1 in Sovereign AI."
+    },
+    "after3": {
+      "url": "/research/",
+      "tabActive": "true",
+      "animations": 3,
+      "filterCount": "21",
+      "headerBg": "rgb(245, 244, 239)",
+      "active": true
+    }
+  },
+  "clone": {
+    "afterFilter": "3",
+    "toHome": {
+      "url": "/",
+      "headerBg": "rgb(251, 251, 248)",
+      "active": true,
+      "h1": "Mistral is #1 in Sovereign AI."
+    },
+    "backToResearch": {
+      "url": "/research/",
+      "headerBg": "rgb(245, 244, 239)",
+      "active": true,
+      "h1": "We advance the open frontier."
+    },
+    "back": {
+      "url": "/",
+      "headerBg": "rgb(251, 251, 248)",
+      "active": true,
+      "h1": "Mistral is #1 in Sovereign AI."
+    },
+    "after3": {
+      "url": "/research/",
+      "tabActive": "true",
+      "animations": 3,
+      "filterCount": "21",
+      "headerBg": "rgb(245, 244, 239)",
+      "active": true
+    }
+  }
+}

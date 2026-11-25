@@ -1,0 +1,932 @@
+{
+  "orig": {
+    "initial": {
+      "count": "21",
+      "results": 6,
+      "titles": [
+        "Mistral Large 4",
+        "Timestral",
+        "Shieldstral",
+        "Robostral Navigate",
+        "Phoenix-VL 1.5 Medium",
+        "Voxtral TTS"
+      ],
+      "hrefs": [
+        "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+        "https://arxiv.org/abs/2610.37585",
+        "https://arxiv.org/abs/2607.25857",
+        "https://arxiv.org/abs/2607.20785",
+        "https://arxiv.org/abs/2605.10391",
+        "https://arxiv.org/abs/2603.25551"
+      ],
+      "more": true,
+      "less": false,
+      "empty": false,
+      "moreText": "Load more",
+      "lessText": "Show less"
+    },
+    "singles": {
+      "foundation-models": {
+        "count": "5",
+        "results": 5,
+        "titles": [
+          "Mistral Large 4",
+          "Timestral",
+          "Ministral 3",
+          "Mixtral of Experts",
+          "Mistral 7B"
+        ],
+        "hrefs": [
+          "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+          "https://arxiv.org/abs/2610.37585",
+          "https://arxiv.org/abs/2601.08584",
+          "https://arxiv.org/abs/2401.04088",
+          "https://arxiv.org/abs/2310.06825"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "safety": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Shieldstral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.25857"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "robotics": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Robostral Navigate"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.20785"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "applied-ai": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Phoenix-VL 1.5 Medium"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2605.10391"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "audio": {
+        "count": "3",
+        "results": 3,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "physical-ai": {
+        "count": "7",
+        "results": 7,
+        "titles": [
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "AB-UPT",
+          "NeuralDEM",
+          "Universal Physics Transformers"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2402.12365"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "coding": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Devstral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2509.25193"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "reasoning": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Magistral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2506.10910"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "vision": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Pixtral 12B"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2410.07073"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      }
+    },
+    "combos": {
+      "audio+vision": {
+        "count": "4",
+        "results": 4,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral",
+          "Pixtral 12B"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264",
+          "https://arxiv.org/abs/2410.07073"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "safety+robotics": {
+        "count": "2",
+        "results": 2,
+        "titles": [
+          "Shieldstral",
+          "Robostral Navigate"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.25857",
+          "https://arxiv.org/abs/2607.20785"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "coding+reasoning": {
+        "count": "2",
+        "results": 2,
+        "titles": [
+          "Devstral",
+          "Magistral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2509.25193",
+          "https://arxiv.org/abs/2506.10910"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "foundation-models+physical-ai": {
+        "count": "12",
+        "results": 12,
+        "titles": [
+          "Mistral Large 4",
+          "Timestral",
+          "Ministral 3",
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "AB-UPT",
+          "NeuralDEM",
+          "Universal Physics Transformers",
+          "Mixtral of Experts",
+          "Mistral 7B"
+        ],
+        "hrefs": [
+          "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+          "https://arxiv.org/abs/2610.37585",
+          "https://arxiv.org/abs/2601.08584",
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2402.12365",
+          "https://arxiv.org/abs/2401.04088",
+          "https://arxiv.org/abs/2310.06825"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "applied-ai+audio": {
+        "count": "4",
+        "results": 4,
+        "titles": [
+          "Phoenix-VL 1.5 Medium",
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2605.10391",
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "physical-ai+vision+audio": {
+        "count": "11",
+        "results": 11,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "Voxtral",
+          "AB-UPT",
+          "NeuralDEM",
+          "Pixtral 12B",
+          "Universal Physics Transformers"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2507.13264",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2410.07073",
+          "https://arxiv.org/abs/2402.12365"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      }
+    },
+    "expanded": {},
+    "scroll": {},
+    "cleared": {
+      "count": "21",
+      "results": 6,
+      "titles": [
+        "Mistral Large 4",
+        "Timestral",
+        "Shieldstral",
+        "Robostral Navigate",
+        "Phoenix-VL 1.5 Medium",
+        "Voxtral TTS"
+      ],
+      "hrefs": [
+        "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+        "https://arxiv.org/abs/2610.37585",
+        "https://arxiv.org/abs/2607.25857",
+        "https://arxiv.org/abs/2607.20785",
+        "https://arxiv.org/abs/2605.10391",
+        "https://arxiv.org/abs/2603.25551"
+      ],
+      "more": true,
+      "less": false,
+      "empty": false,
+      "moreText": "Load more",
+      "lessText": "Show less"
+    },
+    "scrollOnFilter": {
+      "before": 2642,
+      "after": 1994,
+      "search": "?categories=audio"
+    },
+    "expansion": {
+      "expanded": {
+        "more1": {
+          "count": "21",
+          "results": 21,
+          "titles": [
+            "Mistral Large 4",
+            "Timestral",
+            "Shieldstral",
+            "Robostral Navigate",
+            "Phoenix-VL 1.5 Medium",
+            "Voxtral TTS",
+            "Voxtral Realtime",
+            "Ministral 3",
+            "Going with the Speed of Sound",
+            "Fluid Intelligence",
+            "AB-UPT for Automotive and Aerospace",
+            "GyroSwin",
+            "Devstral",
+            "Voxtral",
+            "Magistral",
+            "AB-UPT",
+            "NeuralDEM",
+            "Pixtral 12B",
+            "Universal Physics Transformers",
+            "Mixtral of Experts",
+            "Mistral 7B"
+          ],
+          "hrefs": [
+            "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+            "https://arxiv.org/abs/2610.37585",
+            "https://arxiv.org/abs/2607.25857",
+            "https://arxiv.org/abs/2607.20785",
+            "https://arxiv.org/abs/2605.10391",
+            "https://arxiv.org/abs/2603.25551",
+            "https://arxiv.org/abs/2602.11298",
+            "https://arxiv.org/abs/2601.08584",
+            "https://arxiv.org/abs/2511.21474",
+            "https://arxiv.org/abs/2511.20455",
+            "https://arxiv.org/abs/2510.15808",
+            "https://arxiv.org/abs/2510.07314",
+            "https://arxiv.org/abs/2509.25193",
+            "https://arxiv.org/abs/2507.13264",
+            "https://arxiv.org/abs/2506.10910",
+            "https://arxiv.org/abs/2502.09692",
+            "https://arxiv.org/abs/2411.09678",
+            "https://arxiv.org/abs/2410.07073",
+            "https://arxiv.org/abs/2402.12365",
+            "https://arxiv.org/abs/2401.04088",
+            "https://arxiv.org/abs/2310.06825"
+          ],
+          "more": false,
+          "less": true,
+          "empty": false,
+          "moreText": "Load more",
+          "lessText": "Show less"
+        },
+        "less": {
+          "count": "21",
+          "results": 6,
+          "titles": [
+            "Mistral Large 4",
+            "Timestral",
+            "Shieldstral",
+            "Robostral Navigate",
+            "Phoenix-VL 1.5 Medium",
+            "Voxtral TTS"
+          ],
+          "hrefs": [
+            "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+            "https://arxiv.org/abs/2610.37585",
+            "https://arxiv.org/abs/2607.25857",
+            "https://arxiv.org/abs/2607.20785",
+            "https://arxiv.org/abs/2605.10391",
+            "https://arxiv.org/abs/2603.25551"
+          ],
+          "more": true,
+          "less": false,
+          "empty": false,
+          "moreText": "Load more",
+          "lessText": "Show less"
+        }
+      },
+      "scroll": {
+        "more1": {
+          "before": 2306,
+          "after": 2306,
+          "boxY": 430
+        }
+      },
+      "empty": {
+        "exists": true,
+        "html": "<div class=\"flex flex-col items-center justify-center gap-4 text-center p-10\"><img src=\"/images/cat/cat-chilling-black.gif\" alt=\"Search\" loading=\"lazy\" decoding=\"async\" width=\"100\" height=\"100\"><h2 class=\"text-h5 font-mistral text-current\">No results</h2><p class=\"text-body-base text-text-muted\">Try adjusting your search or filters to find what you are looking for.</p></div>"
+      }
+    }
+  },
+  "clone": {
+    "initial": {
+      "count": "21",
+      "results": 6,
+      "titles": [
+        "Mistral Large 4",
+        "Timestral",
+        "Shieldstral",
+        "Robostral Navigate",
+        "Phoenix-VL 1.5 Medium",
+        "Voxtral TTS"
+      ],
+      "hrefs": [
+        "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+        "https://arxiv.org/abs/2610.37585",
+        "https://arxiv.org/abs/2607.25857",
+        "https://arxiv.org/abs/2607.20785",
+        "https://arxiv.org/abs/2605.10391",
+        "https://arxiv.org/abs/2603.25551"
+      ],
+      "more": true,
+      "less": false,
+      "empty": false,
+      "moreText": "Load more",
+      "lessText": "Show less"
+    },
+    "singles": {
+      "foundation-models": {
+        "count": "5",
+        "results": 5,
+        "titles": [
+          "Mistral Large 4",
+          "Timestral",
+          "Ministral 3",
+          "Mixtral of Experts",
+          "Mistral 7B"
+        ],
+        "hrefs": [
+          "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+          "https://arxiv.org/abs/2610.37585",
+          "https://arxiv.org/abs/2601.08584",
+          "https://arxiv.org/abs/2401.04088",
+          "https://arxiv.org/abs/2310.06825"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "safety": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Shieldstral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.25857"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "robotics": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Robostral Navigate"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.20785"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "applied-ai": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Phoenix-VL 1.5 Medium"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2605.10391"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "audio": {
+        "count": "3",
+        "results": 3,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "physical-ai": {
+        "count": "7",
+        "results": 7,
+        "titles": [
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "AB-UPT",
+          "NeuralDEM",
+          "Universal Physics Transformers"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2402.12365"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "coding": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Devstral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2509.25193"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "reasoning": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Magistral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2506.10910"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "vision": {
+        "count": "1",
+        "results": 1,
+        "titles": [
+          "Pixtral 12B"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2410.07073"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      }
+    },
+    "combos": {
+      "audio+vision": {
+        "count": "4",
+        "results": 4,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral",
+          "Pixtral 12B"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264",
+          "https://arxiv.org/abs/2410.07073"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "safety+robotics": {
+        "count": "2",
+        "results": 2,
+        "titles": [
+          "Shieldstral",
+          "Robostral Navigate"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2607.25857",
+          "https://arxiv.org/abs/2607.20785"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "coding+reasoning": {
+        "count": "2",
+        "results": 2,
+        "titles": [
+          "Devstral",
+          "Magistral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2509.25193",
+          "https://arxiv.org/abs/2506.10910"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "foundation-models+physical-ai": {
+        "count": "12",
+        "results": 12,
+        "titles": [
+          "Mistral Large 4",
+          "Timestral",
+          "Ministral 3",
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "AB-UPT",
+          "NeuralDEM",
+          "Universal Physics Transformers",
+          "Mixtral of Experts",
+          "Mistral 7B"
+        ],
+        "hrefs": [
+          "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+          "https://arxiv.org/abs/2610.37585",
+          "https://arxiv.org/abs/2601.08584",
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2402.12365",
+          "https://arxiv.org/abs/2401.04088",
+          "https://arxiv.org/abs/2310.06825"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "applied-ai+audio": {
+        "count": "4",
+        "results": 4,
+        "titles": [
+          "Phoenix-VL 1.5 Medium",
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Voxtral"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2605.10391",
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2507.13264"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      },
+      "physical-ai+vision+audio": {
+        "count": "11",
+        "results": 11,
+        "titles": [
+          "Voxtral TTS",
+          "Voxtral Realtime",
+          "Going with the Speed of Sound",
+          "Fluid Intelligence",
+          "AB-UPT for Automotive and Aerospace",
+          "GyroSwin",
+          "Voxtral",
+          "AB-UPT",
+          "NeuralDEM",
+          "Pixtral 12B",
+          "Universal Physics Transformers"
+        ],
+        "hrefs": [
+          "https://arxiv.org/abs/2603.25551",
+          "https://arxiv.org/abs/2602.11298",
+          "https://arxiv.org/abs/2511.21474",
+          "https://arxiv.org/abs/2511.20455",
+          "https://arxiv.org/abs/2510.15808",
+          "https://arxiv.org/abs/2510.07314",
+          "https://arxiv.org/abs/2507.13264",
+          "https://arxiv.org/abs/2502.09692",
+          "https://arxiv.org/abs/2411.09678",
+          "https://arxiv.org/abs/2410.07073",
+          "https://arxiv.org/abs/2402.12365"
+        ],
+        "more": false,
+        "less": false,
+        "empty": false,
+        "moreText": "Load more",
+        "lessText": "Show less"
+      }
+    },
+    "expanded": {},
+    "scroll": {},
+    "cleared": {
+      "count": "21",
+      "results": 6,
+      "titles": [
+        "Mistral Large 4",
+        "Timestral",
+        "Shieldstral",
+        "Robostral Navigate",
+        "Phoenix-VL 1.5 Medium",
+        "Voxtral TTS"
+      ],
+      "hrefs": [
+        "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+        "https://arxiv.org/abs/2610.37585",
+        "https://arxiv.org/abs/2607.25857",
+        "https://arxiv.org/abs/2607.20785",
+        "https://arxiv.org/abs/2605.10391",
+        "https://arxiv.org/abs/2603.25551"
+      ],
+      "more": true,
+      "less": false,
+      "empty": false,
+      "moreText": "Load more",
+      "lessText": "Show less"
+    },
+    "scrollOnFilter": {
+      "before": 2642,
+      "after": 1994,
+      "search": "?categories=audio"
+    },
+    "expansion": {
+      "expanded": {
+        "more1": {
+          "count": "21",
+          "results": 21,
+          "titles": [
+            "Mistral Large 4",
+            "Timestral",
+            "Shieldstral",
+            "Robostral Navigate",
+            "Phoenix-VL 1.5 Medium",
+            "Voxtral TTS",
+            "Voxtral Realtime",
+            "Ministral 3",
+            "Going with the Speed of Sound",
+            "Fluid Intelligence",
+            "AB-UPT for Automotive and Aerospace",
+            "GyroSwin",
+            "Devstral",
+            "Voxtral",
+            "Magistral",
+            "AB-UPT",
+            "NeuralDEM",
+            "Pixtral 12B",
+            "Universal Physics Transformers",
+            "Mixtral of Experts",
+            "Mistral 7B"
+          ],
+          "hrefs": [
+            "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+            "https://arxiv.org/abs/2610.37585",
+            "https://arxiv.org/abs/2607.25857",
+            "https://arxiv.org/abs/2607.20785",
+            "https://arxiv.org/abs/2605.10391",
+            "https://arxiv.org/abs/2603.25551",
+            "https://arxiv.org/abs/2602.11298",
+            "https://arxiv.org/abs/2601.08584",
+            "https://arxiv.org/abs/2511.21474",
+            "https://arxiv.org/abs/2511.20455",
+            "https://arxiv.org/abs/2510.15808",
+            "https://arxiv.org/abs/2510.07314",
+            "https://arxiv.org/abs/2509.25193",
+            "https://arxiv.org/abs/2507.13264",
+            "https://arxiv.org/abs/2506.10910",
+            "https://arxiv.org/abs/2502.09692",
+            "https://arxiv.org/abs/2411.09678",
+            "https://arxiv.org/abs/2410.07073",
+            "https://arxiv.org/abs/2402.12365",
+            "https://arxiv.org/abs/2401.04088",
+            "https://arxiv.org/abs/2310.06825"
+          ],
+          "more": false,
+          "less": true,
+          "empty": false,
+          "moreText": "Load more",
+          "lessText": "Show less"
+        },
+        "less": {
+          "count": "21",
+          "results": 6,
+          "titles": [
+            "Mistral Large 4",
+            "Timestral",
+            "Shieldstral",
+            "Robostral Navigate",
+            "Phoenix-VL 1.5 Medium",
+            "Voxtral TTS"
+          ],
+          "hrefs": [
+            "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+            "https://arxiv.org/abs/2610.37585",
+            "https://arxiv.org/abs/2607.25857",
+            "https://arxiv.org/abs/2607.20785",
+            "https://arxiv.org/abs/2605.10391",
+            "https://arxiv.org/abs/2603.25551"
+          ],
+          "more": true,
+          "less": false,
+          "empty": false,
+          "moreText": "Load more",
+          "lessText": "Show less"
+        }
+      },
+      "scroll": {
+        "more1": {
+          "before": 2306,
+          "after": 2306,
+          "boxY": 430
+        }
+      },
+      "empty": {
+        "exists": true,
+        "html": "<div class=\"flex flex-col items-center justify-center gap-4 text-center p-10\"><img src=\"/images/cat/cat-chilling-black.gif\" alt=\"Search\" loading=\"lazy\" decoding=\"async\" width=\"100\" height=\"100\"><h2 class=\"text-h5 font-mistral text-current\">No results</h2><p class=\"text-body-base text-text-muted\">Try adjusting your search or filters to find what you are looking for.</p></div>"
+      }
+    }
+  }
+}
