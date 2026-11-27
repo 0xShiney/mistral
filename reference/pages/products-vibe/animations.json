@@ -1,0 +1,118 @@
+{
+  "inventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    },
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    },
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Hero title slot-machine",
+      "evidence": "mistral-atom-text-hero-title (data-autoplay, data-grow, data-randomness) + SplitText per character"
+    },
+    {
+      "name": "Feature tabs",
+      "evidence": "slideshow-media-feature + mistral-atom-spoiler; .js-media[data-active] cross-fade and mistral-atom-progressbar"
+    },
+    {
+      "name": "Capability scroll-spy",
+      "evidence": "navigation-summary.*.js + mistral-atom-spoiler[data-id]; anchors #6a0f…, mobile sticky summary"
+    },
+    {
+      "name": "Price tax toggle",
+      "evidence": "mistral-atom-text-price .js-exclude-taxe + mistral-atom-button-tooltip"
+    },
+    {
+      "name": "OS download switcher",
+      "evidence": "mistral-atom-button-os-download detects the platform and reveals the matching platform row"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0.0289
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0607
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.0001
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0249
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0258
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0.0272
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0365
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.3014
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.3421
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0118
+    }
+  ]
+}

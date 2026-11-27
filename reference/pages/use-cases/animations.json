@@ -1,0 +1,84 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Live counter + list filter",
+      "evidence": "posts.*.js filter(): OR across every selected chip (`data-categories` split, .some), display:none on hidden rows, count.innerHTML"
+    },
+    {
+      "name": "Pagination",
+      "evidence": "navigation-pagination.*.js: 9 per page, mousedown on .js-pagination-page, page in ?page=, hide() when one page"
+    },
+    {
+      "name": "Scroll to listing top on filter/page change",
+      "evidence": "posts.*.js goTop() -> scrollTo(this.top, {offset:-48})"
+    },
+    {
+      "name": "Card hover",
+      "evidence": "group/use-case: icon scale-95 + background shift + arrow slide (CSS transition)"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0
+    }
+  ]
+}

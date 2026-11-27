@@ -1,0 +1,9 @@
+---
+// Section markup captured verbatim from https://mistral.ai/our-method/
+// Behaviour (bento, tabs, sliders, filters, scrollytelling) comes from the
+// original client runtime in public/js/ — this component only emits the DOM.
+import RawSection from '../RawSection.astro'
+import markup from '../../markup/method/markup/value.html?raw'
+---
+
+<RawSection html={markup} />

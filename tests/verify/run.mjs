@@ -634,9 +634,28 @@ async function main() {
 }
 
 // `pnpm verify --page research` runs the /research/ harness instead of the homepage one.
+// The content routes share the config-driven harness in site.mjs: the four index
+// pages, the five product/cloud landings and the 16 /use-cases/<slug>/ detail pages.
+// `--all` runs every one of them in one browser session.
 const pageArg = process.argv.includes('--page') ? process.argv[process.argv.indexOf('--page') + 1] : null
+const SITE_PAGES = [
+  'products',
+  'our-method',
+  'use-cases',
+  'sovereign-ai',
+  'products/vibe',
+  'products/studio',
+  'products/forge',
+  'cloud/inference',
+  'cloud/compute',
+  'all',
+]
+const isUseCaseDetail = /^use-cases\/[a-z0-9-]+$/.test(pageArg ?? '')
+const allPages = process.argv.includes('--all')
 if (pageArg === 'research') {
   await import('./research.mjs')
+} else if (allPages || SITE_PAGES.includes(pageArg) || isUseCaseDetail) {
+  await import('./site.mjs')
 } else {
   main().catch(async (e) => {
     console.error(e)

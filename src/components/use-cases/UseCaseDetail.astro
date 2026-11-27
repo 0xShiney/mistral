@@ -1,0 +1,13 @@
+---
+// One captured /use-cases/<slug>/ page, emitted verbatim. All 16 detail pages
+// share this component: the route picks the markup and passes it in.
+import RawSection from '../RawSection.astro'
+
+interface Props {
+  markup: string
+}
+
+const { markup } = Astro.props
+---
+
+<RawSection html={markup} />

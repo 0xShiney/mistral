@@ -1,0 +1,156 @@
+{
+  "inventory": [
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 400,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 300.00000000000006,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 200,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 100,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 400,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 300.00000000000006,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 200,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 100,
+      "iterations": 1
+    },
+    {
+      "name": "bento-fall",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Hero title slot-machine",
+      "evidence": "mistral-atom-text-hero-title (data-autoplay, data-grow, data-randomness) + SplitText chunk; per-character swap on load"
+    },
+    {
+      "name": "Bento entrance",
+      "evidence": ".bento-card[--i] + .in-view class added by product-bento.*.js show(); CSS transition"
+    },
+    {
+      "name": "Card image lift on hover",
+      "evidence": ".js-product-card:hover img { transform: scale3d(1.05,1.05,1.05) } (300ms cubic-bezier(.4,0,.2,1)); the runtime additionally wires a title roll when a .js-title exists — the current markup has none, and the original logs the same warning"
+    },
+    {
+      "name": "Bottom arrow loop",
+      "evidence": "animate-fading-arrow-scroll-1..3 on the scroll hint"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0.0208
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0
+    }
+  ]
+}

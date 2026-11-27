@@ -1,0 +1,41 @@
+---
+// /cloud/compute/ — composition of the 9 top-level blocks of #page-path, in the
+// original order. Markup for each block lives verbatim in
+// src/markup/compute/markup/ (see reference/page-split.py).
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import { COMPUTE } from '../../../content/details'
+import ComputeHero from '../../../components/compute/ComputeHero.astro'
+import ComputeMedia from '../../../components/compute/ComputeMedia.astro'
+import ComputeQuotes from '../../../components/compute/ComputeQuotes.astro'
+import ComputeInfraHeadline from '../../../components/compute/ComputeInfraHeadline.astro'
+import ComputeInfra from '../../../components/compute/ComputeInfra.astro'
+import ComputeControlsHeadline from '../../../components/compute/ComputeControlsHeadline.astro'
+import ComputeControls from '../../../components/compute/ComputeControls.astro'
+import ComputeGuarantees from '../../../components/compute/ComputeGuarantees.astro'
+import ComputeClosing from '../../../components/compute/ComputeClosing.astro'
+---
+
+<Base
+  title={COMPUTE.title}
+  description={COMPUTE.description}
+  path={COMPUTE.path}
+  navActive="/cloud/inference/"
+  navSurface="secondary"
+  jsonLd={COMPUTE.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <ComputeHero />
+      <ComputeMedia />
+      <ComputeQuotes />
+      <ComputeInfraHeadline />
+      <ComputeInfra />
+      <ComputeControlsHeadline />
+      <ComputeControls />
+      <ComputeGuarantees />
+      <ComputeClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

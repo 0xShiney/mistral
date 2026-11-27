@@ -1,0 +1,47 @@
+---
+// /cloud/inference/ — composition of the 12 top-level blocks of #page-path, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/inference/markup/ (see reference/page-split.py).
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import { INFERENCE } from '../../../content/details'
+import InferenceHero from '../../../components/inference/InferenceHero.astro'
+import InferenceLogos from '../../../components/inference/InferenceLogos.astro'
+import InferenceSovereigntyHeadline from '../../../components/inference/InferenceSovereigntyHeadline.astro'
+import InferenceSovereignty from '../../../components/inference/InferenceSovereignty.astro'
+import InferenceModelsHeadline from '../../../components/inference/InferenceModelsHeadline.astro'
+import InferenceModels from '../../../components/inference/InferenceModels.astro'
+import InferenceApis from '../../../components/inference/InferenceApis.astro'
+import InferenceStories from '../../../components/inference/InferenceStories.astro'
+import InferenceResourcesHeadline from '../../../components/inference/InferenceResourcesHeadline.astro'
+import InferenceResources from '../../../components/inference/InferenceResources.astro'
+import InferenceClosingHeadline from '../../../components/inference/InferenceClosingHeadline.astro'
+import InferenceFaq from '../../../components/inference/InferenceFaq.astro'
+---
+
+<Base
+  title={INFERENCE.title}
+  description={INFERENCE.description}
+  path={INFERENCE.path}
+  navActive="/cloud/inference/"
+  navSurface="secondary"
+  jsonLd={INFERENCE.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <InferenceHero />
+      <InferenceLogos />
+      <InferenceSovereigntyHeadline />
+      <InferenceSovereignty />
+      <InferenceModelsHeadline />
+      <InferenceModels />
+      <InferenceApis />
+      <InferenceStories />
+      <InferenceResourcesHeadline />
+      <InferenceResources />
+      <InferenceClosingHeadline />
+      <InferenceFaq />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

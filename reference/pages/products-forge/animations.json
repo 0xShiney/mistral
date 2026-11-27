@@ -1,0 +1,104 @@
+{
+  "inventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Hero product animation",
+      "evidence": "mistral-section-hero-product-forge + mistral-atom-text-hero-title; js-forge-image frame swap"
+    },
+    {
+      "name": "Infinite logo marquee",
+      "evidence": "mistral-block-slider-infinite-scrolling copies the track twice and translates it in a loop"
+    },
+    {
+      "name": "Why Forge: tabbed media slideshow",
+      "evidence": "mistral-block-slideshow-media-feature with mistral-atom-spoiler + mistral-atom-progressbar; .js-media[data-active] cross-fade"
+    },
+    {
+      "name": "System scroll-spy",
+      "evidence": "mistral-atom-navigation-summary a.js-anchor[data-active] scrolls the six spoiler panels of section 6"
+    },
+    {
+      "name": "Industry carousel",
+      "evidence": "mistral-section-carousel-collection: .js-slider/.js-slider-item, .js-prev/.js-next and .js-dots"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0.0999
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0945
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.1639
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0445
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0004
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0.0907
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0.0482
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0788
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.1357
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0552
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0529
+    }
+  ]
+}

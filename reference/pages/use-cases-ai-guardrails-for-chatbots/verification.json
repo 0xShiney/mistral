@@ -1,0 +1,203 @@
+{
+  "generated": "2026-11-27T01:53:19.874Z",
+  "widths": [
+    1440
+  ],
+  "schemes": [
+    "light"
+  ],
+  "results": [
+    {
+      "group": "light@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1440x2819 vs 1440x2819)"
+    },
+    {
+      "group": "light@1440",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "66.8kB vs 68.4kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.3kB vs 40.1kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "navbar@light",
+      "name": "25px scroll sweep (63 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "motion",
+      "name": "animation inventory identical",
+      "pass": true,
+      "detail": "0 vs 0 running animations"
+    },
+    {
+      "group": "interaction",
+      "name": "controls behave identically",
+      "pass": true,
+      "detail": "{\"initial\":{\"tags\":[\"Customer Support\",\"Cybersecurity\",\"Search\"],\"headings\":[\"How AI teams protect chatbots with parallel guardrails.\",\"AI guardrails "
+    },
+    {
+      "group": "content",
+      "name": "every text node matches",
+      "pass": true,
+      "detail": "26 vs 26 text nodes"
+    },
+    {
+      "group": "content",
+      "name": "footer text matches",
+      "pass": true,
+      "detail": "24 nodes"
+    },
+    {
+      "group": "content",
+      "name": "link targets match",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "group": "content",
+      "name": "image sources/alt match",
+      "pass": true,
+      "detail": "5 vs 5 images"
+    },
+    {
+      "group": "meta",
+      "name": "title",
+      "pass": true,
+      "detail": "AI guardrails for chatbots | Mistral"
+    },
+    {
+      "group": "meta",
+      "name": "canonical + hreflang",
+      "pass": true,
+      "detail": "[\"canonical:null=https://mistral.ai/use-cases/ai-guardrails-for-chatbots/\",\"alternate:en=https://mistral.ai/use-cases/ai-guardrails-for-chatbots/\",\"alternate:fr=https://mistral.ai/fr/use-cases/ai-guardrails-for-chatbots/\",\"alternate:it=https://mistral.ai/it/use-cases/ai-guardrails-for-chatbots/\",\"alternate:x-default=https://mistral.ai/use-cases/ai-guardrails-for-chatbots/\",\"alternate:null=https://mistral.ai/news/rss\"]"
+    },
+    {
+      "group": "meta",
+      "name": "structured data",
+      "pass": true,
+      "detail": "{\"@context\":\"https://schema.org\",\"@id\":\"https://mistral.ai/use-cases/ai-guardrai"
+    },
+    {
+      "group": "meta",
+      "name": "single h1 + lang",
+      "pass": true,
+      "detail": "How AI teams protect chatbots with parallel guardrails. · en"
+    },
+    {
+      "group": "meta",
+      "name": "description / og / twitter / viewport",
+      "pass": true,
+      "detail": "[\"description=The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open mode"
+    },
+    {
+      "group": "architecture",
+      "name": "islands (count/framework)",
+      "pass": true,
+      "detail": "orig 0, clone 0"
+    },
+    {
+      "group": "architecture",
+      "name": "no-JS markup + styled state",
+      "pass": true,
+      "detail": "nodes=94 h1=1 header=rgb(245, 244, 239)"
+    },
+    {
+      "group": "transitions",
+      "name": "tour across all cloned routes",
+      "pass": true,
+      "detail": "[\"/:false\",\"/sovereign-ai/:true\",\"/products/:true\",\"/our-method/:true\",\"/use-cases/:true\",\"/research/:false\",\"/:false\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "browser back restores previous pages",
+      "pass": true,
+      "detail": "[\"/research/\",\"/use-cases/\",\"/our-method/\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "after the tour a filter still works",
+      "pass": true,
+      "detail": "{\"path\":\"/use-cases/\",\"before\":\"16\",\"after\":\"3\",\"listenersWork\":true,\"headerBg\":\"rgb(245, 244, 239)\"}"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (light)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 or matches original (light)",
+      "pass": true,
+      "detail": "0.0048 (orig 0.0000)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (light)",
+      "pass": true,
+      "detail": "orig \"\" rgb(245, 244, 239) · clone \"\" rgb(245, 244, 239)"
+    },
+    {
+      "group": "quality",
+      "name": "prefers-reduced-motion parity",
+      "pass": true,
+      "detail": "height 2819 vs 2819, title opacity null vs null"
+    },
+    {
+      "group": "chrome",
+      "name": "mega behaves identically",
+      "pass": true,
+      "detail": "{\"h\":229,\"items\":4,\"rows\":16,\"closedH\":2}"
+    },
+    {
+      "group": "chrome",
+      "name": "lang behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"count\":3,\"visible\":3}"
+    },
+    {
+      "group": "chrome",
+      "name": "theme behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"dark\":true,\"changed\":true,\"stored\":\"light\"}"
+    },
+    {
+      "group": "chrome",
+      "name": "cat behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"src\":\"/images/cat/cat-sitting-black.gif\",\"w\":256,\"h\":224,\"rw\":56,\"rh\":49}"
+    },
+    {
+      "group": "chrome",
+      "name": "mobile behaves identically",
+      "pass": true,
+      "detail": "{\"opened\":{\"expanded\":\"true\",\"panelX\":0,\"label\":\"Menu\",\"bodyOverflow\":\"hidden\"},\"sub\":{\"subX\":0,\"links\":[\"/sovereign-ai/\",\"/products/\",\"/our-method/\",\"/use-cases/\"]},\"closed\":{\"expanded\":\"false\",\"panelX\":390}}"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+// Emits one captured section. The capture is DOM-exact, so it stays a string;
+// the only things that are not strings are the icons in src/svg/, which the
+// capture references as `<!--svg:Name-->` markers (see reference/split-svgs.py)
+// and which are rendered here as real components.
+import { SVG_COMPONENTS } from '../svg/registry'
+import { rewriteHrefs } from '../content/routes'
+
+interface Props {
+  html: string
+}
+
+const { html } = Astro.props
+const source = rewriteHrefs(html)
+
+const MARKER = /<!--svg:([A-Za-z0-9]+)-->/g
+const parts: Array<{ html: string; Svg: any }> = []
+let cursor = 0
+for (const match of source.matchAll(MARKER)) {
+  const name = match[1]
+  const Svg = SVG_COMPONENTS[name]
+  if (!Svg) throw new Error(`RawSection: unknown svg marker "${name}"`)
+  const at = match.index ?? 0
+  if (at > cursor) parts.push({ html: source.slice(cursor, at), Svg: null })
+  parts.push({ html: '', Svg })
+  cursor = at + match[0].length
+}
+if (cursor < source.length) parts.push({ html: source.slice(cursor), Svg: null })
+---
+
+{parts.map(({ html, Svg }) => (Svg ? <Svg /> : <Fragment set:html={html} />))}

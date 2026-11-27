@@ -1,0 +1,88 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Hero image + SplitText intro",
+      "evidence": "mistral-section-hero-default data-loaded=\"false\" flipped by hero-default.*.js; .js-title SplitText per character"
+    },
+    {
+      "name": "Value / flexibility card slideshow",
+      "evidence": "slideshow-cards-feature + slideshow.CWoS44AO.js: hover trigger, auto progressbar (.js-progressbar) and .js-card-spoiler height"
+    },
+    {
+      "name": "Working with Mistral tab stack",
+      "evidence": "slideshow-media-feature + mistral-atom-spoiler: trigger click/hover switches .js-media[data-active] and the panel spoiler"
+    },
+    {
+      "name": "Customer quotes slider",
+      "evidence": "carousel-collection + Swiper (slider.CmLRuZco.js), loop:true, .js-next/.js-prev + navigation dots"
+    },
+    {
+      "name": "Journey graphic reveal",
+      "evidence": "data-loaded on the section; CSS fade/translate once in view"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0012
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.0001
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0001
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0007
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0153
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.0007
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0001
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0006
+    }
+  ]
+}

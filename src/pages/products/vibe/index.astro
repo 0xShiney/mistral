@@ -1,0 +1,47 @@
+---
+// /products/vibe/ — composition of the 12 top-level blocks of #page-path, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/vibe/markup/ (see reference/page-split.py).
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import { VIBE } from '../../../content/details'
+import VibeHero from '../../../components/vibe/VibeHero.astro'
+import VibeLogos from '../../../components/vibe/VibeLogos.astro'
+import VibeFeaturesHeadline from '../../../components/vibe/VibeFeaturesHeadline.astro'
+import VibeFeatures from '../../../components/vibe/VibeFeatures.astro'
+import VibePricingHeadline from '../../../components/vibe/VibePricingHeadline.astro'
+import VibePricing from '../../../components/vibe/VibePricing.astro'
+import VibeUnderstand from '../../../components/vibe/VibeUnderstand.astro'
+import VibeWorkHeadline from '../../../components/vibe/VibeWorkHeadline.astro'
+import VibeShip from '../../../components/vibe/VibeShip.astro'
+import VibeAudiencesHeadline from '../../../components/vibe/VibeAudiencesHeadline.astro'
+import VibeFaq from '../../../components/vibe/VibeFaq.astro'
+import VibeClosing from '../../../components/vibe/VibeClosing.astro'
+---
+
+<Base
+  title={VIBE.title}
+  description={VIBE.description}
+  path={VIBE.path}
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={VIBE.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <VibeHero />
+      <VibeLogos />
+      <VibeFeaturesHeadline />
+      <VibeFeatures />
+      <VibePricingHeadline />
+      <VibePricing />
+      <VibeUnderstand />
+      <VibeWorkHeadline />
+      <VibeShip />
+      <VibeAudiencesHeadline />
+      <VibeFaq />
+      <VibeClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

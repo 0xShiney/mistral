@@ -1,0 +1,43 @@
+---
+// /products/forge/ — composition of the 10 top-level blocks of #page-path, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/forge/markup/ (see reference/page-split.py).
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import { FORGE } from '../../../content/details'
+import ForgeHero from '../../../components/forge/ForgeHero.astro'
+import ForgeLogos from '../../../components/forge/ForgeLogos.astro'
+import ForgeWhyHeadline from '../../../components/forge/ForgeWhyHeadline.astro'
+import ForgeWhy from '../../../components/forge/ForgeWhy.astro'
+import ForgeSystemHeadline from '../../../components/forge/ForgeSystemHeadline.astro'
+import ForgeSystem from '../../../components/forge/ForgeSystem.astro'
+import ForgeMedia from '../../../components/forge/ForgeMedia.astro'
+import ForgeIndustriesHeadline from '../../../components/forge/ForgeIndustriesHeadline.astro'
+import ForgeIndustries from '../../../components/forge/ForgeIndustries.astro'
+import ForgeClosing from '../../../components/forge/ForgeClosing.astro'
+---
+
+<Base
+  title={FORGE.title}
+  description={FORGE.description}
+  path={FORGE.path}
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={FORGE.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <ForgeHero />
+      <ForgeLogos />
+      <ForgeWhyHeadline />
+      <ForgeWhy />
+      <ForgeSystemHeadline />
+      <ForgeSystem />
+      <ForgeMedia />
+      <ForgeIndustriesHeadline />
+      <ForgeIndustries />
+      <ForgeClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

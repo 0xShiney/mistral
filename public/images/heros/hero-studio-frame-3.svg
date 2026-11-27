@@ -1,0 +1,49 @@
+<svg width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3_2569)">
+<g filter="url(#filter0_d_3_2569)">
+<g clip-path="url(#clip1_3_2569)">
+<rect width="204" height="204" fill="#FBFBF8"/>
+<g clip-path="url(#clip2_3_2569)">
+<g clip-path="url(#clip3_3_2569)">
+<rect x="180.469" y="151.375" width="73.6875" height="24.5625" fill="#FA500F"/>
+<rect x="45.375" y="102.25" width="110.531" height="24.5625" fill="#FF92DC"/>
+<rect x="-3.75" y="53.125" width="49.125" height="24.5625" fill="#FFAF01"/>
+<rect x="155.906" y="126.812" width="24.5625" height="24.5625" fill="#FF8204"/>
+<rect x="45.375" y="77.6875" width="17.3683" height="17.3683" transform="rotate(45 45.375 77.6875)" fill="#55B3FB"/>
+<line x1="76.0781" y1="-94.25" x2="76.0781" y2="298.75" stroke="#C9C9C4" stroke-width="0.49125"/>
+<rect x="155.906" y="102.25" width="24.5625" height="24.5625" stroke="#C9C9C4" stroke-width="0.49125"/>
+<rect x="180.469" y="102.25" width="24.5625" height="24.5625" stroke="#C9C9C4" stroke-width="0.49125"/>
+<rect x="74.3588" y="125.339" width="2.9475" height="2.9475" fill="#CE1493"/>
+<rect x="74.3588" y="100.776" width="2.9475" height="2.9475" fill="#CE1493"/>
+<rect x="-3.75" y="28.5625" width="24.5625" height="24.5625" stroke="#C9C9C4" stroke-width="0.49125"/>
+<rect x="20.8125" y="28.5625" width="24.5625" height="24.5625" stroke="#C9C9C4" stroke-width="0.49125"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_3_2569" x="-60" y="-40" width="324" height="324" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="30"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2569"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2569" result="shape"/>
+</filter>
+<clipPath id="clip0_3_2569">
+<path d="M0 1.99999C0 0.895424 0.895431 0 2 0H202C203.105 0 204 0.895431 204 2V202C204 203.105 203.105 204 202 204H1.99999C0.895424 204 0 203.105 0 202V1.99999Z" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2569">
+<rect width="204" height="204" fill="white"/>
+</clipPath>
+<clipPath id="clip2_3_2569">
+<rect width="393" height="245.625" fill="white" transform="translate(-102 -20.5625)"/>
+</clipPath>
+<clipPath id="clip3_3_2569">
+<rect width="393" height="393" fill="white" transform="translate(-102 -94.25)"/>
+</clipPath>
+</defs>
+</svg>

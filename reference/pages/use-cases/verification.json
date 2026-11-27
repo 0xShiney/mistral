@@ -1,0 +1,899 @@
+{
+  "generated": "2026-11-26T05:42:31.721Z",
+  "widths": [
+    390,
+    768,
+    1024,
+    1440,
+    1920,
+    2560
+  ],
+  "schemes": [
+    "light",
+    "dark"
+  ],
+  "results": [
+    {
+      "group": "light@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (390x6505 vs 390x6505)"
+    },
+    {
+      "group": "light@390",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (768x6102 vs 768x6102)"
+    },
+    {
+      "group": "light@768",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1024x5247 vs 1024x5247)"
+    },
+    {
+      "group": "light@1024",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1440x3571 vs 1440x3571)"
+    },
+    {
+      "group": "light@1440",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1920x2733 vs 1920x2733)"
+    },
+    {
+      "group": "light@1920",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "light@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (2560x2733 vs 2560x2733)"
+    },
+    {
+      "group": "light@2560",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (390x6505 vs 390x6505)"
+    },
+    {
+      "group": "dark@390",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (768x6102 vs 768x6102)"
+    },
+    {
+      "group": "dark@768",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1024x5247 vs 1024x5247)"
+    },
+    {
+      "group": "dark@1024",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1440x3571 vs 1440x3571)"
+    },
+    {
+      "group": "dark@1440",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (1920x2733 vs 1920x2733)"
+    },
+    {
+      "group": "dark@1920",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "dark@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (2560x2733 vs 2560x2733)"
+    },
+    {
+      "group": "dark@2560",
+      "name": "page height identical",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "74.0kB vs 75.8kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "37.5kB vs 40.1kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "group": "navbar@light",
+      "name": "25px scroll sweep (66 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "navbar@dark",
+      "name": "25px scroll sweep (66 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "motion",
+      "name": "hero moves identically",
+      "pass": true,
+      "detail": "moving true/true · Δpixels 0.007%/0.006% · animations [\"fading-arrow-scroll\",\"fading-arrow-scroll\",\"fading-arrow-scroll\"]"
+    },
+    {
+      "group": "motion",
+      "name": "index moves identically",
+      "pass": true,
+      "detail": "moving false/false · Δpixels 0%/0% · animations []"
+    },
+    {
+      "group": "motion",
+      "name": "card-0 moves identically",
+      "pass": true,
+      "detail": "moving false/false · Δpixels 0%/0% · animations []"
+    },
+    {
+      "group": "motion",
+      "name": "animation inventory identical",
+      "pass": true,
+      "detail": "3 vs 3 running animations"
+    },
+    {
+      "group": "filter",
+      "name": "initial list + counter",
+      "pass": true,
+      "detail": "16 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “government”",
+      "pass": true,
+      "detail": "4 · 4 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=government\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “manufacturing”",
+      "pass": true,
+      "detail": "10 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=manufacturing\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “financial-services”",
+      "pass": true,
+      "detail": "8 · 8 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=financial-services\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “energy”",
+      "pass": true,
+      "detail": "8 · 8 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=energy\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “technology”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=technology\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “healthcare-and-life-sciences”",
+      "pass": true,
+      "detail": "2 · 2 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=healthcare-and-life-sciences\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “consumer-products-and-retail”",
+      "pass": true,
+      "detail": "4 · 4 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=consumer-products-and-retail\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “transportation-and-logistics”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=transportation-and-logistics\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “software-engineering-coding”",
+      "pass": true,
+      "detail": "1 · 1 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=software-engineering-coding\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “digital-assistant”",
+      "pass": true,
+      "detail": "2 · 2 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=digital-assistant\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “search”",
+      "pass": true,
+      "detail": "3 · 3 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=search\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “speech”",
+      "pass": true,
+      "detail": "2 · 2 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=speech\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “customer-support”",
+      "pass": true,
+      "detail": "3 · 3 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=customer-support\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “cybersecurity”",
+      "pass": true,
+      "detail": "3 · 3 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=cybersecurity\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “risk-and-compliance”",
+      "pass": true,
+      "detail": "2 · 2 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=risk-and-compliance\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “document-intelligence”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=document-intelligence\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “agentic-workflows”",
+      "pass": true,
+      "detail": "10 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=agentic-workflows\""
+    },
+    {
+      "group": "filter",
+      "name": "industry/capability “industrial-engineering”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=industrial-engineering\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “government+manufacturing”",
+      "pass": true,
+      "detail": "11 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=government%2Cmanufacturing\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “energy+technology”",
+      "pass": true,
+      "detail": "9 · 9 rows · pages=[\"1:true/true\",\"2:false/false\"] · query=\"?categories=energy%2Ctechnology\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “cybersecurity+risk-and-compliance”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=cybersecurity%2Crisk-and-compliance\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “speech+search”",
+      "pass": true,
+      "detail": "4 · 4 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=speech%2Csearch\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “software-engineering-coding+digital-assistant”",
+      "pass": true,
+      "detail": "3 · 3 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=software-engineering-coding%2Cdigital-assistant\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “document-intelligence+agentic-workflows”",
+      "pass": true,
+      "detail": "11 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=document-intelligence%2Cagentic-workflows\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “government+document-intelligence”",
+      "pass": true,
+      "detail": "8 · 8 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=government%2Cdocument-intelligence\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “manufacturing+industrial-engineering”",
+      "pass": true,
+      "detail": "10 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=manufacturing%2Cindustrial-engineering\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “financial-services+risk-and-compliance”",
+      "pass": true,
+      "detail": "8 · 8 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=financial-services%2Crisk-and-compliance\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “healthcare-and-life-sciences+digital-assistant”",
+      "pass": true,
+      "detail": "4 · 4 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=healthcare-and-life-sciences%2Cdigital-assistant\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “technology+cybersecurity”",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=technology%2Ccybersecurity\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “transportation-and-logistics+search”",
+      "pass": true,
+      "detail": "7 · 7 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=transportation-and-logistics%2Csearch\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “consumer-products-and-retail+document-intelligence”",
+      "pass": true,
+      "detail": "8 · 8 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=consumer-products-and-retail%2Cdocument-intelligence\""
+    },
+    {
+      "group": "filter",
+      "name": "combo “government+agentic-workflows+search”",
+      "pass": true,
+      "detail": "12 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=government%2Cagentic-workflows%2Csearch\""
+    },
+    {
+      "group": "filter",
+      "name": "clear all restores initial",
+      "pass": true,
+      "detail": "16 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"\""
+    },
+    {
+      "group": "filter",
+      "name": "pagination initial",
+      "pass": true,
+      "detail": "16 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"\""
+    },
+    {
+      "group": "filter",
+      "name": "pagination page2",
+      "pass": true,
+      "detail": "16 · 7 rows · pages=[\"1:false/true\",\"2:true/true\"] · query=\"?page=2\""
+    },
+    {
+      "group": "filter",
+      "name": "pagination back",
+      "pass": true,
+      "detail": "16 · 9 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"\""
+    },
+    {
+      "group": "filter",
+      "name": "pagination afterFilter",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=technology\""
+    },
+    {
+      "group": "filter",
+      "name": "search hit",
+      "pass": true,
+      "detail": "1 · 1 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?search=CAD\""
+    },
+    {
+      "group": "filter",
+      "name": "search empty state",
+      "pass": true,
+      "detail": "0 · 0 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?search=zzzz-no-match\""
+    },
+    {
+      "group": "filter",
+      "name": "empty state markup",
+      "pass": true,
+      "detail": "undefined · undefined rows · pages=undefined · query=\"undefined\""
+    },
+    {
+      "group": "filter",
+      "name": "filter change resets page + scrolls to list top",
+      "pass": true,
+      "detail": "orig {\"before\":1300,\"after\":452} · clone {\"before\":1300,\"after\":452}"
+    },
+    {
+      "group": "filter",
+      "name": "pagination resets on filter change",
+      "pass": true,
+      "detail": "5 · 5 rows · pages=[\"1:true/true\",\"2:false/true\"] · query=\"?categories=technology\""
+    },
+    {
+      "group": "content",
+      "name": "every text node matches",
+      "pass": true,
+      "detail": "47 vs 47 text nodes"
+    },
+    {
+      "group": "content",
+      "name": "footer text matches",
+      "pass": true,
+      "detail": "24 nodes"
+    },
+    {
+      "group": "content",
+      "name": "link targets match",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "group": "content",
+      "name": "image sources/alt match",
+      "pass": true,
+      "detail": "19 vs 19 images"
+    },
+    {
+      "group": "meta",
+      "name": "title",
+      "pass": true,
+      "detail": "Frontier AI LLMs, assistants, agents, services | Mistral AI"
+    },
+    {
+      "group": "meta",
+      "name": "canonical + hreflang",
+      "pass": true,
+      "detail": "[\"canonical:null=https://mistral.ai/use-cases/\",\"alternate:en=https://mistral.ai/use-cases/\",\"alternate:fr=https://mistral.ai/fr/use-cases/\",\"alternate:it=https://mistral.ai/it/use-cases/\",\"alternate:x-default=https://mistral.ai/use-cases/\",\"alternate:null=https://mistral.ai/news/rss\"]"
+    },
+    {
+      "group": "meta",
+      "name": "structured data",
+      "pass": true,
+      "detail": "{\"@context\":\"https://schema.org\",\"@id\":\"https://mistral.ai/use-cases/\",\"name\":\"U"
+    },
+    {
+      "group": "meta",
+      "name": "single h1 + lang",
+      "pass": true,
+      "detail": "Sovereign AI in practice. · en"
+    },
+    {
+      "group": "meta",
+      "name": "description / og / twitter / viewport",
+      "pass": true,
+      "detail": "[\"description=The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open mode"
+    },
+    {
+      "group": "architecture",
+      "name": "islands (count/framework)",
+      "pass": true,
+      "detail": "orig 0, clone 0"
+    },
+    {
+      "group": "architecture",
+      "name": "no-JS markup + styled state",
+      "pass": true,
+      "detail": "nodes=717 h1=1 header=rgb(245, 244, 239)"
+    },
+    {
+      "group": "transitions",
+      "name": "tour across all cloned routes",
+      "pass": true,
+      "detail": "[\"/:false\",\"/sovereign-ai/:true\",\"/products/:true\",\"/our-method/:true\",\"/use-cases/:true\",\"/research/:false\",\"/:false\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "browser back restores previous pages",
+      "pass": true,
+      "detail": "[\"/research/\",\"/use-cases/\",\"/our-method/\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "after the tour a filter still works",
+      "pass": true,
+      "detail": "{\"path\":\"/use-cases/\",\"before\":\"16\",\"after\":\"3\",\"listenersWork\":true,\"headerBg\":\"rgb(245, 244, 239)\"}"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (light)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 (light)",
+      "pass": true,
+      "detail": "0.0003 (orig 0.0000)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (light)",
+      "pass": true,
+      "detail": "orig \"\" rgb(245, 244, 239) · clone \"\" rgb(245, 244, 239)"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (dark)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 (dark)",
+      "pass": true,
+      "detail": "0.0003 (orig 0.0000)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (dark)",
+      "pass": true,
+      "detail": "orig \"dark\" rgb(26, 26, 30) · clone \"dark\" rgb(26, 26, 30)"
+    },
+    {
+      "group": "quality",
+      "name": "prefers-reduced-motion parity",
+      "pass": true,
+      "detail": "height 3571 vs 3571, title opacity 1 vs 1"
+    },
+    {
+      "group": "chrome",
+      "name": "mega behaves identically",
+      "pass": true,
+      "detail": "{\"h\":229,\"items\":4,\"rows\":16,\"closedH\":2}"
+    },
+    {
+      "group": "chrome",
+      "name": "lang behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"count\":3,\"visible\":3}"
+    },
+    {
+      "group": "chrome",
+      "name": "theme behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"dark\":true,\"changed\":true,\"stored\":\"light\"}"
+    },
+    {
+      "group": "chrome",
+      "name": "cat behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"src\":\"/images/cat/cat-sitting-black.gif\",\"w\":256,\"h\":224,\"rw\":56,\"rh\":49}"
+    },
+    {
+      "group": "chrome",
+      "name": "mobile behaves identically",
+      "pass": true,
+      "detail": "{\"opened\":{\"expanded\":\"true\",\"panelX\":0,\"label\":\"Menu\",\"bodyOverflow\":\"hidden\"},\"sub\":{\"subX\":0,\"links\":[\"/sovereign-ai/\",\"/products/\",\"/our-method/\",\"/use-cases/\"]},\"closed\":{\"expanded\":\"false\",\"panelX\":390}}"
+    }
+  ]
+}

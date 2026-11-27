@@ -1,0 +1,129 @@
+---
+// /sovereign-ai/ — composition of the 7 top-level blocks of #page-path, in the
+// original order. Markup for each block lives verbatim in
+// src/markup/sovereign-ai/markup/ (see reference/page-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import SovereignHero from '../../components/sovereign-ai/SovereignHero.astro'
+import ScrollStory from '../../components/sovereign-ai/ScrollStory.astro'
+import LayersHeadline from '../../components/sovereign-ai/LayersHeadline.astro'
+import Layers from '../../components/sovereign-ai/Layers.astro'
+import PathHeadline from '../../components/sovereign-ai/PathHeadline.astro'
+import Path from '../../components/sovereign-ai/Path.astro'
+import Closing from '../../components/sovereign-ai/Closing.astro'
+---
+
+<Base
+  title="Sovereign AI — Own the Intelligence You Build | Mistral"
+  description="Mistral's Sovereign AI gives you control across data, intelligence, compute, and operations, so the intelligence you build stays with you."
+  path="/sovereign-ai/"
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={{
+    '@graph': [
+      {
+        '@id': 'https://mistral.ai/sovereign-ai#webpage',
+        url: 'https://mistral.ai/sovereign-ai',
+        name: 'Sovereign AI — Own the Intelligence You Build | Mistral AI',
+        '@type': 'WebPage',
+        about: { '@id': 'https://mistral.ai/sovereign-ai#topic' },
+        isPartOf: { '@id': 'https://mistral.ai/#website' },
+        inLanguage: 'en',
+        description:
+          'Sovereign AI means the intelligence you build stays with you. Control across four layers: data, intelligence, compute, and operations.',
+        primaryImageOfPage: 'https://mistral.ai/images/og/sovereign-ai.png',
+      },
+      {
+        '@id': 'https://mistral.ai/#organization',
+        url: 'https://mistral.ai',
+        logo: 'https://mistral.ai/images/logo.png',
+        name: 'Mistral AI',
+        '@type': 'Organization',
+        sameAs: [
+          'https://x.com/MistralAI',
+          'https://www.linkedin.com/company/mistralai',
+          'https://github.com/mistralai',
+        ],
+      },
+      {
+        '@id': 'https://mistral.ai/#website',
+        url: 'https://mistral.ai',
+        name: 'Mistral AI',
+        '@type': 'WebSite',
+        publisher: { '@id': 'https://mistral.ai/#organization' },
+        inLanguage: 'en',
+      },
+      {
+        '@id': 'https://mistral.ai/sovereign-ai#topic',
+        name: 'Sovereign AI',
+        '@type': 'DefinedTerm',
+        description:
+          'Sovereign AI is the principle that the intelligence an organization builds — its data, model adaptations, evaluations, feedback, and operating controls — remains under its ownership and control. It spans four layers of control: data, intelligence, compute, and operations.',
+        inDefinedTermSet: {
+          url: 'https://mistral.ai/research',
+          name: 'AI Concepts',
+          '@type': 'DefinedTermSet',
+        },
+      },
+      {
+        name: 'Your path to AI sovereignty',
+        step: [
+          {
+            name: 'Choose open models',
+            text: 'Use open-weight models you can independently operate and evolve, with rights to modify, fine-tune, distill, deploy, and retain what you build.',
+            '@type': 'HowToStep',
+            position: 1,
+          },
+          {
+            name: 'Customize your AI',
+            text: 'Adapt models around proprietary knowledge, workflows, and objectives — and keep what you build, with versioned data, code, and evaluations.',
+            '@type': 'HowToStep',
+            position: 2,
+          },
+          {
+            name: 'Control AI operations',
+            text: 'Control how AI is governed, changed, and kept running in production through identity controls, policies, logging, and versioning.',
+            '@type': 'HowToStep',
+            position: 3,
+          },
+          {
+            name: 'Define the right deployment',
+            text: 'Choose where AI runs, who operates it, and what capacity it can rely on — from shared infrastructure to on-premises or disconnected environments.',
+            '@type': 'HowToStep',
+            position: 4,
+          },
+          {
+            name: 'Run it yourself',
+            text: 'Build, operate, and improve your AI systems without external dependencies through capability transfer to your teams.',
+            '@type': 'HowToStep',
+            position: 5,
+          },
+        ],
+        '@type': 'HowTo',
+        description:
+          'Five steps for organizations to achieve AI sovereignty with open models and controlled AI operations.',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { item: 'https://mistral.ai', name: 'Home', '@type': 'ListItem', position: 1 },
+          { item: 'https://mistral.ai/sovereign-ai', name: 'Sovereign AI', '@type': 'ListItem', position: 2 },
+        ],
+      },
+    ],
+    '@context': 'https://schema.org',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <SovereignHero />
+      <ScrollStory />
+      <LayersHeadline />
+      <Layers />
+      <PathHeadline />
+      <Path />
+      <Closing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

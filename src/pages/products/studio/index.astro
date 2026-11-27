@@ -1,0 +1,33 @@
+---
+// /products/studio/ — composition of the 5 top-level blocks of #page-path, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/studio/markup/ (see reference/page-split.py).
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import { STUDIO } from '../../../content/details'
+import StudioHero from '../../../components/studio/StudioHero.astro'
+import StudioPlatform from '../../../components/studio/StudioPlatform.astro'
+import StudioCardsHeadline from '../../../components/studio/StudioCardsHeadline.astro'
+import StudioCards from '../../../components/studio/StudioCards.astro'
+import StudioClosing from '../../../components/studio/StudioClosing.astro'
+---
+
+<Base
+  title={STUDIO.title}
+  description={STUDIO.description}
+  path={STUDIO.path}
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={STUDIO.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <StudioHero />
+      <StudioPlatform />
+      <StudioCardsHeadline />
+      <StudioCards />
+      <StudioClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

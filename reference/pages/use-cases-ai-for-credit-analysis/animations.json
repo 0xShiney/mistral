@@ -1,0 +1,25 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Static CMS detail template",
+      "evidence": "No client-side state: hero + sticky summary card + Challenge/Solution/Result grid, server-rendered by the original Astro app"
+    },
+    {
+      "name": "Button icon roll on hover",
+      "evidence": "group/button translate-x custom properties on the back link and CTA, 300ms CSS transition"
+    },
+    {
+      "name": "Related-use-case slider",
+      "evidence": "mistral-block-slider-cards (Swiper) on pages that carry a related section"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    }
+  ]
+}

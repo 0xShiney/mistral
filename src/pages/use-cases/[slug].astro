@@ -1,0 +1,39 @@
+---
+// /use-cases/<slug>/ — one CMS template rendered for each captured slug.
+// Markup lives verbatim in src/markup/use-cases-detail/<slug>.html (see
+// reference/page-split.py); metadata comes from src/content/details.ts.
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import UseCaseDetail from '../../components/use-cases/UseCaseDetail.astro'
+import { USE_CASE_DETAILS } from '../../content/details'
+
+export function getStaticPaths() {
+  return USE_CASE_DETAILS.map((detail) => ({ params: { slug: detail.slug }, props: { detail } }))
+}
+
+const pages = import.meta.glob('../../markup/use-cases-detail/*.html', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>
+
+const { detail } = Astro.props
+const markup = pages[`../../markup/use-cases-detail/${detail.slug}.html`]
+if (!markup) throw new Error(`no captured markup for ${detail.path}`)
+---
+
+<Base
+  title={detail.title}
+  description={detail.description}
+  path={detail.path}
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={detail.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" class="pt-nav" data-taxi-view>
+      <UseCaseDetail markup={markup} />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

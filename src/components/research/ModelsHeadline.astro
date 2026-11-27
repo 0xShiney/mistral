@@ -3,7 +3,7 @@
 // Behaviour (models dock, filter, reveals, sliders) comes from the original
 // client runtime in public/js/ — this component only emits the DOM.
 import markup from '../../markup/research/markup/models-headline.html?raw'
-import { rewriteHrefs } from '../../content/routes'
+import RawSection from '../RawSection.astro'
 ---
 
-<Fragment set:html={rewriteHrefs(markup)} />
+<RawSection html={markup} />

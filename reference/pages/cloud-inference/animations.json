@@ -1,0 +1,118 @@
+{
+  "inventory": [
+    {
+      "name": "flow-dot",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 600,
+      "iterations": null
+    },
+    {
+      "name": "flow-dot",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 1600,
+      "iterations": null
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "flow-dot",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 600,
+      "iterations": null
+    },
+    {
+      "name": "flow-dot",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 1600,
+      "iterations": null
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Hero terminal build",
+      "evidence": "mistral-block-terminal-build types the code sample; mistral-atom-navigation-tabs (.js-tabs/.js-tab/.js-tab-content) switches Python/JavaScript/curl"
+    },
+    {
+      "name": "Sovereignty slideshow cards",
+      "evidence": "mistral-block-slideshow-cards-feature + mistral-atom-navigation-dots + mistral-atom-progressbar; .js-media[data-active]"
+    },
+    {
+      "name": "Model catalogue tabs",
+      "evidence": "mistral-section-highlighted-models: mistral-atom-navigation-tab-processing/-pricing, mistral-atom-input-checkbox-regional and mistral-atom-text-price (js-text-price/regional discount)"
+    },
+    {
+      "name": "Quote carousel",
+      "evidence": "mistral-section-carousel-collection (.js-slider-item, .js-prev/.js-next)"
+    },
+    {
+      "name": "FAQ spoilers",
+      "evidence": "mistral-atom-spoiler + .js-spoiler-trigger in the final section"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0.0461
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0.0509
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0187
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.0616
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0021
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0643
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0.0456
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0.0013
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0026
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.0619
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0763
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.001
+    }
+  ]
+}

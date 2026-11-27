@@ -123,11 +123,11 @@ for name, cls in CLASSES.items():
 // Section markup captured verbatim from https://mistral.ai/research/ .
 // Behaviour (models dock, filter, reveals, sliders) comes from the original
 // client runtime in public/js/ — this component only emits the DOM.
-import markup from '../../content/research/markup/{name}.html?raw'
-import {{ rewriteHrefs }} from '../../content/routes'
+import RawSection from '../RawSection.astro'
+import markup from '../../markup/research/markup/{name}.html?raw'
 ---
 
-<Fragment set:html={{rewriteHrefs(markup)}} />
+<RawSection html={{markup}} />
 """
     with open(os.path.join(COMP, cls + '.astro'), 'w', encoding='utf8') as f:
         f.write(src)

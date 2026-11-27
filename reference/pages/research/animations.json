@@ -1,10 +1,56 @@
 {
+  "orig": [
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": null
+    },
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 200,
+      "iterations": null
+    },
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 400,
+      "iterations": null
+    }
+  ],
+  "clone": [
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": null
+    },
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 200,
+      "iterations": null
+    },
+    {
+      "name": "fading-arrow-scroll",
+      "duration": 2000,
+      "easing": "linear",
+      "delay": 400,
+      "iterations": null
+    }
+  ],
   "motion": {
     "orig": {
       "regions": {
         "hero": {
           "moving": true,
-          "pct": 0,
+          "pct": 0.005,
           "anims": [
             "fading-arrow-scroll",
             "fading-arrow-scroll",

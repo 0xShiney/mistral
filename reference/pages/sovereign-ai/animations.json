@@ -1,0 +1,104 @@
+{
+  "inventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Pinned, scrubbed sovereignty diagram",
+      "evidence": "scrolling-sovereignty.*.js: GSAP timeline + ScrollTrigger {trigger: this, start:\"top+=100px\", end:\"bottom 100%\", scrub:true}; tags orbit then collapse, square scale 1→0.4→1, circles 2/3, border #ff8204"
+    },
+    {
+      "name": "Layer tabs",
+      "evidence": "slideshow-media-feature + spoilers; .js-media[data-active] cross-fade, .js-progressbar height"
+    },
+    {
+      "name": "Scroll-spy path",
+      "evidence": "navigation-summary.*.js + mistral-atom-spoiler[data-id]; anchors #6abe…; mobile summary label"
+    },
+    {
+      "name": "Flag spritesheet",
+      "evidence": "/images/spritesheets/flag.gif above the h1; GIF left unoptimised"
+    },
+    {
+      "name": "Hero SplitText",
+      "evidence": "mistral-atom-text-hero-title autoplay/grow/randomness; .js-title opacity handled by SplitText"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0015
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0021
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0
+    }
+  ]
+}

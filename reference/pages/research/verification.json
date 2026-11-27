@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T12:34:55.488Z",
+  "generated": "2026-11-26T06:04:14.391Z",
   "widths": [
     390,
     768,
@@ -35,7 +35,7 @@
       "group": "light@390",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@390",
@@ -71,7 +71,7 @@
       "group": "light@768",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@768",
@@ -107,7 +107,7 @@
       "group": "light@1024",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@1024",
@@ -120,12 +120,6 @@
       "name": "CSS animations match (name/duration/easing)",
       "pass": true,
       "detail": "3 vs 3"
-    },
-    {
-      "group": "navbar@light",
-      "name": "25px scroll sweep (79 samples)",
-      "pass": true,
-      "detail": "all sampled states matched"
     },
     {
       "group": "light@1440",
@@ -149,7 +143,7 @@
       "group": "light@1440",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@1440",
@@ -167,7 +161,7 @@
       "group": "light@1920",
       "name": "full-page pixel diff < 1%",
       "pass": true,
-      "detail": "0.000%  (1920x6689 vs 1920x6689)"
+      "detail": "0.001%  (1920x6689 vs 1920x6689)"
     },
     {
       "group": "light@1920",
@@ -185,7 +179,7 @@
       "group": "light@1920",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@1920",
@@ -221,7 +215,7 @@
       "group": "light@2560",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "light@2560",
@@ -257,7 +251,7 @@
       "group": "dark@390",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@390",
@@ -293,7 +287,7 @@
       "group": "dark@768",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@768",
@@ -329,7 +323,7 @@
       "group": "dark@1024",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@1024",
@@ -365,7 +359,7 @@
       "group": "dark@1440",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@1440",
@@ -401,7 +395,7 @@
       "group": "dark@1920",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@1920",
@@ -437,7 +431,7 @@
       "group": "dark@2560",
       "name": "JS weight within 15%",
       "pass": true,
-      "detail": "103.3kB vs 106.0kB"
+      "detail": "103.2kB vs 106.0kB"
     },
     {
       "group": "dark@2560",
@@ -452,6 +446,12 @@
       "detail": "3 vs 3"
     },
     {
+      "group": "navbar@light",
+      "name": "25px scroll sweep (79 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
       "group": "navbar@dark",
       "name": "25px scroll sweep (79 samples)",
       "pass": true,
@@ -461,7 +461,7 @@
       "group": "motion",
       "name": "hero moves identically",
       "pass": true,
-      "detail": "moving orig true/clone true · Δpixels 0%/0.005% · running animations [\"fading-arrow-scroll\",\"fading-arrow-scroll\",\"fading-arrow-scroll\"]"
+      "detail": "moving orig true/clone true · Δpixels 0.005%/0.005% · running animations [\"fading-arrow-scroll\",\"fading-arrow-scroll\",\"fading-arrow-scroll\"]"
     },
     {
       "group": "motion",
@@ -707,7 +707,7 @@
       "group": "meta",
       "name": "description / og / twitter / viewport",
       "pass": true,
-      "detail": "[\"description=Meet Mistral models, from open-weight Large 4 to Voxtral and OCR, and read the frontier AI research, papers, and benchmarks behind them.\",\"og:titl"
+      "detail": "[\"description=Mistral AI is the European frontier AI lab: open-weight models from Large 4 to Voxtral and OCR, plus the research, papers, and benchmarks behind t"
     },
     {
       "group": "architecture",

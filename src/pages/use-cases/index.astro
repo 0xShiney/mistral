@@ -1,0 +1,33 @@
+---
+// /use-cases/ — composition of the 2 top-level blocks of #use-case-index, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/use-cases/markup/ (see reference/page-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import UseCasesHero from '../../components/use-cases/UseCasesHero.astro'
+import UseCaseIndex from '../../components/use-cases/UseCaseIndex.astro'
+---
+
+<Base
+  title="Frontier AI LLMs, assistants, agents, services | Mistral AI"
+  description="The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+  path="/use-cases/"
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@id': 'https://mistral.ai/use-cases/',
+    name: 'Use Cases',
+    mainEntityOfPage: 'https://mistral.ai/use-cases/',
+    datePublished: '2026-09-16T08:39:59.841Z',
+    dateModified: '2026-10-03T21:35:58.025Z',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="use-case-index" data-taxi-view>
+      <UseCasesHero />
+      <UseCaseIndex />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

@@ -1,0 +1,34 @@
+---
+// /products/ — composition of the 2 top-level blocks of #page-path, in the
+// original order. Markup for each block lives verbatim in
+// src/markup/products/markup/ (see reference/page-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import ProductsHero from '../../components/products/ProductsHero.astro'
+import ProductBento from '../../components/products/ProductBento.astro'
+---
+
+<Base
+  title="Products | Mistral"
+  description="The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+  path="/products/"
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://mistral.ai/products/',
+    name: 'Products',
+    mainEntityOfPage: 'https://mistral.ai/products/',
+    datePublished: '2026-04-29T07:55:08.997Z',
+    dateModified: '2026-10-05T21:32:55.820Z',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <ProductsHero />
+      <ProductBento />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

@@ -1,0 +1,54 @@
+---
+// /our-method/ — composition of the 12 top-level blocks of #page-path, in the
+// original order. Markup for each block lives verbatim in
+// src/markup/method/markup/ (see reference/page-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import MethodHero from '../../components/method/MethodHero.astro'
+import ValueHeadline from '../../components/method/ValueHeadline.astro'
+import ValueGrid from '../../components/method/ValueGrid.astro'
+import Journey from '../../components/method/Journey.astro'
+import WorkingHeadline from '../../components/method/WorkingHeadline.astro'
+import Working from '../../components/method/Working.astro'
+import TeamHeadline from '../../components/method/TeamHeadline.astro'
+import Team from '../../components/method/Team.astro'
+import Quotes from '../../components/method/Quotes.astro'
+import FlexibilityHeadline from '../../components/method/FlexibilityHeadline.astro'
+import Flexibility from '../../components/method/Flexibility.astro'
+import Closing from '../../components/method/Closing.astro'
+---
+
+<Base
+  title="Mistral services | Build your own AI, supported by Mistral."
+  description="From initial use case deployment to enterprise-wide transformation, we connect frontier AI with business reality to secure your lasting competitive advantage."
+  path="/our-method/"
+  navActive="/sovereign-ai/"
+  navSurface="secondary"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://mistral.ai/our-method/',
+    name: 'Our method',
+    mainEntityOfPage: 'https://mistral.ai/our-method/',
+    datePublished: '2026-05-22T00:45:04.245Z',
+    dateModified: '2026-10-05T18:29:48.857Z',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <MethodHero />
+      <ValueHeadline />
+      <ValueGrid />
+      <Journey />
+      <WorkingHeadline />
+      <Working />
+      <TeamHeadline />
+      <Team />
+      <Quotes />
+      <FlexibilityHeadline />
+      <Flexibility />
+      <Closing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

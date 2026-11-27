@@ -1,0 +1,100 @@
+{
+  "inventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "cloneInventory": [
+    {
+      "name": "animate-pop-in",
+      "duration": 500,
+      "easing": "linear",
+      "delay": 0,
+      "iterations": 1
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "Hero product animation",
+      "evidence": "mistral-section-hero-product-studio: mistral-atom-text-hero-title (autoplay/grow/randomness) plus the js-studio-image / js-studio-background frame swap driven by hero-product-studio.*.js"
+    },
+    {
+      "name": "Platform scroll-spy + spoilers",
+      "evidence": "mistral-atom-navigation-summary (navigation-summary.*.js) drives a.js-anchor[data-active] and the mistral-atom-spoiler[data-id] panels of section 2; anchored by the #69f2… ids"
+    },
+    {
+      "name": "Sticky media panel",
+      "evidence": ".js-sticky / .js-media: the left column pins while the spoiler list scrolls; progressbar height follows the trigger"
+    },
+    {
+      "name": "Service card hover",
+      "evidence": ".js-card-service:hover reveals .js-card-service-description (opacity/transform transition)"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0.0035
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0.0011
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.002
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0006
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0004
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.0008
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0005
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0002
+    }
+  ]
+}

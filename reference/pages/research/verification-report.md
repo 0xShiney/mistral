@@ -1,6 +1,6 @@
 # /research/ verification report
 
-Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright + Chromium).
+Generated 2026-11-26T06:04:14.372Z by `pnpm verify --page research` (Playwright + Chromium 159.0.8154.6).
 
 - original: https://mistral.ai/research/
 - clone: http://127.0.0.1:4322/research/
@@ -10,8 +10,6 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 
 **139/139 checks passed.**
 
-> The visual matrix was collected in batched invocations of the same harness (per width group / scheme) and merged; interaction, copy, meta, architecture, transition, hover, mobile and quality checks ran in a fourth invocation. Both use the identical code path — `WIDTHS`/`SCHEMES`/`SKIP` only select which blocks execute.
-
 ## light@390
 
 | check | result | evidence |
@@ -19,7 +17,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (390x8394 vs 390x8394) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 0 vs 0 |
 
@@ -30,7 +28,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (768x7843 vs 768x7843) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 0 vs 0 |
 
@@ -41,7 +39,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (1112x7876 vs 1112x7876) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -52,7 +50,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (1440x6816 vs 1440x6816) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -60,10 +58,10 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 
 | check | result | evidence |
 | --- | --- | --- |
-| full-page pixel diff < 1% | PASS | 0.000%  (1920x6689 vs 1920x6689) |
+| full-page pixel diff < 1% | PASS | 0.001%  (1920x6689 vs 1920x6689) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -74,7 +72,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.003%  (2560x6689 vs 2560x6689) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -85,7 +83,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (390x8394 vs 390x8394) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 0 vs 0 |
 
@@ -96,7 +94,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (768x7843 vs 768x7843) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 0 vs 0 |
 
@@ -107,7 +105,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (1112x7876 vs 1112x7876) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -118,7 +116,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (1440x6816 vs 1440x6816) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -129,7 +127,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.000%  (1920x6689 vs 1920x6689) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -140,7 +138,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | full-page pixel diff < 1% | PASS | 0.001%  (2560x6689 vs 2560x6689) |
 | page height identical | PASS | equal |
 | geometry + computed style (1px) | PASS | all matched |
-| JS weight within 15% | PASS | 103.3kB vs 106.0kB |
+| JS weight within 15% | PASS | 103.2kB vs 106.0kB |
 | CSS weight within 15% | PASS | 37.5kB vs 40.1kB |
 | CSS animations match (name/duration/easing) | PASS | 3 vs 3 |
 
@@ -160,7 +158,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 
 | check | result | evidence |
 | --- | --- | --- |
-| hero moves identically | PASS | moving orig true/clone true · Δpixels 0%/0.005% · running animations ["fading-arrow-scroll","fading-arrow-scroll","fading-arrow-scroll"] |
+| hero moves identically | PASS | moving orig true/clone true · Δpixels 0.005%/0.005% · running animations ["fading-arrow-scroll","fading-arrow-scroll","fading-arrow-scroll"] |
 | models-dock moves identically | PASS | moving orig false/clone false · Δpixels 0%/0% · running animations [] |
 | publications moves identically | PASS | moving orig false/clone false · Δpixels 0%/0% · running animations [] |
 | areas moves identically | PASS | moving orig false/clone false · Δpixels 0%/0% · running animations [] |
@@ -221,7 +219,7 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 | canonical + hreflang | PASS | ["canonical:null=https://mistral.ai/research/","alternate:en=https://mistral.ai/research/","alternate:fr=https://mistral.ai/fr/research/","alternate:it=https://mistral.ai/it/research/","alternate:x-default=https://mistral.ai/research/","alternate:null=https://mistral.ai/news/rss"] |
 | structured data | PASS | {"@context":"https://schema.org","@type":"WebPage","@id":"https://mistral.ai/res |
 | single h1 + lang | PASS | We advance the open frontier. · en |
-| description / og / twitter / viewport | PASS | ["description=Meet Mistral models, from open-weight Large 4 to Voxtral and OCR, and read the frontier AI research, papers, and benchmarks behind them.","og:titl |
+| description / og / twitter / viewport | PASS | ["description=Mistral AI is the European frontier AI lab: open-weight models from Large 4 to Voxtral and OCR, plus the research, papers, and benchmarks behind t |
 
 ## architecture
 
@@ -274,11 +272,8 @@ Generated 2026-11-25T12:34:55.487Z by `pnpm verify --page research` (Playwright 
 ## Method
 
 - Both sites run in the same Chromium build, same viewport, same `colorScheme`, same scroll program.
-- Screenshots decoded to raw RGBA, compared per pixel (threshold 16/255); a settled-asset wait prevents mid-fade captures.
-- Geometry/computed style read for 27 landmark elements (1px).
-- Navbar sampled every 25px for the first 1500px of scroll, then every 250px, in both schemes.
-- Motion probed by frame sampling each region (600ms apart) plus its running-animation inventory.
-- Models: group switch, dock card switch, keyboard attempt, scroll stability — compared as full state JSON.
-- Filter matrix: 9 single topics, 6 multi-topic combos, Load more ×3, Show less, clear-all, URL sync + scroll-to-top.
-- Content: every text node, every resolved link target, every image src/srcset/alt.
-- Transitions: research → home → research, browser back, three consecutive swaps then a control check.
+- Sections compared: hero, models dock, publications, research areas, inside the work, build, join us, footer.
+- Navbar state sampled every 25px for the first 1500px of scroll, then every 250px, in both schemes.
+- Motion probed by frame sampling each section (600ms apart) plus a 10fps transform trace of the models dock.
+- Filter matrix: 9 single topics, 6 multi-topic combos, Load more ×3, Show less, clear-all — compared on count, row order, hrefs and control text.
+- Page transitions: research → home → research, browser back, and three consecutive swaps with a control check afterwards.
