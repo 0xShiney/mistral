@@ -1,0 +1,44 @@
+[
+  {
+    "from": "/",
+    "to": "/terms/get-started/",
+    "during": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "named": [],
+    "finalPath": "/"
+  },
+  {
+    "from": "/terms/get-started/",
+    "to": "/ai-governance/models/",
+    "during": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "named": [],
+    "finalPath": "/terms/get-started/"
+  },
+  {
+    "from": "/ai-governance/models/",
+    "to": "/ai-governance/models/voxtral-3/",
+    "during": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "named": [],
+    "finalPath": "/ai-governance/models/"
+  }
+]

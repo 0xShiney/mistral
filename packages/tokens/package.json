@@ -1,0 +1,13 @@
+{
+  "name": "@mistral-clone/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens.json": "./tokens.json"
+  },
+  "scripts": {
+    "generate": "node build.mjs"
+  }
+}

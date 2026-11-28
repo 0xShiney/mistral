@@ -1,0 +1,9 @@
+# Deploy configuration for the landing-site reproduction only.
+# Independent from apps/legal: its own project, domain and build output.
+
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

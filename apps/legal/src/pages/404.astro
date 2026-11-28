@@ -1,0 +1,9 @@
+---
+import { notFoundPage } from '../content'
+import { rewriteWebOrigin } from '../lib/origins'
+
+// The captured origin 404 document is emitted at /404.html so hosts that use
+// the conventional 404 file serve it with a 404 status.
+const page = notFoundPage()
+---
+<Fragment set:html={rewriteWebOrigin(page ? page.html : '<!DOCTYPE html><html><head><title>404: Not Found</title></head><body><h1>404: Not Found</h1></body></html>')} />

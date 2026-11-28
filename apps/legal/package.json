@@ -1,0 +1,32 @@
+{
+  "name": "@mistral-clone/legal",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync": "pnpm --filter @mistral-clone/assets sync",
+    "extract": "node scripts/extract.mjs && pnpm --filter @mistral-clone/assets sync",
+    "extract:check": "node scripts/extract.mjs --check",
+    "recon": "node scripts/recon.mjs && node scripts/write-reference.mjs",
+    "verify": "node tests/verify/legal.mjs",
+    "test": "node tests/verify/smoke.mjs",
+    "predev": "pnpm sync",
+    "dev": "astro dev --host 0.0.0.0 --port 4322",
+    "prebuild": "pnpm sync",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 4322",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@mistral-clone/config": "workspace:*",
+    "astro": "7.0.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@mistral-clone/verify": "workspace:*",
+    "node-html-parser": "^9.0.7",
+    "playwright": "^1.55.0",
+    "sharp": "^0.35.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,16 @@
+# Deploy configuration for the legal study replica only.
+# Kept app-local: apps/web deploys to its own project and shares no config.
+
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Non-authoritative replica: never let search engines index it.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Strict-Transport-Security = "max-age=31536000"

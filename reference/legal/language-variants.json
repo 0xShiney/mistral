@@ -1,0 +1,60 @@
+{
+  "hasLanguageSelector": false,
+  "probes": [
+    {
+      "url": "/terms/privacy-policy?language=en-US",
+      "status": 301,
+      "location": "/terms/privacy-policy/?language=en-US",
+      "finalUrl": "https://legal.mistral.ai/terms/privacy-policy/?language=en-US",
+      "finalStatus": 200,
+      "bytes": 1370617,
+      "sha256": "819ac3c8084255c1fd5788e23b201d77b99c40e1be2fbfcfb4c0f68596bf522b",
+      "identicalToCanonical": true,
+      "title": "Privacy Policy"
+    },
+    {
+      "url": "/terms/privacy-policy?language=en-GB",
+      "status": 301,
+      "location": "/terms/privacy-policy/?language=en-GB",
+      "finalUrl": "https://legal.mistral.ai/terms/privacy-policy/?language=en-GB",
+      "finalStatus": 200,
+      "bytes": 1370617,
+      "sha256": "819ac3c8084255c1fd5788e23b201d77b99c40e1be2fbfcfb4c0f68596bf522b",
+      "identicalToCanonical": true,
+      "title": "Privacy Policy"
+    },
+    {
+      "url": "/terms/privacy-policy?language=fr-FR",
+      "status": 301,
+      "location": "/terms/privacy-policy/?language=fr-FR",
+      "finalUrl": "https://legal.mistral.ai/terms/privacy-policy/?language=fr-FR",
+      "finalStatus": 200,
+      "bytes": 1370617,
+      "sha256": "819ac3c8084255c1fd5788e23b201d77b99c40e1be2fbfcfb4c0f68596bf522b",
+      "identicalToCanonical": true,
+      "title": "Privacy Policy"
+    },
+    {
+      "url": "/terms/privacy-policy?language=de-DE",
+      "status": 301,
+      "location": "/terms/privacy-policy/?language=de-DE",
+      "finalUrl": "https://legal.mistral.ai/terms/privacy-policy/?language=de-DE",
+      "finalStatus": 200,
+      "bytes": 1370617,
+      "sha256": "819ac3c8084255c1fd5788e23b201d77b99c40e1be2fbfcfb4c0f68596bf522b",
+      "identicalToCanonical": true,
+      "title": "Privacy Policy"
+    },
+    {
+      "url": "/terms/privacy-policy",
+      "status": 301,
+      "location": "/terms/privacy-policy/",
+      "finalUrl": "https://legal.mistral.ai/terms/privacy-policy/",
+      "finalStatus": 200,
+      "bytes": 1370617,
+      "sha256": "819ac3c8084255c1fd5788e23b201d77b99c40e1be2fbfcfb4c0f68596bf522b",
+      "identicalToCanonical": true,
+      "title": "Privacy Policy"
+    }
+  ]
+}

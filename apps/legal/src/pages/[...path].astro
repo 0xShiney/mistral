@@ -1,0 +1,21 @@
+---
+import { allPages } from '../content'
+import { rewriteWebOrigin } from '../lib/origins'
+
+export function getStaticPaths() {
+  // Canonical paths are decoded once for Astro's route params; the origin's
+  // one path containing a space therefore becomes a literal-space param.
+  return allPages().map((page) => ({
+    params: {
+      path:
+        page.path === '/'
+          ? undefined
+          : decodeURIComponent(page.path).replace(/^\/|\/$/g, ''),
+    },
+    props: { page },
+  }))
+}
+
+const { page } = Astro.props
+---
+<Fragment set:html={rewriteWebOrigin(page.html)} />

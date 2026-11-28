@@ -1,20 +1,23 @@
 {
-  "name": "mistral-homepage-clone",
-  "type": "module",
-  "version": "1.0.0",
+  "name": "mistral-clone",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@10.34.9",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 3000",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0 --port 3000",
-    "verify": "node tests/verify/run.mjs"
-  },
-  "dependencies": {
-    "astro": "^5.14.1"
+    "dev": "turbo run dev --parallel --ui tui",
+    "dev:web": "pnpm --filter @mistral-clone/web dev",
+    "dev:legal": "pnpm --filter @mistral-clone/legal dev",
+    "build": "turbo run build",
+    "preview": "turbo run preview --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "verify": "node scripts/verify.mjs",
+    "check:boundaries": "node scripts/check-boundaries.mjs",
+    "sync:assets": "pnpm --filter @mistral-clone/assets sync",
+    "extract:legal": "pnpm --filter @mistral-clone/legal extract"
   },
   "devDependencies": {
-    "playwright": "^1.55.0",
-    "sharp": "^0.35.5"
+    "turbo": "^2.5.6"
   }
 }

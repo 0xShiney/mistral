@@ -1,0 +1,676 @@
+[
+  {
+    "query": "model",
+    "results": [
+      {
+        "title": "Models",
+        "type": "Page",
+        "url": "/ai-governance/models"
+      }
+    ]
+  },
+  {
+    "query": "models",
+    "results": [
+      {
+        "title": "Models",
+        "type": "Page",
+        "url": "/ai-governance/models"
+      }
+    ]
+  },
+  {
+    "query": "mistral",
+    "results": [
+      {
+        "title": "Mistral Terms of Use for Microsoft",
+        "type": "Term",
+        "url": "/terms/terms-of-service-dpa-microsoft"
+      },
+      {
+        "title": "Mistral Multimodal Embed",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-mutlimodal-embed"
+      },
+      {
+        "title": "Mistral Large 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-4"
+      },
+      {
+        "title": "Mistral OCR 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-4"
+      },
+      {
+        "title": "Mistral Small 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-4"
+      },
+      {
+        "title": "Mistral OCR 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-3"
+      },
+      {
+        "title": "Mistral Large 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-3"
+      },
+      {
+        "title": "Mistral Nemo 12B",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-nemo-12b"
+      }
+    ]
+  },
+  {
+    "query": "voxtral",
+    "results": [
+      {
+        "title": "Voxtral 3",
+        "type": "Model",
+        "url": "/ai-governance/models/voxtral-3"
+      },
+      {
+        "title": "Voxtral Mini TTS",
+        "type": "Model",
+        "url": "/ai-governance/models/voxtral-mini-tts"
+      },
+      {
+        "title": "Voxtral 2",
+        "type": "Model",
+        "url": "/ai-governance/models/voxtral-2"
+      },
+      {
+        "title": "Voxtral Small",
+        "type": "Model",
+        "url": "/ai-governance/models/voxtral-small"
+      }
+    ]
+  },
+  {
+    "query": "privacy",
+    "results": [
+      {
+        "title": "Privacy Policy",
+        "type": "Term",
+        "url": "/terms/privacy-policy"
+      },
+      {
+        "title": "Applicant Privacy Policy",
+        "type": "Term",
+        "url": "/terms/applicant-privacy-policy"
+      }
+    ]
+  },
+  {
+    "query": "terms",
+    "results": [
+      {
+        "title": "Terms",
+        "type": "Page",
+        "url": "/terms"
+      },
+      {
+        "title": "Terms of Service for consumers outside of the European Economic Area",
+        "type": "Term",
+        "url": "/terms/row-consumer-terms"
+      },
+      {
+        "title": "Terms of Service for consumers in the European Economic Area",
+        "type": "Term",
+        "url": "/terms/eu-consumers-terms-of-service"
+      },
+      {
+        "title": "Mistral Terms of Use for Microsoft",
+        "type": "Term",
+        "url": "/terms/terms-of-service-dpa-microsoft"
+      },
+      {
+        "title": "Connectors terms",
+        "type": "Term",
+        "url": "/terms/connectors-terms"
+      },
+      {
+        "title": "Partner-served deployment terms",
+        "type": "Term",
+        "url": "/terms/partner-served-deployment-terms"
+      },
+      {
+        "title": "Additional Product Terms",
+        "type": "Term",
+        "url": "/terms/additional-terms"
+      },
+      {
+        "title": "Commercial Terms of Service",
+        "type": "Term",
+        "url": "/terms/commercial-terms-of-service"
+      }
+    ]
+  },
+  {
+    "query": "data",
+    "results": [
+      {
+        "title": "Data Processing Addendum for Mistral AI Training Products",
+        "type": "Term",
+        "url": "/terms/data-processing-addendum-training-products"
+      },
+      {
+        "title": "Data Processing Addendum",
+        "type": "Term",
+        "url": "/terms/data-processing-addendum"
+      }
+    ]
+  },
+  {
+    "query": "cookie",
+    "results": [
+      {
+        "title": "Cookie Policy",
+        "type": "Term",
+        "url": "/terms/cookie-policy"
+      }
+    ]
+  },
+  {
+    "query": "usage",
+    "results": [
+      {
+        "title": "Usage Policy",
+        "type": "Term",
+        "url": "/terms/usage-policy"
+      },
+      {
+        "title": "Trademark Usage Guidelines for Mistral AI’s contracting parties",
+        "type": "Term",
+        "url": "/terms/trademark-usage-guidelines"
+      }
+    ]
+  },
+  {
+    "query": "policy",
+    "results": [
+      {
+        "title": "Applicant Privacy Policy",
+        "type": "Term",
+        "url": "/terms/applicant-privacy-policy"
+      },
+      {
+        "title": "Cookie Policy",
+        "type": "Term",
+        "url": "/terms/cookie-policy"
+      },
+      {
+        "title": "Usage Policy",
+        "type": "Term",
+        "url": "/terms/usage-policy"
+      },
+      {
+        "title": "Privacy Policy",
+        "type": "Term",
+        "url": "/terms/privacy-policy"
+      }
+    ]
+  },
+  {
+    "query": "legal",
+    "results": [
+      {
+        "title": "Legal Notice",
+        "type": "Page",
+        "url": "/legal-notice"
+      },
+      {
+        "title": "Welcome to our Legal Center",
+        "type": "Term",
+        "url": "/terms/get-started"
+      }
+    ]
+  },
+  {
+    "query": "ai act",
+    "results": []
+  },
+  {
+    "query": "governance",
+    "results": []
+  },
+  {
+    "query": "vibe",
+    "results": [
+      {
+        "title": "Vibe Code",
+        "type": "AI System",
+        "url": "/ai-governance/ai-systems/vibe-code"
+      },
+      {
+        "title": "Vibe Work",
+        "type": "AI System",
+        "url": "/ai-governance/ai-systems/vibe-work"
+      }
+    ]
+  },
+  {
+    "query": "codestral",
+    "results": [
+      {
+        "title": "Codestral",
+        "type": "Model",
+        "url": "/ai-governance/models/codestral"
+      }
+    ]
+  },
+  {
+    "query": "ministral",
+    "results": [
+      {
+        "title": "Ministral 3 - 14B",
+        "type": "Model",
+        "url": "/ai-governance/models/ministral-3-14b"
+      },
+      {
+        "title": "Ministral 3 - 8B",
+        "type": "Model",
+        "url": "/ai-governance/models/ministral-3-8b"
+      },
+      {
+        "title": "Ministral 3 - 3B",
+        "type": "Model",
+        "url": "/ai-governance/models/ministral-3-3b"
+      },
+      {
+        "title": "Ministral 1 - 8B",
+        "type": "Model",
+        "url": "/ai-governance/models/ministral-1-8b"
+      },
+      {
+        "title": "Ministral 1 - 3B",
+        "type": "Model",
+        "url": "/ai-governance/models/ministral-1-3b"
+      }
+    ]
+  },
+  {
+    "query": "magistral",
+    "results": [
+      {
+        "title": "Magistral Small 1",
+        "type": "Model",
+        "url": "/ai-governance/models/magistral-small-1"
+      },
+      {
+        "title": "Magistral Medium 1",
+        "type": "Model",
+        "url": "/ai-governance/models/magistral-medium-1"
+      }
+    ]
+  },
+  {
+    "query": "large",
+    "results": [
+      {
+        "title": "Mistral Large 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-4"
+      },
+      {
+        "title": "Mistral Large 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-3"
+      },
+      {
+        "title": "Pixtral Large",
+        "type": "Model",
+        "url": "/ai-governance/models/pixtral-large"
+      },
+      {
+        "title": "Mistral Large 2.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-2"
+      },
+      {
+        "title": "Mistral Large 1.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-10"
+      }
+    ]
+  },
+  {
+    "query": "small",
+    "results": [
+      {
+        "title": "Mistral Small 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-4"
+      },
+      {
+        "title": "Devstral Small 2",
+        "type": "Model",
+        "url": "/ai-governance/models/devstral-small-2"
+      },
+      {
+        "title": "Voxtral Small",
+        "type": "Model",
+        "url": "/ai-governance/models/voxtral-small"
+      },
+      {
+        "title": "Devstral Small 1",
+        "type": "Model",
+        "url": "/ai-governance/models/devstral-small-1"
+      },
+      {
+        "title": "Magistral Small 1",
+        "type": "Model",
+        "url": "/ai-governance/models/magistral-small-1"
+      },
+      {
+        "title": "Mistral Small 3.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-3"
+      },
+      {
+        "title": "Mistral Small 2.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-2"
+      },
+      {
+        "title": "Mistral Small 1.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-1"
+      }
+    ]
+  },
+  {
+    "query": "ocr",
+    "results": [
+      {
+        "title": "Mistral OCR 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-4"
+      },
+      {
+        "title": "Mistral OCR 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-3"
+      },
+      {
+        "title": "Mistral OCR",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr"
+      }
+    ]
+  },
+  {
+    "query": "embed",
+    "results": [
+      {
+        "title": "Mistral Multimodal Embed",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-mutlimodal-embed"
+      },
+      {
+        "title": "Mistral Embed",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-embed"
+      }
+    ]
+  },
+  {
+    "query": "license",
+    "results": [
+      {
+        "title": "License Notice",
+        "type": "Term",
+        "url": "/terms/license-notice"
+      }
+    ]
+  },
+  {
+    "query": "applicant",
+    "results": [
+      {
+        "title": "Applicant Privacy Policy",
+        "type": "Term",
+        "url": "/terms/applicant-privacy-policy"
+      }
+    ]
+  },
+  {
+    "query": "consumer",
+    "results": [
+      {
+        "title": "Terms of Service for consumers outside of the European Economic Area",
+        "type": "Term",
+        "url": "/terms/row-consumer-terms"
+      },
+      {
+        "title": "Terms of Service for consumers in the European Economic Area",
+        "type": "Term",
+        "url": "/terms/eu-consumers-terms-of-service"
+      }
+    ]
+  },
+  {
+    "query": "commercial",
+    "results": [
+      {
+        "title": "Commercial Terms of Service",
+        "type": "Term",
+        "url": "/terms/commercial-terms-of-service"
+      }
+    ]
+  },
+  {
+    "query": "contract",
+    "results": [
+      {
+        "title": "Trademark Usage Guidelines for Mistral AI’s contracting parties",
+        "type": "Term",
+        "url": "/terms/trademark-usage-guidelines"
+      }
+    ]
+  },
+  {
+    "query": "agreement",
+    "results": []
+  },
+  {
+    "query": "dpa",
+    "results": []
+  },
+  {
+    "query": "row",
+    "results": []
+  },
+  {
+    "query": "eu",
+    "results": [
+      {
+        "title": "Terms of Service for consumers outside of the European Economic Area",
+        "type": "Term",
+        "url": "/terms/row-consumer-terms"
+      },
+      {
+        "title": "Terms of Service for consumers in the European Economic Area",
+        "type": "Term",
+        "url": "/terms/eu-consumers-terms-of-service"
+      }
+    ]
+  },
+  {
+    "query": "system",
+    "results": [
+      {
+        "title": "AI Systems",
+        "type": "Page",
+        "url": "/ai-governance/ai-systems"
+      }
+    ]
+  },
+  {
+    "query": "incident",
+    "results": []
+  },
+  {
+    "query": "guardrails",
+    "results": []
+  },
+  {
+    "query": "agents",
+    "results": []
+  },
+  {
+    "query": "studio",
+    "results": []
+  },
+  {
+    "query": "forge",
+    "results": []
+  },
+  {
+    "query": "compute",
+    "results": []
+  },
+  {
+    "query": "inference",
+    "results": []
+  },
+  {
+    "query": "chat",
+    "results": []
+  },
+  {
+    "query": "qa",
+    "results": []
+  },
+  {
+    "query": "zzzz",
+    "results": []
+  },
+  {
+    "query": "Mistral Large",
+    "results": [
+      {
+        "title": "Mistral Large 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-4"
+      },
+      {
+        "title": "Mistral Large 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-3"
+      },
+      {
+        "title": "Mistral Large 2.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-2"
+      },
+      {
+        "title": "Mistral Large 1.0",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-10"
+      }
+    ]
+  },
+  {
+    "query": "terms of service",
+    "results": [
+      {
+        "title": "Terms of Service for consumers outside of the European Economic Area",
+        "type": "Term",
+        "url": "/terms/row-consumer-terms"
+      },
+      {
+        "title": "Terms of Service for consumers in the European Economic Area",
+        "type": "Term",
+        "url": "/terms/eu-consumers-terms-of-service"
+      },
+      {
+        "title": "Commercial Terms of Service",
+        "type": "Term",
+        "url": "/terms/commercial-terms-of-service"
+      }
+    ]
+  },
+  {
+    "query": "privac",
+    "results": [
+      {
+        "title": "Privacy Policy",
+        "type": "Term",
+        "url": "/terms/privacy-policy"
+      },
+      {
+        "title": "Applicant Privacy Policy",
+        "type": "Term",
+        "url": "/terms/applicant-privacy-policy"
+      }
+    ]
+  },
+  {
+    "query": "voxtrla",
+    "results": []
+  },
+  {
+    "query": "MISTRAL",
+    "results": [
+      {
+        "title": "Mistral Terms of Use for Microsoft",
+        "type": "Term",
+        "url": "/terms/terms-of-service-dpa-microsoft"
+      },
+      {
+        "title": "Mistral Multimodal Embed",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-mutlimodal-embed"
+      },
+      {
+        "title": "Mistral Large 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-4"
+      },
+      {
+        "title": "Mistral OCR 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-4"
+      },
+      {
+        "title": "Mistral Small 4",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-small-4"
+      },
+      {
+        "title": "Mistral OCR 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-ocr-3"
+      },
+      {
+        "title": "Mistral Large 3",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-large-3"
+      },
+      {
+        "title": "Mistral Nemo 12B",
+        "type": "Model",
+        "url": "/ai-governance/models/mistral-nemo-12b"
+      }
+    ]
+  },
+  {
+    "query": "  privacy  ",
+    "results": [
+      {
+        "title": "Privacy Policy",
+        "type": "Term",
+        "url": "/terms/privacy-policy"
+      },
+      {
+        "title": "Applicant Privacy Policy",
+        "type": "Term",
+        "url": "/terms/applicant-privacy-policy"
+      }
+    ]
+  }
+]

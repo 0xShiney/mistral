@@ -1,0 +1,312 @@
+{
+  "generator": "Astro v7.0.7",
+  "viewTransitions": {},
+  "templates": {
+    "home": {
+      "js": 76,
+      "css": 9728
+    },
+    "terms-index": {
+      "js": 76,
+      "css": 9728
+    },
+    "terms-long": {
+      "js": 76,
+      "css": 9728
+    },
+    "privacy": {
+      "js": 76,
+      "css": 9716
+    },
+    "terms-short": {
+      "js": 76,
+      "css": 9716
+    },
+    "models-index": {
+      "js": 76,
+      "css": 9726
+    },
+    "model-detail": {
+      "js": 76,
+      "css": 9716
+    },
+    "systems-index": {
+      "js": 76,
+      "css": 9730
+    },
+    "system-detail": {
+      "js": 76,
+      "css": 9728
+    }
+  },
+  "headers": {
+    "/": {
+      "accept-ranges": "bytes",
+      "age": "7942",
+      "cache-control": "public,max-age=0,must-revalidate",
+      "cache-status": "\"Netlify Edge\"; hit; ttl=31528058",
+      "content-encoding": "br",
+      "content-length": "9864",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; frame-src *; style-src 'self' 'unsafe-inline'; img-src * blob: data:; media-src *; connect-src *; font-src 'self' data:; form-action 'self'; frame-ancestors 'self' https://legal.mistral.ai https://legal-center-v2.netlify.app; upgrade-insecure-requests;",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 28 Nov 2026 03:54:36 GMT",
+      "etag": "W/\"1c56e865bd347bb67cb942ebe934223d-ssl\"",
+      "server": "Netlify",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding",
+      "x-nf-request-id": "01M8G4MSSBTZR3BHKJF3ZVGB95"
+    },
+    "/terms/get-started/": {
+      "accept-ranges": "bytes",
+      "age": "30472",
+      "cache-control": "public,max-age=0,must-revalidate",
+      "cache-status": "\"Netlify Edge\"; hit; ttl=31505529",
+      "content-encoding": "br",
+      "content-length": "9138",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; frame-src *; style-src 'self' 'unsafe-inline'; img-src * blob: data:; media-src *; connect-src *; font-src 'self' data:; form-action 'self'; frame-ancestors 'self' https://legal.mistral.ai https://legal-center-v2.netlify.app; upgrade-insecure-requests;",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 28 Nov 2026 03:54:36 GMT",
+      "etag": "W/\"9093f936acc3d5b744de6bc2658760d5-ssl\"",
+      "server": "Netlify",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding",
+      "x-nf-request-id": "01M8G4MSVYJ7VFSYTCAF6J6J92"
+    },
+    "/ai-governance/models/": {
+      "accept-ranges": "bytes",
+      "age": "381",
+      "cache-control": "public,max-age=0,must-revalidate",
+      "cache-status": "\"Netlify Edge\"; hit; ttl=31535619",
+      "content-encoding": "br",
+      "content-length": "21735",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; frame-src *; style-src 'self' 'unsafe-inline'; img-src * blob: data:; media-src *; connect-src *; font-src 'self' data:; form-action 'self'; frame-ancestors 'self' https://legal.mistral.ai https://legal-center-v2.netlify.app; upgrade-insecure-requests;",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 28 Nov 2026 03:54:36 GMT",
+      "etag": "W/\"a59b9d1a8a272856924b3be766bd0b62-ssl\"",
+      "server": "Netlify",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding",
+      "x-nf-request-id": "01M8G4MSWMTV12ZYPR2QD90MR7"
+    },
+    "/search-index.json": {
+      "accept-ranges": "bytes",
+      "age": "2",
+      "cache-control": "public,max-age=0,must-revalidate",
+      "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+      "content-encoding": "br",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; frame-src *; style-src 'self' 'unsafe-inline'; img-src * blob: data:; media-src *; connect-src *; font-src 'self' data:; form-action 'self'; frame-ancestors 'self' https://legal.mistral.ai https://legal-center-v2.netlify.app; upgrade-insecure-requests;",
+      "content-type": "application/json",
+      "date": "Sat, 28 Nov 2026 03:54:37 GMT",
+      "etag": "W/\"0fa956303988b10528da9f1768dc8fd3-ssl\"",
+      "server": "Netlify",
+      "strict-transport-security": "max-age=31536000",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-nf-request-id": "01M8G4MSXJ9D44GXJNBW3GBQPQ"
+    },
+    "/images/og-image.png": {
+      "accept-ranges": "bytes",
+      "age": "0",
+      "cache-control": "public,max-age=0,must-revalidate",
+      "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+      "content-length": "16706",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; frame-src *; style-src 'self' 'unsafe-inline'; img-src * blob: data:; media-src *; connect-src *; font-src 'self' data:; form-action 'self'; frame-ancestors 'self' https://legal.mistral.ai https://legal-center-v2.netlify.app; upgrade-insecure-requests;",
+      "content-type": "image/png",
+      "date": "Sat, 28 Nov 2026 03:54:37 GMT",
+      "etag": "\"de5a7923fbaca1c98749d12dd90b5786-ssl\"",
+      "server": "Netlify",
+      "strict-transport-security": "max-age=31536000",
+      "x-nf-request-id": "01M8G4MT8BFBD2AEN18T8YJE2W"
+    }
+  },
+  "fonts": [
+    {
+      "family": "ALTMistral",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "ALTMistral",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "ALTMistral",
+      "weight": "500",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "ALTMistral",
+      "weight": "500",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "ALTMistral",
+      "weight": "600",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "ALTMistral",
+      "weight": "600",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Space Mono",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "Inter",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "dpl": [
+    "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.d4KnfXdx.js?dpl=6b09be635aa060ae1ecdb1ae",
+    "/images/mistral-logo.svg?dpl=6b09be635aa060ae1ecdb1ae",
+    "/images/icons/icon-law.svg?dpl=6b09be635aa060ae1ecdb1ae",
+    "/images/legal-cover.webp?dpl=6b09be635aa060ae1ecdb1ae",
+    "/images/mistral-logo-full.svg?dpl=6b09be635aa060ae1ecdb1ae"
+  ],
+  "vtEnabled": "true",
+  "vtFallback": "none",
+  "islands": [
+    {
+      "name": "ModeWatcher",
+      "component": "/_astro/index.Do_9lL7I.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "Search",
+      "component": "/_astro/search.DNpscTUM.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "FaqItem",
+      "component": "/_astro/faq-item.r-3N7oyS.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    },
+    {
+      "name": "ThemeSwitcher",
+      "component": "/_astro/theme-switcher.B0lvFYjl.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "renderer": "/_astro/client.svelte.YwYi6gul.js?dpl=6b09be635aa060ae1ecdb1ae",
+      "client": "load",
+      "ssr": false
+    }
+  ],
+  "transitionStyle": "@media (prefers-reduced-motion) {\n  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*), [data-astro-transition-scope] { animation: auto ease 0s 1 normal none running none !important; }\n}\n[data-astro-transition-scope=\"astro-yztbsuuz-1\"] { view-transition-name: astro-yztbsuuz-1; }\n@layer astro {\n  ::view-transition-old(astro-yztbsuuz-1) { animation: auto ease 0s 1 normal none running none; opacity: 0; mix-blend-mode: normal; }\n  ::view-transition-new(astro-yztbsuuz-1) { animation: auto ease 0s 1 normal none running none; mix-blend-mode: normal; }\n  ::view-transition-group(astro-yztbsuuz-1) { animation: auto ease 0s 1 normal none running none; }\n}",
+  "html": 100859,
+  "rootStyle": "astro-yztbsuuz-1"
+}

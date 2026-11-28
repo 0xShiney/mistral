@@ -1,0 +1,4 @@
+# Unofficial non-authoritative study replica of legal.mistral.ai.
+# It is not the authoritative Legal Center and is not legal advice.
+User-agent: *
+Disallow: /

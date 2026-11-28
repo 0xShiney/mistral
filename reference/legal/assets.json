@@ -1,0 +1,542 @@
+[
+  {
+    "pathname": "/_astro/class.C2HXimop.js",
+    "bytes": 26954,
+    "sha256": "733c9e58b04cf4f630dd380658ece43f0d1518d5aca0ca1cc4cd24bf0a04f794"
+  },
+  {
+    "pathname": "/_astro/client.CE06xNb8.js",
+    "bytes": 48393,
+    "sha256": "022d278750d799386589e0c50f744a33e9694e11bfdac6c14e922677a3fdf4ef"
+  },
+  {
+    "pathname": "/_astro/client.DZ323knP.js",
+    "bytes": 72,
+    "sha256": "cfa6ed0c79a1a1bba137823e6d3092776b847154b88e5d9aafb6ef38454380fd"
+  },
+  {
+    "pathname": "/_astro/client.svelte.YwYi6gul.js",
+    "bytes": 918,
+    "sha256": "ef416e68f0da7f44a2d9e01935d470774fd09c27d0ad08a71b7699ac80e685c2"
+  },
+  {
+    "pathname": "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.d4KnfXdx.js",
+    "bytes": 13707,
+    "sha256": "22640ba4223646a08d112700ff2a8bb709ac3c35e91928cb61efea27ca907c58"
+  },
+  {
+    "pathname": "/_astro/collection-item.BG7JEyxC.js",
+    "bytes": 1980,
+    "sha256": "b5f6dfc5611a6251b8e9771148674e16377dcd3549e691ad455bb22a7b18da96"
+  },
+  {
+    "pathname": "/_astro/date.DnlEGz4W.js",
+    "bytes": 224,
+    "sha256": "bf2cd2b9227239b84c7ab971e8b9a8021d9d0c233786d4fe38294086a078797f"
+  },
+  {
+    "pathname": "/_astro/disclose-version.xihTtKlq.js",
+    "bytes": 65,
+    "sha256": "0214edcff77242079f540507a53803aa22d857b6ad673e60e39748b6c7aa08c1"
+  },
+  {
+    "pathname": "/_astro/dist.BkHAs72x.js",
+    "bytes": 6141,
+    "sha256": "e7b498477f9df0d4bde8eedcbea4aef0e4badb30e8e0eb134979695f42089a00"
+  },
+  {
+    "pathname": "/_astro/faq-item.r-3N7oyS.js",
+    "bytes": 1204,
+    "sha256": "1c4a74fd87d745a10a7c53d6b278b695afe917d48f69cc3edfc1b989f10bfe8f"
+  },
+  {
+    "pathname": "/_astro/icon-chevron.C9BbFUbS.js",
+    "bytes": 912,
+    "sha256": "c2258131e721731b4c67095685d5613e6c62f2aaa4ae58f47cc6e1e9aad8971e"
+  },
+  {
+    "pathname": "/_astro/icon-download.bpOPDXNe.js",
+    "bytes": 1451,
+    "sha256": "cf1411f0bc4dbc4e94c60dc9a065844800ad3b582f9bea06034ec80c61f3a8ce"
+  },
+  {
+    "pathname": "/_astro/icon-search.DkvK3-qR.js",
+    "bytes": 1290,
+    "sha256": "3737aee5cfb00e54d6d97ccf44e5987c83f01d116773949348d07669d07cb1fb"
+  },
+  {
+    "pathname": "/_astro/index-model.DfdQt3ct.js",
+    "bytes": 2536,
+    "sha256": "5c581e58a8cb2833878332a55042688f627a0d998e0c55601c38a7d595d88d95"
+  },
+  {
+    "pathname": "/_astro/index-system.D6bgFOFj.js",
+    "bytes": 607,
+    "sha256": "3e507e8acdcca16c744263f5ae700926c15e56334a6a8edeebfbfe66ac41220d"
+  },
+  {
+    "pathname": "/_astro/index.Do_9lL7I.js",
+    "bytes": 367,
+    "sha256": "6d3c8155ac6889fc137871c8f3103e9c757a975f9a907df52165031751926fc4"
+  },
+  {
+    "pathname": "/_astro/Layout.CdK3j_XA.css",
+    "bytes": 59957,
+    "sha256": "3183894fa952ff8771d8d904b409c185930203932c4152972ce4aeeb31f12e85"
+  },
+  {
+    "pathname": "/_astro/lexical.GF9wuR7_.js",
+    "bytes": 3315,
+    "sha256": "328d720a75f9b3ba7e77f05cae7471d2ddbd075eaa03796ac82aaa69f113c774"
+  },
+  {
+    "pathname": "/_astro/page.BX0Pobze.js",
+    "bytes": 76,
+    "sha256": "2a640b114abce794da157a5e32f88d396f19257c458706b593af4bded984893e"
+  },
+  {
+    "pathname": "/_astro/prefetch.BC3msIxT.js",
+    "bytes": 2550,
+    "sha256": "1c991deac1fa1ecb3300850b2831495d7c94f979a19afcff088e2689d693201e"
+  },
+  {
+    "pathname": "/_astro/rich-text-parser.B3I9oY74.js",
+    "bytes": 422,
+    "sha256": "c9742a155694c1cd580c98986b8d0a87084eab106f37b7602ad591d8e9f72fee"
+  },
+  {
+    "pathname": "/_astro/search.DNpscTUM.js",
+    "bytes": 4111,
+    "sha256": "418cbfe74c693feb6b58b2003584336e3ec6b3370b1697fb3c261c51b657f144"
+  },
+  {
+    "pathname": "/_astro/tabs.BSNjtFJS.js",
+    "bytes": 6319,
+    "sha256": "8096c4e700360a48c386fe10a4d6f60366ffd2b655c759ba47e1de96f2c2a67c"
+  },
+  {
+    "pathname": "/_astro/terms.DyoAAKdL.js",
+    "bytes": 250080,
+    "sha256": "4e942ba4cf49cfd155684c366bff741dfdeadcfe0cf030e602c5f63befffb729"
+  },
+  {
+    "pathname": "/_astro/theme-switcher.B0lvFYjl.js",
+    "bytes": 5291,
+    "sha256": "40328e49413d0b82e6578c7c7e0eb236c3c584aca7abfac8ee626d5c03362a09"
+  },
+  {
+    "pathname": "/_astro/transition.C9Hg4rJI.js",
+    "bytes": 670,
+    "sha256": "34a3326e73a133739c4713c196fe91a00a5e163d76563be0c9598f2719a29db1"
+  },
+  {
+    "pathname": "/favicon.ico",
+    "bytes": 4286,
+    "sha256": "6bb7171d0ed524e477011c45100bef7d4e43a7bb075019656da8c55b752015fe"
+  },
+  {
+    "pathname": "/favicon.svg",
+    "bytes": 1687,
+    "sha256": "89e428cc4f9f80fc973d1752d87fcf4f533ef98c4503fc3252f089a5af0ef346"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Italic.woff",
+    "bytes": 88048,
+    "sha256": "39cfc1cac7d4ea885a813cb18eba0fad7f8715e3bd3dcf30c681bbf57e1b5d73"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Italic.woff2",
+    "bytes": 78940,
+    "sha256": "8b5e0f1162b5c684fb102c3ae52a1dbebe50801fc3d39667f1753f600856d844"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Medium.woff",
+    "bytes": 87260,
+    "sha256": "023e493e3477a78fb0cb61d1516d92382977e1f7cf012e004f7ea818ec829bee"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Medium.woff2",
+    "bytes": 77496,
+    "sha256": "9eefb5ae94fde9ceaf652c13490f656a21e932d1e19456504125182053f880a2"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-MediumItalic.woff",
+    "bytes": 92164,
+    "sha256": "5a268172917dfd0a3355f50f161196887fb06eb1a64748b3eee4b9203a7ef006"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-MediumItalic.woff2",
+    "bytes": 82248,
+    "sha256": "25eb539a613f00bf7450919a655fe6985c7544d703fbaedd51f6f3c284a88d58"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Regular.woff",
+    "bytes": 85168,
+    "sha256": "21c038ff728fa2c2b485936cbd76987ff4e466f2d037d9f9dc837d0421adf542"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Regular.woff2",
+    "bytes": 75668,
+    "sha256": "9b2f9238acf5a147231091439fcf950b1b98598b29aa170683d1af93cb9d71b9"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Semibold.woff",
+    "bytes": 84320,
+    "sha256": "f50623a6fa8df270f74e5146f3518cdec40141f5783ffc7fca5f22fb23538189"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-Semibold.woff2",
+    "bytes": 75656,
+    "sha256": "386f2b3c29be7acd4e16fa67cc65c03fba04032ecb1c1e7f9243de0f20f13ab3"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-SemiboldItalic.woff",
+    "bytes": 87756,
+    "sha256": "0599ee93417ee89be708a25fa9a63d13cd1bc4eed4da6e285991ac964170bc6f"
+  },
+  {
+    "pathname": "/fonts/alt-mistral/ALTMistral-SemiboldItalic.woff2",
+    "bytes": 78360,
+    "sha256": "46ce908481014e80f6b77deef1a83f955cee5e7f310861ac9770e63842bb47d6"
+  },
+  {
+    "pathname": "/fonts/inter/Inter-VariableFont.ttf",
+    "bytes": 874708,
+    "sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8"
+  },
+  {
+    "pathname": "/fonts/space-mono/SpaceMono-Regular.ttf",
+    "bytes": 98320,
+    "sha256": "508a2a382b46a55be24d9edb70ce7d59be695cd5808e641fda24c40864b0d5d2"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=7b-1.svg",
+    "bytes": 4124,
+    "sha256": "fe64639f6c3a91ff8ab66b24b3917207765e9d45d865860c6ccaff8eb79037e5"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=7b-2.svg",
+    "bytes": 4124,
+    "sha256": "fe64639f6c3a91ff8ab66b24b3917207765e9d45d865860c6ccaff8eb79037e5"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=7b.svg",
+    "bytes": 4124,
+    "sha256": "fe64639f6c3a91ff8ab66b24b3917207765e9d45d865860c6ccaff8eb79037e5"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Codestral Embed.svg",
+    "bytes": 1359,
+    "sha256": "20e19134477b54c631f488d47af1c2e29ba58e579130882031d1798dde27ce62"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Devstral-1.svg",
+    "bytes": 1787,
+    "sha256": "3cd407c3322ccf8335a6135925c66c1bf1c02f983f37b01f229f8d11ce5df825"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Devstral-2.svg",
+    "bytes": 1787,
+    "sha256": "3cd407c3322ccf8335a6135925c66c1bf1c02f983f37b01f229f8d11ce5df825"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Devstral.svg",
+    "bytes": 1787,
+    "sha256": "3cd407c3322ccf8335a6135925c66c1bf1c02f983f37b01f229f8d11ce5df825"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Embed.svg",
+    "bytes": 3714,
+    "sha256": "4dc11970d4de0795036eb0a226ef3a20907f3f24c8d2329e7931214f073a7665"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Large 3-1.svg",
+    "bytes": 6750,
+    "sha256": "7819c7a212f13cc57add126964aaa30a485f8264bfc12c3295f9ec25090a9e02"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Large 3-2.svg",
+    "bytes": 6750,
+    "sha256": "7819c7a212f13cc57add126964aaa30a485f8264bfc12c3295f9ec25090a9e02"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Large 3-3.svg",
+    "bytes": 6750,
+    "sha256": "7819c7a212f13cc57add126964aaa30a485f8264bfc12c3295f9ec25090a9e02"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Large 3.svg",
+    "bytes": 6750,
+    "sha256": "7819c7a212f13cc57add126964aaa30a485f8264bfc12c3295f9ec25090a9e02"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Leanstral.svg",
+    "bytes": 2083,
+    "sha256": "b8a193aea0bfbf2b27583775056c35efcd0be7ed9f73acd591d34e52e4a46cf8"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Magistral-1.svg",
+    "bytes": 2869,
+    "sha256": "0052a33536d61ec44a410de86eb2d6b3dd01a16b3c59cf2f664e574e2a291a16"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Magistral.svg",
+    "bytes": 2869,
+    "sha256": "0052a33536d61ec44a410de86eb2d6b3dd01a16b3c59cf2f664e574e2a291a16"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Mathstral.svg",
+    "bytes": 2532,
+    "sha256": "572927076c351b293257dc20ef302ddeb03cc0c9cc607c2e5bfd4c461433f5af"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Medium-1.svg",
+    "bytes": 6447,
+    "sha256": "9c674d4660d27f44b6ee57acecee5732cd05bc777d057954a1a7ced710645a83"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Medium.svg",
+    "bytes": 6447,
+    "sha256": "9c674d4660d27f44b6ee57acecee5732cd05bc777d057954a1a7ced710645a83"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Ministraux-1.svg",
+    "bytes": 5486,
+    "sha256": "908a596ae83e228db807115cb50fab16c7e704e03daa5228f5f58090f2a0fcfb"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Ministraux-2.svg",
+    "bytes": 5486,
+    "sha256": "908a596ae83e228db807115cb50fab16c7e704e03daa5228f5f58090f2a0fcfb"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Ministraux-3.svg",
+    "bytes": 5486,
+    "sha256": "908a596ae83e228db807115cb50fab16c7e704e03daa5228f5f58090f2a0fcfb"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Ministraux-4.svg",
+    "bytes": 5486,
+    "sha256": "908a596ae83e228db807115cb50fab16c7e704e03daa5228f5f58090f2a0fcfb"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Ministraux.svg",
+    "bytes": 5486,
+    "sha256": "908a596ae83e228db807115cb50fab16c7e704e03daa5228f5f58090f2a0fcfb"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Moderation.svg",
+    "bytes": 1789,
+    "sha256": "140a7134618785a0484f415a5f39c421d85c924e16ca527a92868ab543f9f8a0"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Nemo.svg",
+    "bytes": 2200,
+    "sha256": "e433287e140c40a663e9b1d15d887a3e37d90fc00ff55a32d05c30d6aa891509"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=OCR-1.svg",
+    "bytes": 1751,
+    "sha256": "f10324dafcf0ab943d1eb0fcbfc9fc6a651a78662db1c4595d53292d2b1d9b05"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=OCR-2.svg",
+    "bytes": 1751,
+    "sha256": "f10324dafcf0ab943d1eb0fcbfc9fc6a651a78662db1c4595d53292d2b1d9b05"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=OCR.svg",
+    "bytes": 1751,
+    "sha256": "f10324dafcf0ab943d1eb0fcbfc9fc6a651a78662db1c4595d53292d2b1d9b05"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Pixtral-1.svg",
+    "bytes": 1511,
+    "sha256": "af764cec239b8fe33a14f0bcc3401cb6b30f7007e80f12fdd1758f963cf0e440"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Pixtral.svg",
+    "bytes": 1511,
+    "sha256": "af764cec239b8fe33a14f0bcc3401cb6b30f7007e80f12fdd1758f963cf0e440"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Robotstral.svg",
+    "bytes": 3724,
+    "sha256": "b398a6809054062f07ccb512d73b675777cc5cf1a1b80d99365357282d25686f"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Saba.svg",
+    "bytes": 2840,
+    "sha256": "4acb8317eae6f101369da4aefef2f5312cc328ce7e1e1bed8b7ea49b2a86d03d"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Shieldstral.svg",
+    "bytes": 11250,
+    "sha256": "f91a17c7a6e4aa8a88512c1f2817ff48280388259f1b19868bf2f5592d825987"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Small-1.svg",
+    "bytes": 3931,
+    "sha256": "230a76fe90f643414d55a56ac73334eee0c22cfde1009466feef215770e0a755"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Small-2.svg",
+    "bytes": 3931,
+    "sha256": "230a76fe90f643414d55a56ac73334eee0c22cfde1009466feef215770e0a755"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Small.svg",
+    "bytes": 3931,
+    "sha256": "230a76fe90f643414d55a56ac73334eee0c22cfde1009466feef215770e0a755"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Voxtral-1.svg",
+    "bytes": 8337,
+    "sha256": "f102aaa64f97c4dac3c830bcdc8759de1c55f4b7f3b3148834b9e8d2def754b7"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Voxtral-2.svg",
+    "bytes": 8337,
+    "sha256": "f102aaa64f97c4dac3c830bcdc8759de1c55f4b7f3b3148834b9e8d2def754b7"
+  },
+  {
+    "pathname": "/icons/Icon-L-Model=Voxtral.svg",
+    "bytes": 8337,
+    "sha256": "f102aaa64f97c4dac3c830bcdc8759de1c55f4b7f3b3148834b9e8d2def754b7"
+  },
+  {
+    "pathname": "/icons/ml4-chonk.svg",
+    "bytes": 11888,
+    "sha256": "a3895b64f7843c8d51520eab65294be848e2c83f5c92a9d856dc5841d7e4f012"
+  },
+  {
+    "pathname": "/icons/timestral-icon-model.svg",
+    "bytes": 5244,
+    "sha256": "dc0970a35b92f86c51f621e33e1ae2313b17cdcb0b84eeabc76c06f32d9c0810"
+  },
+  {
+    "pathname": "/images/cat-moving.gif",
+    "bytes": 26993,
+    "sha256": "9631057a4246ffd59a778e47d5ef03efeb9d679849c9258929a765dff58a3fb1"
+  },
+  {
+    "pathname": "/images/cover-terms-dark.svg",
+    "bytes": 2236,
+    "sha256": "c22e5db9fd37d83d7236755aa25c8e06914d8dee7af5d5770a38f2d12236daf3"
+  },
+  {
+    "pathname": "/images/cover-terms.svg",
+    "bytes": 2252,
+    "sha256": "eecd0feafa72334c0d733ff61ad556a9ca4259af65ecf2025f47cfee0e93ddb0"
+  },
+  {
+    "pathname": "/images/icons/icon-gear.svg",
+    "bytes": 7252,
+    "sha256": "7b1152bf8777808125fafd80907325fd545235ddc4ef23ef5845fbfe532346b5"
+  },
+  {
+    "pathname": "/images/icons/icon-law.svg",
+    "bytes": 3082,
+    "sha256": "1c3e1dc0d8b979960502b9162a04a3df389309798a5575206338383ffc338e14"
+  },
+  {
+    "pathname": "/images/icons/icon-model.svg",
+    "bytes": 8108,
+    "sha256": "ac0e1bfaf8ef878ceab823c8cc101321850e121d158a0a594eb52a46d6a7ed29"
+  },
+  {
+    "pathname": "/images/legal-cover.webp",
+    "bytes": 20908,
+    "sha256": "df35916866f6c6b28192c79b0fc74869237ac039f9d86a093443a17abe26235e"
+  },
+  {
+    "pathname": "/images/mistral-logo-full.svg",
+    "bytes": 4824,
+    "sha256": "0bf349f7c00fea10764a8e06f460bdfec33c846715d4196db24b8a2af6c8ad53"
+  },
+  {
+    "pathname": "/images/mistral-logo.svg",
+    "bytes": 1220,
+    "sha256": "d869352fa188d3d9e15a0853c1bff3209b0086b57182e01be7e60a2c5cc11c70"
+  },
+  {
+    "pathname": "/images/model-covers/7b.png",
+    "bytes": 1176499,
+    "sha256": "621795c0c0569359b88ad2eeb92ecb6c207e754d63fa8a9c19e0320ce8898471"
+  },
+  {
+    "pathname": "/images/model-covers/default.png",
+    "bytes": 1159808,
+    "sha256": "273b0aead282db0ad6102d2c5f6d3eeeab8e355380622f2dbff9cb41ec9487a8"
+  },
+  {
+    "pathname": "/images/model-covers/devstral.png",
+    "bytes": 1141350,
+    "sha256": "8638bcd85def11a9f4bdd0d08734edc0f26ee893967bac22457a64215035f321"
+  },
+  {
+    "pathname": "/images/model-covers/large.png",
+    "bytes": 1138261,
+    "sha256": "e82181288f6ff2b6cd97aa6a03853868a0a9eb88af1ef7d74de5a81d930b8037"
+  },
+  {
+    "pathname": "/images/model-covers/magistral.png",
+    "bytes": 1139029,
+    "sha256": "f1e8ee11316da30ef0282899f3621769034392512943e34fdb202c70b8f5e1a1"
+  },
+  {
+    "pathname": "/images/model-covers/medium.png",
+    "bytes": 1153434,
+    "sha256": "04129b8e9ab5e4e4aaf4d8abcca8a52557a4e78982933555b3c4b7022b37a575"
+  },
+  {
+    "pathname": "/images/model-covers/mini.png",
+    "bytes": 1147845,
+    "sha256": "8b975106681f6df5749610b985c09cca274688207b3b2bd6ca1ea0cf07bb4b52"
+  },
+  {
+    "pathname": "/images/model-covers/ocr.png",
+    "bytes": 1155651,
+    "sha256": "1006fd377413bfc824c5bf3b2c82bb9353cb19883014ceebb1d4502886c858bf"
+  },
+  {
+    "pathname": "/images/model-covers/pixtral.png",
+    "bytes": 1114602,
+    "sha256": "06c444ecaeec34d16b3ea7411afee169236f090322ab819eaa2fb7859915d934"
+  },
+  {
+    "pathname": "/images/model-covers/small.png",
+    "bytes": 772786,
+    "sha256": "7b9f31045477f07af48bbf12d2dd4a945916b73308c43f4f7d3bd8f7b1aa91ef"
+  },
+  {
+    "pathname": "/images/model-covers/voxtral.png",
+    "bytes": 1155627,
+    "sha256": "0779125134e71b56c72b198c2b1218c23d31f524f5013f314438dcce509578f7"
+  },
+  {
+    "pathname": "/images/models-cover.webp",
+    "bytes": 30470,
+    "sha256": "3dcfa9ea0694b20f21269e6d1a34b05f75614464cd0c7232f6caeede094524bd"
+  },
+  {
+    "pathname": "/images/og-image.png",
+    "bytes": 16706,
+    "sha256": "7a28a022208ce0540faa8530dc57d08ad56a7dac35d3f6d5b50605e112c54cd7"
+  },
+  {
+    "pathname": "/images/systems-cover.webp",
+    "bytes": 30132,
+    "sha256": "1aa681f1f8f18604f7cd84e4a830329165fe4828471340da07da49dc86a60e16"
+  },
+  {
+    "pathname": "/images/texture.webp",
+    "bytes": 83736,
+    "sha256": "c9818304e19292a04a38f7ecbe44fb20c40a44d159ac44ed03db549507bbebc2"
+  },
+  {
+    "pathname": "/search-index.json",
+    "bytes": 6583,
+    "sha256": "c1987101a310790fd859add60aafb0f471f2d02762bfee72bd9983f391bbd447"
+  }
+]

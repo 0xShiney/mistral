@@ -1,0 +1,10 @@
+{
+  "name": "@mistral-clone/verify",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./report": "./src/report.mjs"
+  }
+}

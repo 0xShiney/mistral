@@ -1,0 +1,170 @@
+{
+  "idle": {
+    "home": []
+  },
+  "interactions": {
+    "faqOpen": [
+      {
+        "type": "CSSTransition",
+        "target": "header.fixed",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "CSSTransition",
+        "target": "svg.[object",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "rotate"
+        ]
+      },
+      {
+        "type": "Animation",
+        "target": "div.mt-4",
+        "pseudoElement": null,
+        "duration": 300,
+        "delay": 0,
+        "easing": "linear",
+        "iterations": 1,
+        "fill": "forwards",
+        "playState": "running",
+        "properties": [
+          "transform",
+          "opacity"
+        ]
+      }
+    ],
+    "faqOpenSettled": [],
+    "searchOpen": [
+      {
+        "type": "CSSTransition",
+        "target": "header.fixed",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "CSSTransition",
+        "target": "button.cursor-pointer",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "Animation",
+        "target": "div.fixed",
+        "pseudoElement": null,
+        "duration": 100,
+        "delay": 0,
+        "easing": "linear",
+        "iterations": 1,
+        "fill": "forwards",
+        "playState": "running",
+        "properties": [
+          "opacity"
+        ]
+      }
+    ],
+    "searchOpenSettled": [],
+    "themeOpen": [
+      {
+        "type": "CSSTransition",
+        "target": "header.fixed",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "CSSTransition",
+        "target": "button.cursor-pointer",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "CSSTransition",
+        "target": "button.flex",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "backgroundColor"
+        ]
+      },
+      {
+        "type": "CSSTransition",
+        "target": "svg.[object",
+        "pseudoElement": null,
+        "duration": 150,
+        "delay": 0,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "iterations": 1,
+        "fill": "backwards",
+        "playState": "running",
+        "properties": [
+          "rotate"
+        ]
+      }
+    ],
+    "tabSwitch": []
+  },
+  "transitions": {
+    "faqButton": {
+      "transition": "all",
+      "duration": "0s",
+      "easing": "ease"
+    }
+  },
+  "cat": {
+    "src": "/images/cat-moving.gif?dpl=6b09be635aa060ae1ecdb1ae",
+    "width": 256,
+    "height": 224,
+    "alt": "Cat Gif"
+  }
+}

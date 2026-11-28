@@ -1,0 +1,38 @@
+<svg width="620" height="450" viewBox="0 0 620 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_631_34448)">
+<path d="M169 310H165V314H169V310Z" fill="#FEC63A"/>
+<path d="M173 306H161V310H177V306H173Z" fill="#FA500F"/>
+<path d="M156.999 286V302H153V306H165V302H161V297.999H165V302H169V297.999H173V302H169V306H181V302H177.001V286H173V290H169V294.001H165V290H161V286H156.999Z" fill="#151524"/>
+<rect x="161" y="298" width="4" height="4" fill="#FBFBF8"/>
+<rect x="169" y="298" width="4" height="4" fill="#FBFBF8"/>
+<rect x="165" y="302" width="4" height="4" fill="#FBFBF8"/>
+<path d="M193 314.25H189V318H193V314.25Z" fill="#151524"/>
+<path d="M197 318H193V326H197V318Z" fill="#151524"/>
+<path d="M189 330.001V334H193V326H189V330.001Z" fill="#151524"/>
+<path d="M168.999 310V314H165.001V310H161V326H157V334H145V338H189V334H185V330.001V318.001H180.999V310H168.999Z" fill="#151524"/>
+<g clip-path="url(#clip1_631_34448)">
+<path d="M225.413 337.93H338.056V450.573H225.413V337.93Z" fill="#F5F4EF"/>
+<rect x="225.413" y="225.286" width="112.643" height="112.643" fill="#F5F4EF"/>
+<path d="M450.698 225.286H563.341V337.93H450.698V225.286Z" fill="#EBE9E0"/>
+<rect x="225.413" y="112.643" width="112.643" height="112.643" fill="#EBE9E0"/>
+<rect x="338.056" y="112.643" width="112.643" height="112.643" fill="#F5F4EF"/>
+<path d="M450.698 112.643H563.341V225.287H450.698V112.643Z" fill="#F5F4EF"/>
+<path d="M563.342 112.643H675.985V225.287H563.342V112.643Z" fill="#EBE9E0"/>
+<path d="M225.413 0H338.056V112.643H225.413V0Z" fill="#F5F4EF"/>
+<rect x="338.056" width="112.643" height="112.643" fill="#EBE9E0"/>
+<path d="M563.342 0H675.985V112.643H563.342V0Z" fill="#F5F4EF"/>
+<rect x="56.3779" y="337.792" width="79.5531" height="79.5531" transform="rotate(45 56.3779 337.792)" fill="#EBE9E0"/>
+<rect x="112.769" y="337.93" width="112.643" height="112.643" fill="#EBE9E0"/>
+<rect x="338.056" y="337.93" width="112.643" height="112.643" fill="#EBE9E0"/>
+<path d="M563.342 337.93H675.985V450.573H563.342V337.93Z" fill="#F5F4EF"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_631_34448">
+<rect width="620" height="450" fill="white"/>
+</clipPath>
+<clipPath id="clip1_631_34448">
+<rect width="676" height="450" fill="white"/>
+</clipPath>
+</defs>
+</svg>
