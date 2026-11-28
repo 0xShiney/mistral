@@ -4,7 +4,7 @@ Two independent reproduction apps and a small set of shared packages.
 
 | app | original | stack |
 | --- | --- | --- |
-| [`apps/web`](apps/web/README.md) | `https://mistral.ai/` (27 routes) | Astro 5, static, zero islands |
+| [`apps/web`](apps/web/README.md) | `https://mistral.ai/` (76 routes) | Astro 5, static, zero islands |
 | [`apps/legal`](apps/legal/README.md) | `https://legal.mistral.ai/` (64 routes + 404) | Astro 7.0.7, static, Svelte islands |
 
 > **`apps/legal` is an unofficial, non-authoritative study replica. It is not

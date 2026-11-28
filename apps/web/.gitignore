@@ -31,3 +31,11 @@ reference/pages/cloud-inference/screenshots/
 reference/pages/cloud-compute/screenshots/
 reference/pages/use-cases-*/screenshots/
 __pycache__/
+reference/original-customers.html
+reference/original-customers-detail/
+reference/pages/customers/screenshots/
+reference/pages/customers-*/screenshots/
+reference/original-industry.html
+reference/original-industry-detail/
+reference/pages/industry/screenshots/
+reference/pages/industry-*/screenshots/

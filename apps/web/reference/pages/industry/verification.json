@@ -1,0 +1,629 @@
+{
+  "generated": "2026-11-28T09:16:35.481Z",
+  "widths": [
+    390,
+    768,
+    1024,
+    1440,
+    1920,
+    2560
+  ],
+  "schemes": [
+    "light",
+    "dark"
+  ],
+  "results": [
+    {
+      "group": "light@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (390x1724 vs 390x1724)"
+    },
+    {
+      "group": "light@390",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.008% (768x900 vs 768x900)"
+    },
+    {
+      "group": "light@768",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.006% (1024x900 vs 1024x900)"
+    },
+    {
+      "group": "light@1024",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.2kB vs 68.4kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.004% (1440x900 vs 1440x900)"
+    },
+    {
+      "group": "light@1440",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.003% (1920x900 vs 1920x900)"
+    },
+    {
+      "group": "light@1920",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "light@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.002% (2560x900 vs 2560x900)"
+    },
+    {
+      "group": "light@2560",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "light@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "light@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "light@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@390",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.000% (390x1724 vs 390x1724)"
+    },
+    {
+      "group": "dark@390",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@390",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@390",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@390",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@768",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.008% (768x900 vs 768x900)"
+    },
+    {
+      "group": "dark@768",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@768",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@768",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@768",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@1024",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.006% (1024x900 vs 1024x900)"
+    },
+    {
+      "group": "dark@1024",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1024",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1024",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1024",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@1440",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.004% (1440x900 vs 1440x900)"
+    },
+    {
+      "group": "dark@1440",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1440",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1440",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1440",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@1920",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.003% (1920x900 vs 1920x900)"
+    },
+    {
+      "group": "dark@1920",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@1920",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@1920",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@1920",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "dark@2560",
+      "name": "full-page pixel diff < 1%",
+      "pass": true,
+      "detail": "0.002% (2560x900 vs 2560x900)"
+    },
+    {
+      "group": "dark@2560",
+      "name": "page height within 1px",
+      "pass": true,
+      "detail": "equal"
+    },
+    {
+      "group": "dark@2560",
+      "name": "geometry + computed style (1px)",
+      "pass": true,
+      "detail": "all matched"
+    },
+    {
+      "group": "dark@2560",
+      "name": "JS weight within 15%",
+      "pass": true,
+      "detail": "67.3kB vs 68.4kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS weight within 15%",
+      "pass": true,
+      "detail": "38.4kB vs 40.1kB"
+    },
+    {
+      "group": "dark@2560",
+      "name": "CSS animations match (name/duration/easing)",
+      "pass": true,
+      "detail": "0 vs 0"
+    },
+    {
+      "group": "navbar@light",
+      "name": "25px scroll sweep (1 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "navbar@dark",
+      "name": "25px scroll sweep (1 samples)",
+      "pass": true,
+      "detail": "all sampled states matched"
+    },
+    {
+      "group": "motion",
+      "name": "animation inventory identical",
+      "pass": true,
+      "detail": "0 vs 0 running animations"
+    },
+    {
+      "group": "interaction",
+      "name": "controls behave identically",
+      "pass": true,
+      "detail": "{\"blocks\":0,\"links\":68,\"h1\":0}"
+    },
+    {
+      "group": "content",
+      "name": "every text node matches",
+      "pass": true,
+      "detail": "0 vs 0 text nodes"
+    },
+    {
+      "group": "content",
+      "name": "footer text matches",
+      "pass": true,
+      "detail": "24 nodes"
+    },
+    {
+      "group": "content",
+      "name": "link targets match",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "group": "content",
+      "name": "image sources/alt match",
+      "pass": true,
+      "detail": "2 vs 2 images"
+    },
+    {
+      "group": "meta",
+      "name": "title",
+      "pass": true,
+      "detail": "Industry | Mistral"
+    },
+    {
+      "group": "meta",
+      "name": "canonical + hreflang",
+      "pass": true,
+      "detail": "[\"canonical:null=https://mistral.ai/industry/\",\"alternate:en=https://mistral.ai/industry/\",\"alternate:fr=https://mistral.ai/fr/industry/\",\"alternate:it=https://mistral.ai/it/industry/\",\"alternate:x-default=https://mistral.ai/industry/\",\"alternate:null=https://mistral.ai/news/rss\"]"
+    },
+    {
+      "group": "meta",
+      "name": "structured data",
+      "pass": true,
+      "detail": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://mistral.ai/ind"
+    },
+    {
+      "group": "meta",
+      "name": "single h1 + lang",
+      "pass": true,
+      "detail": " · en"
+    },
+    {
+      "group": "meta",
+      "name": "description / og / twitter / viewport",
+      "pass": true,
+      "detail": "[\"description=The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open mode"
+    },
+    {
+      "group": "architecture",
+      "name": "islands (count/framework)",
+      "pass": true,
+      "detail": "orig 0, clone 0"
+    },
+    {
+      "group": "architecture",
+      "name": "no-JS markup + styled state",
+      "pass": true,
+      "detail": "nodes=1 h1=0 header=rgb(245, 244, 239)"
+    },
+    {
+      "group": "transitions",
+      "name": "tour across all cloned routes",
+      "pass": true,
+      "detail": "[\"/:false\",\"/sovereign-ai/:true\",\"/products/:true\",\"/our-method/:true\",\"/use-cases/:true\",\"/research/:false\",\"/:false\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "browser back restores previous pages",
+      "pass": true,
+      "detail": "[\"/research/\",\"/use-cases/\",\"/our-method/\"]"
+    },
+    {
+      "group": "transitions",
+      "name": "after the tour a filter still works",
+      "pass": true,
+      "detail": "{\"path\":\"/use-cases/\",\"before\":\"16\",\"after\":\"3\",\"listenersWork\":true,\"headerBg\":\"rgb(245, 244, 239)\"}"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (light)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 or no worse than original (light)",
+      "pass": true,
+      "detail": "0.0000 (orig 0.0069)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (light)",
+      "pass": true,
+      "detail": "orig \"\" rgb(245, 244, 239) · clone \"\" rgb(245, 244, 239)"
+    },
+    {
+      "group": "quality",
+      "name": "no console errors (dark)",
+      "pass": true,
+      "detail": "0 (orig 0) "
+    },
+    {
+      "group": "quality",
+      "name": "CLS ≤ 0.05 or no worse than original (dark)",
+      "pass": true,
+      "detail": "0.0000 (orig 0.0069)"
+    },
+    {
+      "group": "quality",
+      "name": "theme resolves identically (dark)",
+      "pass": true,
+      "detail": "orig \"dark\" rgb(26, 26, 30) · clone \"dark\" rgb(26, 26, 30)"
+    },
+    {
+      "group": "quality",
+      "name": "prefers-reduced-motion parity",
+      "pass": true,
+      "detail": "height 900 vs 900, title opacity null vs null"
+    },
+    {
+      "group": "chrome",
+      "name": "mega behaves identically",
+      "pass": true,
+      "detail": "{\"h\":229,\"items\":4,\"rows\":16,\"closedH\":2}"
+    },
+    {
+      "group": "chrome",
+      "name": "lang behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"count\":3,\"visible\":3}"
+    },
+    {
+      "group": "chrome",
+      "name": "theme behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"dark\":true,\"changed\":true,\"stored\":\"light\"}"
+    },
+    {
+      "group": "chrome",
+      "name": "cat behaves identically",
+      "pass": true,
+      "detail": "{\"found\":true,\"src\":\"/images/cat/cat-sitting-black.gif\",\"w\":256,\"h\":224,\"rw\":56,\"rh\":49}"
+    },
+    {
+      "group": "chrome",
+      "name": "mobile behaves identically",
+      "pass": true,
+      "detail": "{\"opened\":{\"expanded\":\"true\",\"panelX\":0,\"label\":\"Menu\",\"bodyOverflow\":\"hidden\"},\"sub\":{\"subX\":0,\"links\":[\"/sovereign-ai/\",\"/products/\",\"/our-method/\",\"/use-cases/\"]},\"closed\":{\"expanded\":\"false\",\"panelX\":390}}"
+    }
+  ]
+}

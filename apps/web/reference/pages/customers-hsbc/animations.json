@@ -1,0 +1,80 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Static CMS story template",
+      "evidence": "No client-side state: a hero grid (name, category chip, logo, summary, back link, cover image) plus one prose body, server-rendered by the original Astro app"
+    },
+    {
+      "name": "Category chip colour",
+      "evidence": "inline background-color on the chip (per-category), not a class"
+    },
+    {
+      "name": "Button icon roll on hover",
+      "evidence": "group/button translate-x custom properties on the back link, 300ms CSS transition"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0
+    }
+  ]
+}

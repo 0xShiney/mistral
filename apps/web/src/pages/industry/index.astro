@@ -1,0 +1,22 @@
+---
+// /industry/ — the original renders this route with an empty #page-path (header
+// and footer only; the five verticals are linked from the mega menu). Captured
+// in reference/original-industry.html, metadata in src/content/industry.ts.
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import { INDUSTRY_INDEX } from '../../content/industry'
+---
+
+<Base
+  title={INDUSTRY_INDEX.title}
+  description={INDUSTRY_INDEX.description}
+  path={INDUSTRY_INDEX.path}
+  image={INDUSTRY_INDEX.image}
+  navSurface="secondary"
+  jsonLd={INDUSTRY_INDEX.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view></div>
+  </main>
+  <GlobalFooter />
+</Base>

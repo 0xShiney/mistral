@@ -1,0 +1,84 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Collection hero title",
+      "evidence": "mistral-atom-text-hero-title (data-autoplay, data-grow, data-randomness) + SplitText chunk; the h1 is sr-only and the visible copy is aria-hidden"
+    },
+    {
+      "name": "Featured slider",
+      "evidence": "mistral-block-slider-cards-collection + slider-cards-collection.*.js (Swiper): the six featured stories are one draggable track"
+    },
+    {
+      "name": "Post grid",
+      "evidence": "mistral-section-posts with data-filtering=\"false\" data-load-more=\"false\" data-post-per-page=\"-1\": all 42 cards are server-rendered, the runtime adds no controls"
+    },
+    {
+      "name": "Card hover",
+      "evidence": ".js-slider-item:hover { opacity: .9 } (300ms transition); the image fades in on load via onload"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Static vertical landing page",
+      "evidence": "Fourteen captured blocks in one #page-path: hero, cover, trusted headline + cards, logo strip, sovereignty headline + cards, capabilities headline + tabbed media, experts headline + service cards, use-case headline + slider, closing CTA"
+    },
+    {
+      "name": "Logo strip + card sliders",
+      "evidence": "mistral-section-slider-logo-scrolling / mistral-block-slideshow-cards-feature / mistral-block-slider-cards are the original Swiper components, driven by the self-hosted runtime"
+    },
+    {
+      "name": "Scroll-reveal media",
+      "evidence": "data-loaded=\"false\" on the cover frame, flipped by the original runtime once the WebP decodes (opacity/blur transition)"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0.1076
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0.0093
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.062
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.0634
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0621
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0757
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0.1403
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0.0692
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0004
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.0959
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0012
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0631
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+---
+// /industry/public-sector/ — composition of the 14 blocks of #page-path, in the
+// original order. Markup lives verbatim in
+// src/markup/industry/markup/public-sector/ (see reference/industry-split.py); metadata in
+// src/content/industry.ts.
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import PublicSectorHero from '../../../components/industry/PublicSectorHero.astro'
+import PublicSectorCover from '../../../components/industry/PublicSectorCover.astro'
+import PublicSectorTrustedHeadline from '../../../components/industry/PublicSectorTrustedHeadline.astro'
+import PublicSectorTrusted from '../../../components/industry/PublicSectorTrusted.astro'
+import PublicSectorLogos from '../../../components/industry/PublicSectorLogos.astro'
+import PublicSectorSovereigntyHeadline from '../../../components/industry/PublicSectorSovereigntyHeadline.astro'
+import PublicSectorSovereignty from '../../../components/industry/PublicSectorSovereignty.astro'
+import PublicSectorCapabilitiesHeadline from '../../../components/industry/PublicSectorCapabilitiesHeadline.astro'
+import PublicSectorCapabilities from '../../../components/industry/PublicSectorCapabilities.astro'
+import PublicSectorExpertsHeadline from '../../../components/industry/PublicSectorExpertsHeadline.astro'
+import PublicSectorExperts from '../../../components/industry/PublicSectorExperts.astro'
+import PublicSectorUseCasesHeadline from '../../../components/industry/PublicSectorUseCasesHeadline.astro'
+import PublicSectorUseCases from '../../../components/industry/PublicSectorUseCases.astro'
+import PublicSectorClosing from '../../../components/industry/PublicSectorClosing.astro'
+import { PUBLIC_SECTOR } from '../../../content/industry'
+---
+
+<Base
+  title={PUBLIC_SECTOR.title}
+  description={PUBLIC_SECTOR.description}
+  path={PUBLIC_SECTOR.path}
+  image={PUBLIC_SECTOR.image}
+  navSurface="secondary"
+  jsonLd={PUBLIC_SECTOR.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <PublicSectorHero />
+      <PublicSectorCover />
+      <PublicSectorTrustedHeadline />
+      <PublicSectorTrusted />
+      <PublicSectorLogos />
+      <PublicSectorSovereigntyHeadline />
+      <PublicSectorSovereignty />
+      <PublicSectorCapabilitiesHeadline />
+      <PublicSectorCapabilities />
+      <PublicSectorExpertsHeadline />
+      <PublicSectorExperts />
+      <PublicSectorUseCasesHeadline />
+      <PublicSectorUseCases />
+      <PublicSectorClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

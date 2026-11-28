@@ -13,6 +13,11 @@ interface Props {
   path?: string
   /** Page-level structured data; defaults to the homepage's organization graph. */
   jsonLd?: Record<string, unknown>
+  /** Social card URL; only pages whose original ships its own thumbnail pass one. */
+  image?: string
+  /** Declared dimensions of that card. */
+  imageWidth?: string
+  imageHeight?: string
   /** Route path of the nav item that is current on this page. */
   navActive?: string
   /** Header surface; the original uses `secondary` on /research/. */
@@ -24,6 +29,9 @@ const {
   description = 'Mistral AI builds frontier open-weight models you own. Customize with Forge, deploy agents with Studio, run on-prem, your VPC, or our European sovereign cloud.',
   path = '/',
   jsonLd,
+  image = 'https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp',
+  imageWidth = '1200',
+  imageHeight = '630',
   navActive = '',
   navSurface = 'primary',
 } = Astro.props
@@ -48,13 +56,13 @@ const canonical = ORIGIN + path
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Mistral" />
-    <meta property="og:image" content="https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content={imageWidth} />
+    <meta property="og:image:height" content={imageHeight} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp" />
+    <meta name="twitter:image" content={image} />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd ?? {

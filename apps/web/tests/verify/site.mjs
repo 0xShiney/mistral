@@ -767,6 +767,13 @@ const USE_CASE_DETAIL_SLUGS = (await fs.readdir('src/markup/use-cases-detail'))
   .map((file) => file.slice(0, -'.html'.length))
   .sort()
 
+const INDUSTRY_SLUGS = (await fs.readdir('src/markup/industry/markup')).sort()
+
+const CUSTOMER_SLUGS = (await fs.readdir('src/markup/customers-detail'))
+  .filter((file) => file.endsWith('.html'))
+  .map((file) => file.slice(0, -'.html'.length))
+  .sort()
+
 function useCaseDetailDefinition(slug) {
   return {
     route: `/use-cases/${slug}/`,
@@ -839,6 +846,248 @@ function useCaseDetailDefinition(slug) {
 
 for (const slug of USE_CASE_DETAIL_SLUGS) {
   DEFINITIONS[`use-cases/${slug}`] = useCaseDetailDefinition(slug)
+}
+
+// ------------------------------------------------------- customers definitions
+// /customers/ is a collection index (hero + featured slider + post grid) and
+// /customers/<slug>/ is one CMS template for all 42 stories (hero grid + prose
+// body), so the index gets its own definition and the stories share one.
+
+defineCustomers()
+
+function defineCustomers() {
+  DEFINITIONS.customers = {
+    route: '/customers/',
+    out: 'reference/pages/customers',
+    landmarks: [
+      ['header', '[data-header]'],
+      ['nav-active', '[data-nav-index="3"]', 0, true],
+      ['hero', 'mistral-section-hero-collection'],
+      ['hero-title', '.js-title'],
+      ['hero-sub', 'mistral-section-hero-collection p.text-body-large'],
+      ['featured', 'mistral-block-slider-cards-collection'],
+      ['featured-card', 'mistral-block-slider-cards-collection .js-slider-item'],
+      ['grid', 'mistral-section-posts'],
+      ['grid-card', 'mistral-section-posts a[href^="/customers/"]'],
+      ['footer', 'footer'],
+      ['footer-cat', '#footer-m', 0, true],
+    ],
+    motion: [['hero-title', 'mistral-atom-text-hero-title']],
+    mechanisms: [
+      {
+        name: 'Collection hero title',
+        evidence: 'mistral-atom-text-hero-title (data-autoplay, data-grow, data-randomness) + SplitText chunk; the h1 is sr-only and the visible copy is aria-hidden',
+      },
+      {
+        name: 'Featured slider',
+        evidence: 'mistral-block-slider-cards-collection + slider-cards-collection.*.js (Swiper): the six featured stories are one draggable track',
+      },
+      {
+        name: 'Post grid',
+        evidence: 'mistral-section-posts with data-filtering="false" data-load-more="false" data-post-per-page="-1": all 42 cards are server-rendered, the runtime adds no controls',
+      },
+      {
+        name: 'Card hover',
+        evidence: '.js-slider-item:hover { opacity: .9 } (300ms transition); the image fades in on load via onload',
+      },
+    ],
+    interactions: async (page) => {
+      const state = () =>
+        page.evaluate(() => ({
+          cards: document.querySelectorAll('mistral-section-posts a[href^="/customers/"]').length,
+          chips: [...document.querySelectorAll('mistral-section-posts [data-category-slug]')]
+            .map((e) => e.dataset.categorySlug)
+            .slice(0, 8),
+          // The live slider links to `/customers/<slug>` and the clone to the
+          // trailing-slash path the origin redirects to; compare the target.
+          featured: [...document.querySelectorAll('mistral-block-slider-cards-collection .js-slider-item')].map((a) =>
+            new URL(a.href).pathname.replace(/\/$/, ''),
+          ),
+        }))
+      const out = { initial: await state() }
+      const box = await page.evaluate(() => {
+        const el = document.querySelector('mistral-block-slider-cards-collection .js-slider-item')
+        el?.scrollIntoView({ block: 'center' })
+        const r = el?.getBoundingClientRect()
+        return r ? { x: r.x + r.width / 2, y: r.y + r.height / 2 } : null
+      })
+      if (box) {
+        await page.mouse.move(box.x, box.y)
+        await page.waitForTimeout(600)
+      }
+      out.hover = await page.evaluate(() =>
+        getComputedStyle(document.querySelector('mistral-block-slider-cards-collection .js-slider-item')).opacity,
+      )
+      await page.evaluate(() => (location.hash = '#main'))
+      return out
+    },
+  }
+
+  for (const slug of CUSTOMER_SLUGS) {
+    DEFINITIONS[`customers/${slug}`] = {
+      route: `/customers/${slug}/`,
+      out: `reference/pages/customers-${slug}`,
+      landmarks: [
+        ['header', '[data-header]'],
+        ['nav-active', '[data-nav-index="3"]', 0, true],
+        ['hero', '#page-path > section'],
+        ['hero-h1', '#page-path h1'],
+        ['hero-chip', '#page-path > section p.text-eyebrow-small'],
+        ['hero-logo', '#page-path > section img'],
+        ['summary', '#page-path > section p.text-h5'],
+        ['back', '#page-path > section a'],
+        ['body', '#page-path > section:nth-of-type(2)'],
+        ['body-text', '#page-path > section:nth-of-type(2) p'],
+        ['footer', 'footer'],
+        ['footer-cat', '#footer-m', 0, true],
+      ],
+      motion: [],
+      mechanisms: [
+        {
+          name: 'Static CMS story template',
+          evidence: 'No client-side state: a hero grid (name, category chip, logo, summary, back link, cover image) plus one prose body, server-rendered by the original Astro app',
+        },
+        {
+          name: 'Category chip colour',
+          evidence: 'inline background-color on the chip (per-category), not a class',
+        },
+        {
+          name: 'Button icon roll on hover',
+          evidence: 'group/button translate-x custom properties on the back link, 300ms CSS transition',
+        },
+      ],
+      interactions: async (page) => {
+        const state = () =>
+          page.evaluate(() => ({
+            h1: document.querySelector('#page-path h1')?.textContent.trim(),
+            chip: document.querySelector('#page-path > section p.text-eyebrow-small')?.textContent.trim(),
+            summary: document.querySelector('#page-path > section p.text-h5')?.textContent.trim(),
+            body: [...document.querySelectorAll('#page-path > section:nth-of-type(2) p')].length,
+            back: new URL(document.querySelector('#page-path > section a').href).pathname.replace(/\/$/, ''),
+          }))
+        const out = { initial: await state() }
+        await page.evaluate(() => document.querySelector('#page-path > section a')?.scrollIntoView({ block: 'center' }))
+        await page.waitForTimeout(400)
+        const box = await page.evaluate(() => {
+          const a = document.querySelector('#page-path > section a')
+          const r = a.getBoundingClientRect()
+          return { x: r.x + r.width / 2, y: r.y + r.height / 2 }
+        })
+        await page.mouse.move(box.x, box.y)
+        await page.waitForTimeout(700)
+        out.hover = await page.evaluate(() => ({
+          spans: [...document.querySelectorAll('#page-path > section a span')].map((s) => getComputedStyle(s).transform),
+          text: [...document.querySelectorAll('#page-path > section a p')].map((p) => getComputedStyle(p).transform),
+        }))
+        return out
+      },
+    }
+  }
+}
+
+// -------------------------------------------------------- industry definitions
+// /industry/ renders an empty #page-path on the original, so only the shared
+// chrome is measured. The five verticals share one 14-block template (the
+// cybersecurity page adds the "Built for the Defenders" promo), so one factory
+// covers them all.
+
+defineIndustry()
+
+function defineIndustry() {
+  DEFINITIONS.industry = {
+    route: '/industry/',
+    out: 'reference/pages/industry',
+    landmarks: [
+      ['header', '[data-header]'],
+      ['path', '#page-path'],
+      ['footer', 'footer'],
+      ['footer-cat', '#footer-m', 0, true],
+    ],
+    motion: [],
+    mechanisms: [
+      {
+        name: 'Empty route',
+        evidence: 'The original renders /industry/ with nothing inside #page-path; the five verticals are linked from the mega menu, so header + footer are the whole page',
+      },
+    ],
+    interactions: async (page) =>
+      page.evaluate(() => ({
+        blocks: document.querySelectorAll('#page-path > *').length,
+        links: document.querySelectorAll('a[href]').length,
+        h1: document.querySelectorAll('h1').length,
+      })),
+  }
+
+  for (const vertical of INDUSTRY_SLUGS) {
+    DEFINITIONS[`industry/${vertical}`] = {
+      route: `/industry/${vertical}/`,
+      out: `reference/pages/industry-${vertical}`,
+      landmarks: [
+        ['header', '[data-header]'],
+        ['hero', '#page-path > :first-child'],
+        ['hero-h1', '#page-path h1'],
+        ['cover', '#page-path > section img'],
+        ['logos', 'mistral-section-slider-logo-scrolling'],
+        ['trusted', 'mistral-block-slideshow-cards-feature'],
+        ['capabilities', 'mistral-block-slideshow-media-feature'],
+        ['experts', 'mistral-section-cards-service'],
+        ['use-cases', 'mistral-block-slider-cards'],
+        ['closing', '#page-path > :last-child'],
+        ['footer', 'footer'],
+        ['footer-cat', '#footer-m', 0, true],
+      ],
+      motion: [['logos', 'mistral-section-slider-logo-scrolling']],
+      mechanisms: [
+        {
+          name: 'Static vertical landing page',
+          evidence: 'Fourteen captured blocks in one #page-path: hero, cover, trusted headline + cards, logo strip, sovereignty headline + cards, capabilities headline + tabbed media, experts headline + service cards, use-case headline + slider, closing CTA',
+        },
+        {
+          name: 'Logo strip + card sliders',
+          evidence: 'mistral-section-slider-logo-scrolling / mistral-block-slideshow-cards-feature / mistral-block-slider-cards are the original Swiper components, driven by the self-hosted runtime',
+        },
+        {
+          name: 'Scroll-reveal media',
+          evidence: 'data-loaded="false" on the cover frame, flipped by the original runtime once the WebP decodes (opacity/blur transition)',
+        },
+      ],
+      interactions: async (page) => {
+        const state = () =>
+          page.evaluate(() => ({
+            blocks: document.querySelectorAll('#page-path > *').length,
+            h1: document.querySelector('#page-path h1')?.textContent.trim(),
+            headlines: [...document.querySelectorAll('#page-path h2')].map((h) => h.textContent.trim()),
+            cards: document.querySelectorAll('mistral-section-cards-service .js-card-service').length,
+            slides: document.querySelectorAll('mistral-block-slider-cards .js-slider-item').length,
+          }))
+        const out = { initial: await state() }
+        const box = await page.evaluate(() => {
+          const a = document.querySelector('#page-path mistral-section-editorial-headline a')
+          if (!a) return null
+          a.scrollIntoView({ block: 'center' })
+          const r = a.getBoundingClientRect()
+          return { x: r.x + r.width / 2, y: r.y + r.height / 2 }
+        })
+        if (box) {
+          await page.mouse.move(box.x, box.y)
+          await page.waitForTimeout(600)
+        }
+        out.hover = await page.evaluate(() => {
+          const a = document.querySelector('#page-path mistral-section-editorial-headline a')
+          // `/customers?categories=…` 301s to `/customers/?categories=…` on the
+          // origin; the clone emits the resolved path, so compare that.
+          const href = a ? new URL(a.href) : null
+          return a
+            ? {
+                href: (href.pathname.replace(/\/$/, '') + (href.search || '')).replace(/^\/customers\?/, '/customers/?'),
+                spans: [...a.querySelectorAll('span')].map((s) => getComputedStyle(s).transform),
+              }
+            : null
+        })
+        return out
+      },
+    }
+  }
 }
 
 // ---------------------------------------------------------------- shared helpers
@@ -1070,9 +1319,14 @@ async function animationInventory(page) {
 
 const normLink = (u) => {
   const clean = u.replace(/^https?:\/\/(127\.0\.0\.1:4322|localhost:4322)/, 'https://mistral.ai')
-  // The detail hero links to `/use-cases`; the live site redirects that to the
-  // index and the clone emits the canonical trailing-slash path instead.
-  return clean === 'https://mistral.ai/use-cases' ? 'https://mistral.ai/use-cases/' : clean
+  // The detail hero links to `/use-cases`, and the customers slider links to
+  // `/customers/<slug>`; the live site 301s both to the trailing-slash path,
+  // which is what the clone emits (it ships without redirects). Compare the
+  // resolved target.
+  if (clean === 'https://mistral.ai/use-cases') return 'https://mistral.ai/use-cases/'
+  return clean
+    .replace(/^(https:\/\/mistral\.ai\/customers(?:\/[a-z0-9-]+)?)$/, '$1/')
+    .replace(/^(https:\/\/mistral\.ai\/customers)\?/, '$1/?')
 }
 
 // ------------------------------------------------------ use-cases filter matrix
@@ -1855,13 +2109,15 @@ async function runPage(browser, name, def, opts) {
     const qa = await qualityRun(ORIGIN_PAGE)
     const qb = await qualityRun(CLONE_PAGE)
     record('quality', `no console errors (${scheme})`, qb.errors.length === 0, `${qb.errors.length} (orig ${qa.errors.length}) ${qb.errors.slice(0, 2).join(' | ')}`)
-    // Some original pages ship a layout shift of their own (Vibe's hero does);
-    // for those the requirement is that the clone reproduces it, not that it
-    // beats the live site.
+    // Some original pages ship a layout shift of their own (Vibe's hero and the
+    // industry cover images do); for those the requirement is that the clone
+    // does not add shift on top of the original. A lower score is not a
+    // deviation — the resources arrive at different times (localhost vs CDN),
+    // so the reveal lands at a different point in the load.
     record(
       'quality',
-      `CLS ≤ 0.05 or matches original (${scheme})`,
-      qb.cls <= 0.05 || Math.abs(qb.cls - qa.cls) <= 0.01,
+      `CLS ≤ 0.05 or no worse than original (${scheme})`,
+      qb.cls <= 0.05 || qb.cls <= qa.cls + 0.01,
       `${qb.cls.toFixed(4)} (orig ${qa.cls.toFixed(4)})`,
     )
     record(
@@ -2100,7 +2356,7 @@ const all = argv.includes('--all') || pageArg === 'all'
 const names = all ? Object.keys(DEFINITIONS) : [pageArg]
 if (!names[0] || !DEFINITIONS[names[0]]) {
   console.error(
-    'usage: pnpm verify --page products|our-method|use-cases|sovereign-ai|products/vibe|products/studio|products/forge|cloud/inference|cloud/compute|use-cases/<slug>|all',
+    'usage: pnpm verify --page products|our-method|use-cases|sovereign-ai|products/vibe|products/studio|products/forge|cloud/inference|cloud/compute|customers|customers/<slug>|industry|industry/<vertical>|use-cases/<slug>|all',
   )
   process.exit(2)
 }

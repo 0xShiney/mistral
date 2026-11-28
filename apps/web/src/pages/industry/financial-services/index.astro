@@ -1,0 +1,52 @@
+---
+// /industry/financial-services/ — composition of the 14 blocks of #page-path, in the
+// original order. Markup lives verbatim in
+// src/markup/industry/markup/financial-services/ (see reference/industry-split.py); metadata in
+// src/content/industry.ts.
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import FinancialServicesHero from '../../../components/industry/FinancialServicesHero.astro'
+import FinancialServicesCover from '../../../components/industry/FinancialServicesCover.astro'
+import FinancialServicesTrustedHeadline from '../../../components/industry/FinancialServicesTrustedHeadline.astro'
+import FinancialServicesTrusted from '../../../components/industry/FinancialServicesTrusted.astro'
+import FinancialServicesLogos from '../../../components/industry/FinancialServicesLogos.astro'
+import FinancialServicesSovereigntyHeadline from '../../../components/industry/FinancialServicesSovereigntyHeadline.astro'
+import FinancialServicesSovereignty from '../../../components/industry/FinancialServicesSovereignty.astro'
+import FinancialServicesCapabilitiesHeadline from '../../../components/industry/FinancialServicesCapabilitiesHeadline.astro'
+import FinancialServicesCapabilities from '../../../components/industry/FinancialServicesCapabilities.astro'
+import FinancialServicesExpertsHeadline from '../../../components/industry/FinancialServicesExpertsHeadline.astro'
+import FinancialServicesExperts from '../../../components/industry/FinancialServicesExperts.astro'
+import FinancialServicesUseCasesHeadline from '../../../components/industry/FinancialServicesUseCasesHeadline.astro'
+import FinancialServicesUseCases from '../../../components/industry/FinancialServicesUseCases.astro'
+import FinancialServicesClosing from '../../../components/industry/FinancialServicesClosing.astro'
+import { FINANCIAL_SERVICES } from '../../../content/industry'
+---
+
+<Base
+  title={FINANCIAL_SERVICES.title}
+  description={FINANCIAL_SERVICES.description}
+  path={FINANCIAL_SERVICES.path}
+  image={FINANCIAL_SERVICES.image}
+  navSurface="secondary"
+  jsonLd={FINANCIAL_SERVICES.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <FinancialServicesHero />
+      <FinancialServicesCover />
+      <FinancialServicesTrustedHeadline />
+      <FinancialServicesTrusted />
+      <FinancialServicesLogos />
+      <FinancialServicesSovereigntyHeadline />
+      <FinancialServicesSovereignty />
+      <FinancialServicesCapabilitiesHeadline />
+      <FinancialServicesCapabilities />
+      <FinancialServicesExpertsHeadline />
+      <FinancialServicesExperts />
+      <FinancialServicesUseCasesHeadline />
+      <FinancialServicesUseCases />
+      <FinancialServicesClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

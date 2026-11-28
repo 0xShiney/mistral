@@ -7,6 +7,9 @@
  * that decides: cloned path -> local path, everything else -> absolute
  * https://mistral.ai URL (identical to the original's own link target).
  */
+import { CUSTOMER_STORIES } from './customers'
+import { INDUSTRY_VERTICALS } from './industry'
+
 export const ORIGIN = 'https://mistral.ai'
 
 export const ROUTES = {
@@ -21,6 +24,8 @@ export const ROUTES = {
   method: '/our-method/',
   useCases: '/use-cases/',
   sovereign: '/sovereign-ai/',
+  customers: '/customers/',
+  industry: '/industry/',
 
   // /use-cases/<slug>/ detail pages (see src/content/details.ts for metadata).
   'use-case/ai-fact-checking-for-live-broadcasts': '/use-cases/ai-fact-checking-for-live-broadcasts/',
@@ -45,14 +50,23 @@ export type RouteKey = keyof typeof ROUTES
 
 const CLONED = new Set<string>(Object.values(ROUTES))
 
+// /customers/<slug>/ pages are generated from the capture, so their paths come
+// from the registry rather than being listed here one by one.
+for (const story of CUSTOMER_STORIES) CLONED.add(story.path)
+for (const vertical of INDUSTRY_VERTICALS) CLONED.add(vertical.path)
+
 /** Local path for cloned routes, absolute original URL for everything else. */
 export function route(path: string): string {
   if (!path.startsWith('/')) return path
-  const clean = path.split('#')[0].split('?')[0]
-  if (CLONED.has(clean)) return path
-  // Detail hero links to `/use-cases` without the trailing slash; the live site
-  // redirects that to the index. Point it at the local route instead.
-  if (CLONED.has(clean + '/')) return clean + '/'
+  const at = path.search(/[?#]/)
+  const pathname = at === -1 ? path : path.slice(0, at)
+  const suffix = at === -1 ? '' : path.slice(at)
+  if (CLONED.has(pathname)) return path
+  // Detail heroes and the industry CTAs link to a cloned route without the
+  // trailing slash (`/use-cases`, `/customers?categories=energy`); the live site
+  // 301s those to the slash form. Point them at the local route, query and hash
+  // intact.
+  if (CLONED.has(pathname + '/')) return pathname + '/' + suffix
   return ORIGIN + path
 }
 

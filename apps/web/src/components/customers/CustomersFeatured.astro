@@ -1,0 +1,9 @@
+---
+// Section markup captured verbatim from https://mistral.ai/customers/
+// Behaviour (the featured slider and the post grid) comes from the original
+// client runtime in public/js/ — this component only emits the DOM.
+import RawSection from '../RawSection.astro'
+import markup from '../../markup/customers/markup/featured.html?raw'
+---
+
+<RawSection html={markup} />

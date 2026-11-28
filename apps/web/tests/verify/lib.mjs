@@ -20,6 +20,11 @@ export async function openPage(browser, { width = 1440, height = 900, scheme = '
     deviceScaleFactor: 1,
     reducedMotion: 'no-preference',
   })
+  // The original loads the Axeptio consent widget (and GTM) from third parties.
+  // The clone ships no consent/analytics SDKs, and the widget mounts a fixed
+  // overlay at whatever moment its script arrives, which would otherwise decide
+  // a pixel diff. Block the requests so neither run renders it.
+  await context.route(/axeptio|googletagmanager|hubspot|contentsquare|netlify\.com\/\.netlify/i, (route) => route.abort())
   const page = await context.newPage()
   page.on('pageerror', (e) => console.log('   [pageerror]', e.message))
   // Measurement-only shim: this Chromium build rejects the legacy
@@ -76,6 +81,15 @@ export async function settle(page, url, scheme) {
       await new Promise((r) => setTimeout(r, 120))
     }
     window.scrollTo(0, 0)
+  })
+  // The original loads the Axeptio consent widget from a third-party script,
+  // which mounts a fixed overlay at unpredictable moments and would otherwise
+  // dominate a pixel diff. The clone ships no consent SDK (no analytics), so
+  // the widget is removed on both sides before anything is measured.
+  await page.evaluate(() => {
+    for (const el of document.querySelectorAll('[id^="axeptio"], [class*="axeptio"]')) {
+      el.closest('#axeptio_overlay')?.remove() ?? el.remove()
+    }
   })
   await page.waitForTimeout(400)
 }

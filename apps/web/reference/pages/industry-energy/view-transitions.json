@@ -1,0 +1,188 @@
+{
+  "orig": {
+    "steps": [
+      {
+        "path": "/",
+        "headerBg": "rgb(251, 251, 248)",
+        "active": false,
+        "h1": "Mistral is #1 in Sovereign AI.",
+        "animations": 1,
+        "mainNodes": 998
+      },
+      {
+        "path": "/sovereign-ai/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereignty is existential.",
+        "animations": 1,
+        "mainNodes": 505
+      },
+      {
+        "path": "/products/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Build your AI with Mistral.",
+        "animations": 5,
+        "mainNodes": 121
+      },
+      {
+        "path": "/our-method/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Partnering with ambitious enterprises at the frontier.",
+        "animations": 3,
+        "mainNodes": 562
+      },
+      {
+        "path": "/use-cases/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereign AI in practice.",
+        "animations": 3,
+        "mainNodes": 715
+      },
+      {
+        "path": "/research/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": false,
+        "h1": "We advance the open frontier.",
+        "animations": 3,
+        "mainNodes": 2663
+      },
+      {
+        "path": "/",
+        "headerBg": "rgb(251, 251, 248)",
+        "active": false,
+        "h1": "Mistral is #1 in Sovereign AI.",
+        "animations": 1,
+        "mainNodes": 998
+      }
+    ],
+    "back": [
+      {
+        "path": "/research/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": false,
+        "h1": "We advance the open frontier.",
+        "animations": 3,
+        "mainNodes": 2663
+      },
+      {
+        "path": "/use-cases/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereign AI in practice.",
+        "animations": 3,
+        "mainNodes": 715
+      },
+      {
+        "path": "/our-method/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Partnering with ambitious enterprises at the frontier.",
+        "animations": 3,
+        "mainNodes": 562
+      }
+    ],
+    "alive": {
+      "path": "/use-cases/",
+      "before": "16",
+      "after": "3",
+      "listenersWork": true,
+      "headerBg": "rgb(245, 244, 239)"
+    }
+  },
+  "clone": {
+    "steps": [
+      {
+        "path": "/",
+        "headerBg": "rgb(251, 251, 248)",
+        "active": false,
+        "h1": "Mistral is #1 in Sovereign AI.",
+        "animations": 1,
+        "mainNodes": 998
+      },
+      {
+        "path": "/sovereign-ai/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereignty is existential.",
+        "animations": 1,
+        "mainNodes": 505
+      },
+      {
+        "path": "/products/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Build your AI with Mistral.",
+        "animations": 5,
+        "mainNodes": 121
+      },
+      {
+        "path": "/our-method/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Partnering with ambitious enterprises at the frontier.",
+        "animations": 3,
+        "mainNodes": 562
+      },
+      {
+        "path": "/use-cases/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereign AI in practice.",
+        "animations": 3,
+        "mainNodes": 715
+      },
+      {
+        "path": "/research/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": false,
+        "h1": "We advance the open frontier.",
+        "animations": 3,
+        "mainNodes": 2663
+      },
+      {
+        "path": "/",
+        "headerBg": "rgb(251, 251, 248)",
+        "active": false,
+        "h1": "Mistral is #1 in Sovereign AI.",
+        "animations": 1,
+        "mainNodes": 998
+      }
+    ],
+    "back": [
+      {
+        "path": "/research/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": false,
+        "h1": "We advance the open frontier.",
+        "animations": 3,
+        "mainNodes": 2663
+      },
+      {
+        "path": "/use-cases/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Sovereign AI in practice.",
+        "animations": 3,
+        "mainNodes": 715
+      },
+      {
+        "path": "/our-method/",
+        "headerBg": "rgb(245, 244, 239)",
+        "active": true,
+        "h1": "Partnering with ambitious enterprises at the frontier.",
+        "animations": 3,
+        "mainNodes": 562
+      }
+    ],
+    "alive": {
+      "path": "/use-cases/",
+      "before": "16",
+      "after": "3",
+      "listenersWork": true,
+      "headerBg": "rgb(245, 244, 239)"
+    }
+  }
+}

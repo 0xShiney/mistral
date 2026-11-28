@@ -1,0 +1,54 @@
+---
+// /industry/cybersecurity/ — composition of the 15 blocks of #page-path, in the
+// original order. Markup lives verbatim in
+// src/markup/industry/markup/cybersecurity/ (see reference/industry-split.py); metadata in
+// src/content/industry.ts.
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import CybersecurityHero from '../../../components/industry/CybersecurityHero.astro'
+import CybersecurityCover from '../../../components/industry/CybersecurityCover.astro'
+import CybersecurityTrustedHeadline from '../../../components/industry/CybersecurityTrustedHeadline.astro'
+import CybersecurityPromo from '../../../components/industry/CybersecurityPromo.astro'
+import CybersecurityTrusted from '../../../components/industry/CybersecurityTrusted.astro'
+import CybersecurityLogos from '../../../components/industry/CybersecurityLogos.astro'
+import CybersecuritySovereigntyHeadline from '../../../components/industry/CybersecuritySovereigntyHeadline.astro'
+import CybersecuritySovereignty from '../../../components/industry/CybersecuritySovereignty.astro'
+import CybersecurityCapabilitiesHeadline from '../../../components/industry/CybersecurityCapabilitiesHeadline.astro'
+import CybersecurityCapabilities from '../../../components/industry/CybersecurityCapabilities.astro'
+import CybersecurityExpertsHeadline from '../../../components/industry/CybersecurityExpertsHeadline.astro'
+import CybersecurityExperts from '../../../components/industry/CybersecurityExperts.astro'
+import CybersecurityUseCasesHeadline from '../../../components/industry/CybersecurityUseCasesHeadline.astro'
+import CybersecurityUseCases from '../../../components/industry/CybersecurityUseCases.astro'
+import CybersecurityClosing from '../../../components/industry/CybersecurityClosing.astro'
+import { CYBERSECURITY } from '../../../content/industry'
+---
+
+<Base
+  title={CYBERSECURITY.title}
+  description={CYBERSECURITY.description}
+  path={CYBERSECURITY.path}
+  image={CYBERSECURITY.image}
+  navSurface="secondary"
+  jsonLd={CYBERSECURITY.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <CybersecurityHero />
+      <CybersecurityCover />
+      <CybersecurityTrustedHeadline />
+      <CybersecurityPromo />
+      <CybersecurityTrusted />
+      <CybersecurityLogos />
+      <CybersecuritySovereigntyHeadline />
+      <CybersecuritySovereignty />
+      <CybersecurityCapabilitiesHeadline />
+      <CybersecurityCapabilities />
+      <CybersecurityExpertsHeadline />
+      <CybersecurityExperts />
+      <CybersecurityUseCasesHeadline />
+      <CybersecurityUseCases />
+      <CybersecurityClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

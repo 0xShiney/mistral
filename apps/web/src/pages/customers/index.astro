@@ -1,0 +1,36 @@
+---
+// /customers/ — composition of the 3 top-level blocks of #customer-stories, in
+// the original order. Markup for each block lives verbatim in
+// src/markup/customers/markup/ (see reference/customers-split.py).
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import CustomersHero from '../../components/customers/CustomersHero.astro'
+import CustomersFeatured from '../../components/customers/CustomersFeatured.astro'
+import CustomersGrid from '../../components/customers/CustomersGrid.astro'
+---
+
+<Base
+  title="Customer stories | Mistral"
+  description="We help customers across the world transform their operations, products, and services with AI."
+  path="/customers/"
+  navActive="/customers/"
+  navSurface="secondary"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://mistral.ai/customers/',
+    name: 'Bringing customers to the frontier.',
+    mainEntityOfPage: 'https://mistral.ai/customers/',
+    datePublished: '2026-05-12T15:07:05.522Z',
+    dateModified: '2026-09-15T15:22:00.691Z',
+  }}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="customer-stories" data-taxi-view>
+      <CustomersHero />
+      <CustomersFeatured />
+      <CustomersGrid />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

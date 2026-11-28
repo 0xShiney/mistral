@@ -1,0 +1,42 @@
+---
+// /customers/<slug>/ — one CMS template rendered for each captured story.
+// Markup lives verbatim in src/markup/customers-detail/<slug>.html (see
+// reference/customers-split.py); metadata comes from src/content/customers.ts.
+import Base from '../../layouts/Base.astro'
+import GlobalFooter from '../../components/GlobalFooter.astro'
+import CustomerStory from '../../components/customers/CustomerStory.astro'
+import { CUSTOMER_STORIES } from '../../content/customers'
+
+export function getStaticPaths() {
+  return CUSTOMER_STORIES.map((story) => ({ params: { slug: story.slug }, props: { story } }))
+}
+
+const pages = import.meta.glob('../../markup/customers-detail/*.html', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>
+
+const { story } = Astro.props
+const markup = pages[`../../markup/customers-detail/${story.slug}.html`]
+if (!markup) throw new Error(`no captured markup for ${story.path}`)
+---
+
+<Base
+  title={story.title}
+  description={story.description}
+  path={story.path}
+  image={story.image}
+  imageWidth={story.imageWidth}
+  imageHeight={story.imageHeight}
+  navActive="/customers/"
+  navSurface="secondary"
+  jsonLd={story.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <CustomerStory markup={markup} />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

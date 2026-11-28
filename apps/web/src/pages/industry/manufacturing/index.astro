@@ -1,0 +1,52 @@
+---
+// /industry/manufacturing/ — composition of the 14 blocks of #page-path, in the
+// original order. Markup lives verbatim in
+// src/markup/industry/markup/manufacturing/ (see reference/industry-split.py); metadata in
+// src/content/industry.ts.
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import ManufacturingHero from '../../../components/industry/ManufacturingHero.astro'
+import ManufacturingCover from '../../../components/industry/ManufacturingCover.astro'
+import ManufacturingTrustedHeadline from '../../../components/industry/ManufacturingTrustedHeadline.astro'
+import ManufacturingTrusted from '../../../components/industry/ManufacturingTrusted.astro'
+import ManufacturingLogos from '../../../components/industry/ManufacturingLogos.astro'
+import ManufacturingSovereigntyHeadline from '../../../components/industry/ManufacturingSovereigntyHeadline.astro'
+import ManufacturingSovereignty from '../../../components/industry/ManufacturingSovereignty.astro'
+import ManufacturingCapabilitiesHeadline from '../../../components/industry/ManufacturingCapabilitiesHeadline.astro'
+import ManufacturingCapabilities from '../../../components/industry/ManufacturingCapabilities.astro'
+import ManufacturingExpertsHeadline from '../../../components/industry/ManufacturingExpertsHeadline.astro'
+import ManufacturingExperts from '../../../components/industry/ManufacturingExperts.astro'
+import ManufacturingUseCasesHeadline from '../../../components/industry/ManufacturingUseCasesHeadline.astro'
+import ManufacturingUseCases from '../../../components/industry/ManufacturingUseCases.astro'
+import ManufacturingClosing from '../../../components/industry/ManufacturingClosing.astro'
+import { MANUFACTURING } from '../../../content/industry'
+---
+
+<Base
+  title={MANUFACTURING.title}
+  description={MANUFACTURING.description}
+  path={MANUFACTURING.path}
+  image={MANUFACTURING.image}
+  navSurface="secondary"
+  jsonLd={MANUFACTURING.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <ManufacturingHero />
+      <ManufacturingCover />
+      <ManufacturingTrustedHeadline />
+      <ManufacturingTrusted />
+      <ManufacturingLogos />
+      <ManufacturingSovereigntyHeadline />
+      <ManufacturingSovereignty />
+      <ManufacturingCapabilitiesHeadline />
+      <ManufacturingCapabilities />
+      <ManufacturingExpertsHeadline />
+      <ManufacturingExperts />
+      <ManufacturingUseCasesHeadline />
+      <ManufacturingUseCases />
+      <ManufacturingClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

@@ -1,0 +1,52 @@
+---
+// /industry/energy/ — composition of the 14 blocks of #page-path, in the
+// original order. Markup lives verbatim in
+// src/markup/industry/markup/energy/ (see reference/industry-split.py); metadata in
+// src/content/industry.ts.
+import Base from '../../../layouts/Base.astro'
+import GlobalFooter from '../../../components/GlobalFooter.astro'
+import EnergyHero from '../../../components/industry/EnergyHero.astro'
+import EnergyCover from '../../../components/industry/EnergyCover.astro'
+import EnergyTrustedHeadline from '../../../components/industry/EnergyTrustedHeadline.astro'
+import EnergyTrusted from '../../../components/industry/EnergyTrusted.astro'
+import EnergyLogos from '../../../components/industry/EnergyLogos.astro'
+import EnergySovereigntyHeadline from '../../../components/industry/EnergySovereigntyHeadline.astro'
+import EnergySovereignty from '../../../components/industry/EnergySovereignty.astro'
+import EnergyCapabilitiesHeadline from '../../../components/industry/EnergyCapabilitiesHeadline.astro'
+import EnergyCapabilities from '../../../components/industry/EnergyCapabilities.astro'
+import EnergyExpertsHeadline from '../../../components/industry/EnergyExpertsHeadline.astro'
+import EnergyExperts from '../../../components/industry/EnergyExperts.astro'
+import EnergyUseCasesHeadline from '../../../components/industry/EnergyUseCasesHeadline.astro'
+import EnergyUseCases from '../../../components/industry/EnergyUseCases.astro'
+import EnergyClosing from '../../../components/industry/EnergyClosing.astro'
+import { ENERGY } from '../../../content/industry'
+---
+
+<Base
+  title={ENERGY.title}
+  description={ENERGY.description}
+  path={ENERGY.path}
+  image={ENERGY.image}
+  navSurface="secondary"
+  jsonLd={ENERGY.jsonLd}
+>
+  <main id="main" data-taxi tabindex="-1">
+    <div id="page-path" data-taxi-view>
+      <EnergyHero />
+      <EnergyCover />
+      <EnergyTrustedHeadline />
+      <EnergyTrusted />
+      <EnergyLogos />
+      <EnergySovereigntyHeadline />
+      <EnergySovereignty />
+      <EnergyCapabilitiesHeadline />
+      <EnergyCapabilities />
+      <EnergyExpertsHeadline />
+      <EnergyExperts />
+      <EnergyUseCasesHeadline />
+      <EnergyUseCases />
+      <EnergyClosing />
+    </div>
+  </main>
+  <GlobalFooter />
+</Base>

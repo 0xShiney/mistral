@@ -1,0 +1,72 @@
+{
+  "inventory": [],
+  "cloneInventory": [],
+  "mechanisms": [
+    {
+      "name": "Empty route",
+      "evidence": "The original renders /industry/ with nothing inside #page-path; the five verticals are linked from the mega menu, so header + footer are the whole page"
+    }
+  ],
+  "matrix": [
+    {
+      "scheme": "light",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "light",
+      "width": 768,
+      "pixelDiffPct": 0.0077
+    },
+    {
+      "scheme": "light",
+      "width": 1024,
+      "pixelDiffPct": 0.0058
+    },
+    {
+      "scheme": "light",
+      "width": 1440,
+      "pixelDiffPct": 0.0041
+    },
+    {
+      "scheme": "light",
+      "width": 1920,
+      "pixelDiffPct": 0.0031
+    },
+    {
+      "scheme": "light",
+      "width": 2560,
+      "pixelDiffPct": 0.0023
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "pixelDiffPct": 0
+    },
+    {
+      "scheme": "dark",
+      "width": 768,
+      "pixelDiffPct": 0.0077
+    },
+    {
+      "scheme": "dark",
+      "width": 1024,
+      "pixelDiffPct": 0.0058
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "pixelDiffPct": 0.0041
+    },
+    {
+      "scheme": "dark",
+      "width": 1920,
+      "pixelDiffPct": 0.0031
+    },
+    {
+      "scheme": "dark",
+      "width": 2560,
+      "pixelDiffPct": 0.0023
+    }
+  ]
+}

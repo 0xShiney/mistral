@@ -215,3 +215,61 @@ captures contained 526 inline `<svg>` occurrences and only 113 distinct drawings
   pages were diffed against the pre-refactor build with a canonicaliser (element tree + attributes +
   text); 0 structural and 0 text differences. The only byte-level change is that Astro no longer
   re-compresses whitespace inside the SVG payloads, which the browser ignores.
+
+## Customer stories and industry verticals
+
+Two route families were cloned after the landings. Both reuse the homepage stack unchanged — same
+two stylesheets, same ClientRouter entry, same self-hosted lazy chunks, no new dependency and no
+island.
+
+### /customers/
+
+| measured | value |
+| --- | --- |
+| routes | 43 (`/customers/` + 42 `/customers/<slug>/`) |
+| index blocks | 3 (`mistral-section-hero-collection`, `mistral-block-slider-cards-collection`, `mistral-section-posts`) |
+| story template | 2 blocks (hero grid + prose body) on all 42 pages |
+| grid | 42 cards server-rendered (`data-filtering="false"`, `data-post-per-page="-1"`) |
+| featured slider | 6 stories, Swiper (`slider-cards-collection.*.js`) |
+| media | 42 logo pairs (black/white SVG), 7 story thumbnails with four `srcset` widths, `customer-story-fallback.webp` |
+| per-story og:image | 7 pages ship their own thumbnail; the rest use the site-wide card |
+
+- Captured by `reference/customers-split.py` into `src/markup/customers/markup/` (3 files) and
+  `src/markup/customers-detail/` (42 files), emitted through `Customers{Hero,Featured,Grid}.astro`
+  and the shared `CustomerStory.astro`.
+- Metadata lives in `src/content/customers.ts`; the registry also drives `routes.ts`, so every card
+  link now navigates in-app.
+- The live slider links to `/customers/<slug>` and the origin 301s it to the slash form; the clone
+  ships without redirects, so the splitter writes the resolved path (`route()` re-attaches queries,
+  which is how the industry CTAs keep `?categories=…`).
+
+### /industry/
+
+| measured | value |
+| --- | --- |
+| routes | 6 (`/industry/` + 5 verticals) |
+| `/industry/` | empty `#page-path` on the original — header + footer only |
+| vertical blocks | 14 (`cybersecurity` 15: adds the "Built for the Defenders" promo) |
+| shared block order | hero → cover → trusted headline + card slideshow → logo strip → sovereignty headline + card slideshow → capabilities headline + tabbed media → experts headline + service cards → use-case headline + slider → closing |
+| components | 71 thin wrappers in `src/components/industry/` |
+| metadata | `src/content/industry.ts` (title, description, WebPage JSON-LD per route) |
+
+### Verification of the two families
+
+| route | checks | worst pixel diff |
+| --- | --- | --- |
+| `/customers/` | 103 (6 widths × 2 schemes) | 0.000 % |
+| `/customers/airbus/` | 102 (6 widths × 2 schemes) | 0.000 % |
+| `/customers/hsbc/` | 102 (6 widths × 2 schemes) | 0.000 % |
+| `/industry/` | 102 (6 widths × 2 schemes) | 0.008 % |
+| `/industry/cybersecurity/` | 103 (6 widths × 2 schemes) | 0.140 % |
+| the other four verticals (energy, financial-services, manufacturing, public-sector) | 33 each (1440 px / light) | 0.005 – 0.118 % |
+
+Every route was also diffed element-by-element against the live server HTML with a canonicaliser
+(element tree + attributes + text, URLs normalised for the `/media/` rewrite and the origin's 301
+targets): 0 differences across all 43 customer pages and all 6 industry pages, and 0 differences in
+`<title>`, description, canonical, og/twitter tags and JSON-LD.
+
+The harness now blocks the third-party consent/analytics requests (Axeptio, GTM, HubSpot,
+Contentsquare, Netlify RUM) in both contexts: the clone ships none of them by design, and the
+consent overlay otherwise mounts at an arbitrary moment on the original and decides a pixel diff.

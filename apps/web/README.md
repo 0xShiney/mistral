@@ -3,7 +3,7 @@
 > with `pnpm dev:web` from the repo root (port 4321) or
 > `pnpm --filter @mistral-clone/web ...` for any script below.
 
-# mistral.ai — Astro reproduction (27 routes)
+# mistral.ai — Astro reproduction (76 routes)
 
 A pixel- and behaviour-faithful reproduction of the [mistral.ai](https://mistral.ai/) homepage plus
 [`/research/`](https://mistral.ai/research/), [`/products/`](https://mistral.ai/products/),
@@ -13,8 +13,11 @@ A pixel- and behaviour-faithful reproduction of the [mistral.ai](https://mistral
 [`/cloud/inference/`](https://mistral.ai/cloud/inference/),
 [`/cloud/compute/`](https://mistral.ai/cloud/compute/),
 [`/our-method/`](https://mistral.ai/our-method/), [`/use-cases/`](https://mistral.ai/use-cases/),
-all 16 [`/use-cases/<slug>/`](https://mistral.ai/use-cases/) detail pages and
-[`/sovereign-ai/`](https://mistral.ai/sovereign-ai/), built on the same architecture as the original:
+all 16 [`/use-cases/<slug>/`](https://mistral.ai/use-cases/) detail pages,
+[`/sovereign-ai/`](https://mistral.ai/sovereign-ai/) and
+[`/customers/`](https://mistral.ai/customers/) with all 42 of its customer stories,
+[`/industry/`](https://mistral.ai/industry/) with its five verticals, built on the same architecture
+as the original:
 **Astro 5, static output, zero framework islands, custom elements + GSAP/Matter.js/Swiper for motion**.
 
 This is a design study. Mistral AI, the Mistral logo, the customer logos (AXA, ASML, Cisco,
@@ -38,6 +41,11 @@ pnpm verify --page products/studio       # /products/studio/
 pnpm verify --page products/forge        # /products/forge/
 pnpm verify --page cloud/inference       # /cloud/inference/
 pnpm verify --page cloud/compute         # /cloud/compute/
+pnpm verify --page customers            # /customers/ (collection index)
+pnpm verify --page customers/<slug>     # one customer story, e.g. customers/hsbc
+pnpm verify --page industry             # /industry/ (header + footer only)
+pnpm verify --page industry/<vertical>  # cybersecurity|energy|financial-services|
+                                        # manufacturing|public-sector
 pnpm verify --page use-cases/<slug>       # one /use-cases/<slug>/ detail page
 pnpm verify --all                # every cloned content route in one browser session
 ```
@@ -72,9 +80,17 @@ src/
   pages/cloud/compute/index.astro     9 blocks: hero, media, quotes, infrastructure, controls,
                                       guarantees, closing
   pages/sovereign-ai/index.astro  7 blocks: hero, pinned scroll story, layers, path, closing
+  pages/customers/index.astro     3 blocks: collection hero, featured slider, post grid
+  pages/customers/[slug].astro    the 42 customer stories, one CMS template + getStaticPaths
+  pages/industry/index.astro      the empty /industry/ route (header + footer)
+  pages/industry/<vertical>/index.astro
+                                  the five verticals, 14 blocks each (cybersecurity 15)
   content/routes.ts           route registry: local path for cloned routes, live URL otherwise
   content/details.ts          generated metadata registry for Vibe, Studio, Forge, Inference,
                               Compute and the 16 use-case details (title, description, JSON-LD)
+  content/customers.ts        generated metadata registry for the 42 customer stories, plus the
+                              per-story og:image when the original ships a thumbnail
+  content/industry.ts         generated metadata registry for /industry/ and its five verticals
   content/research/           typed content model generated from the same capture
                               (publications.ts, models.ts, research-areas.ts, articles.ts)
   markup/research/markup/      the original's server markup per section, byte-for-byte
@@ -84,6 +100,10 @@ src/
   markup/{studio,forge,inference,compute}/markup/
                               the same for the four product/cloud landing pages
   markup/use-cases-detail/    one verbatim file per /use-cases/<slug>/ page
+  markup/customers/markup/    the same for /customers/ (hero, featured, grid)
+  markup/customers-detail/    one verbatim file per /customers/<slug>/ story
+  markup/industry/markup/<vertical>/
+                              one verbatim file per block of each industry vertical
                               (captures hold `<!--svg:Name-->` markers, see svg/ below)
   svg/                        one file per distinct inline SVG, grouped by page
     <page>/*.svg              arrow-up-right.svg, studio-hero-01.svg, …
@@ -104,6 +124,9 @@ src/
                               one zero-JS wrapper per captured section of the four landings
     use-cases/UseCaseDetail.astro
                               one wrapper shared by all 16 use-case detail pages
+    customers/                 three /customers/ wrappers + CustomerStory.astro,
+                              shared by all 42 stories
+    industry/                  71 wrappers, one per block of the five verticals
   styles/base.css             original compiled stylesheet (theme tokens, fonts, Tailwind utilities)
   styles/page.css             original page stylesheet (identical for both routes)
 public/
@@ -118,15 +141,20 @@ reference/                    recon + measured data + verification reports
   research-split.py           capture → src/markup/research/markup/*.html (+ wrappers)
   page-split.py               capture → src/markup/<page>/markup/*.html (+ wrappers), the detail
                               markup and src/content/details.ts
+  customers-split.py          the same for /customers/ (3 blocks) and the 42 stories
+                              (src/markup/customers-detail/, src/content/customers.ts)
+  industry-split.py           the same for the five /industry/ verticals (71 blocks,
+                              src/content/industry.ts)
   split-svgs.py               inline <svg> → src/svg/*.svg + components/svg/*.astro + markers
                               (run after page-split.py / research-split.py)
   download-assets.mjs         Playwright asset downloader for every cloned route
   research-data.py            capture → src/data/research/*.ts
 
 Local-only (git-ignored, regenerated by a verification run): `reference/screenshots/` and each
-`reference/pages/*/screenshots/` directory, plus the raw captures `reference/original*.html` and
-`reference/original-usecases-detail/` (re-`curl` them before re-running `page-split.py` or the
-`research-*.py` scripts).
+`reference/pages/*/screenshots/` directory, plus the raw captures `reference/original*.html`,
+`reference/original-usecases-detail/`, `reference/original-customers-detail/` and
+`reference/original-industry-detail/` (re-`curl` them before re-running `page-split.py`,
+`customers-split.py`, `industry-split.py` or the `research-*.py` scripts).
 tests/verify/                 Playwright harness (run.mjs, site.mjs, research.mjs), static server
 ```
 
@@ -234,7 +262,7 @@ sections per width/scheme), `navbar-states.{light,dark}.json` (25 px sweep), `st
 `/research/` because that route is cloned; `route('/about/')` returns `https://mistral.ai/about/`
 because it is not. The navbar and footer call `route()` for every link, every captured section is
 post-processed with `rewriteHrefs()` on the way out, and `Base.astro` builds canonical/hreflang/og:url
-from the same `path` prop. All 27 cloned routes therefore stay in-app `ClientRouter` transitions in
+from the same `path` prop. All 76 cloned routes therefore stay in-app `ClientRouter` transitions in
 any order (including back/forward), while any uncloned destination leaves the clone for the live site.
 The detail hero links to `/use-cases` without a trailing slash (the live site redirects it); `route()`
 maps it to the cloned `/use-cases/` route.
@@ -243,7 +271,8 @@ The navbar's current-section state is server-rendered, exactly like the original
 surface is `bg-surface-brand-primary` and no nav item is active; on `/research/` the surface is
 `bg-surface-brand-secondary` and the “Research” item carries `bg-surface-brand-primary`. Every
 product, use-case and detail route uses the same surface with the “Sovereign AI” item (nav index 1)
-active — except `/cloud/inference/` and `/cloud/compute/`, which mark the “Cloud” item (nav index 2).
+active — except `/cloud/inference/` and `/cloud/compute/` (nav index 2, “Cloud”) and `/customers/`
+plus every customer story (nav index 3, “Customers”).
 The dropdown sub-items carry no active state in the original, so none is added.
 
 ## /research/ specifics
@@ -264,8 +293,8 @@ The dropdown sub-items carry no active state in the original, so none is added.
 
 ## Known deviations
 
-1. **Uncloned routes are external.** Clicking `/about/`, `/news/…`, `/customers/` etc.
-   navigates to `mistral.ai` instead of a local page, by design (only the 27 routes above are
+1. **Uncloned routes are external.** Clicking `/about/`, `/news/…`, `/partners/` etc.
+   navigates to `mistral.ai` instead of a local page, by design (only the 76 routes above are
    reproduced). Outbound article and arXiv links keep their original targets.
 2. **WebP location.** Hashed WebP files are served from `/media/` instead of `/_astro/` (build-dir
    collision), with identical filenames and `srcset` widths.
@@ -273,8 +302,17 @@ The dropdown sub-items carry no active state in the original, so none is added.
    `/images/*.gif` sources; the clone drops it (static build, no deployment id). Bytes and pixels are
    unaffected.
 4. **Consent UI.** Not reproduced because it never rendered in the captured environment; the
-   original's cookie/consent/analytics scripts are intentionally excluded.
-5. Every other visual/interaction difference found by the harness is zero at the time of writing;
+   original's cookie/consent/analytics scripts are intentionally excluded. Because the third-party
+   Axeptio widget does appear on the live site at unpredictable moments, the harness removes it from
+   both sides before measuring.
+5. **Customer trailing slashes.** The live `/customers/` slider links to `/customers/<slug>` (no
+   slash) and the origin 301s that to `/customers/<slug>/`; the industry pages link to
+   `/customers?categories=<vertical>/`, which 301s to `/customers/?categories=<vertical>/`. The
+   clone ships without redirects, so `customers-split.py` writes the canonical slash into its
+   captures, `route()` keeps the query when it normalises an unclonable linked path, and the
+   harness compares the resolved target. Same for the “Back to Customers” link
+   (`/customers` → `/customers/`).
+6. Every other visual/interaction difference found by the harness is zero at the time of writing;
    residual pixel deltas are confined to regions that are continuously animated (pixel-garden,
    marquee phase, Matter.js tags, GIF frames, the hero's 2 s arrow loop), which is expected for two
    independent runs.
@@ -321,6 +359,12 @@ covered: two blocks (hero + Challenge/Solution/Result body with a sticky summary
 (`ai-for-code-review`) and several embed a Storylane demo iframe; both are kept verbatim, and the
 iframe's own vendor warning is excluded from the console-error check on both sites. Titles,
 descriptions and each page's own JSON-LD graph are generated into `src/content/details.ts`.
+- **`/customers/<slug>/`** — one CMS template rendered for the 42 stories through
+  `src/pages/customers/[slug].astro`. Two blocks everywhere: a hero grid (name, inline-coloured
+  category chip, black/white logo pair, summary, back link, read time, cover image or the
+  `customer-story-fallback.webp` placeholder) and one prose body. Captures land in
+  `src/markup/customers-detail/`, shared by `CustomerStory.astro`; titles, descriptions, JSON-LD and
+  the seven per-story social cards are generated into `src/content/customers.ts`.
 
 ## Product and cloud landing pages
 
@@ -346,6 +390,40 @@ and the closing CTA.
 Metadata (title, description, JSON-LD) for each is generated into `src/content/details.ts` by
 `reference/page-split.py`; every page's header surface is `secondary`, matching the state the live
 runtime applies.
+
+## /customers/
+
+Three blocks under `#customer-stories`, captured verbatim into `src/markup/customers/markup/` and
+emitted by the three wrappers in `src/components/customers/`:
+
+- **Hero** — `mistral-section-hero-collection` with the SplitText `mistral-atom-text-hero-title`
+  (sr-only h1 + aria-hidden visible copy) and the intro paragraph. No runtime behaviour of its own.
+- **Featured** — `mistral-block-slider-cards-collection` (Swiper): six featured stories in one
+  draggable track, each with a gradient scrim, dark/light logo pair, category chip and cover image.
+  The slider is driven by the original's `slider-cards-collection.*.js`.
+- **Grid** — `mistral-section-posts` with `data-filtering="false"`, `data-load-more="false"` and
+  `data-post-per-page="-1"`: all 42 cards are server-rendered (no filter UI, no pagination), so the
+  page is static HTML plus `posts.*.js` wiring the card hover/reveal.
+
+Assets: the 42 logo pairs, the seven story thumbnails (with their four `srcset` widths) and the
+fallback placeholder are downloaded by `reference/download-assets.mjs` into `public/`, keeping the
+original `/cms-media/` and `/media/` paths.
+
+## /industry/
+
+`/industry/` is a real route on the original but renders **nothing** inside `#page-path` — clicking
+“Industry” in the mega menu lands on a page with only the header and footer, and the five vertical
+sub-items carry the content. Both cases are cloned:
+
+- **`/industry/`** — header + footer only, metadata (title, description, WebPage JSON-LD) generated
+  into `src/content/industry.ts`.
+- **`/industry/cybersecurity|energy|financial-services|manufacturing|public-sector/`** — 14 blocks
+  each (cybersecurity adds the “Built for the Defenders” promo after the logo strip). Four verticals
+  share one block order: hero, cover image, “Trusted by …” headline + card slideshow, logo strip,
+  sovereignty headline + card slideshow, capabilities headline + tabbed media feature, experts
+  headline + service cards, use-case headline + slider, closing CTA. Captured per block into
+  `src/markup/industry/markup/<vertical>/` and emitted by 71 thin wrappers in
+  `src/components/industry/`; all motion comes from the original runtime.
 
 ## Verification
 
@@ -384,8 +462,26 @@ runtime applies.
   grid, optional related-use-case slider, hover state of the back/CTA buttons. `ai-for-customer-support`
   was run at the full six-width × two-scheme matrix (102 checks); the other 15 pages were re-run at
   1440 px / light with the identical probe, since they share the template and differ only in content.
-- `pnpm verify --all` now runs all 25 content routes (four index pages + Vibe, Studio, Forge,
-  Inference, Compute + 16 detail pages) in one browser session.
+- `/customers/` — the collection index: full six-width × two-scheme matrix, the shared chrome probes,
+  plus the card count (42), the six featured slider targets and the card hover state (103 checks,
+  worst pixel diff 0.000 %).
+- `/customers/<slug>/` — the shared story template: hero grid, chip text, summary, body paragraph
+  count, the back link's target and its hover roll. `airbus` (fallback placeholder, shortest body)
+  and `hsbc` (own thumbnail, longest body) were run at the full matrix (102 checks each, 0.000 %
+  worst pixel diff); the other 40 stories share the template, and all 43 pages were additionally
+  diffed element-by-element against the live server HTML (0 tree, 0 attribute, 0 text and 0
+  metadata differences outside the documented URL rewrites).
+- `/industry/` — the empty route: full matrix on the shared chrome, plus the empty `#page-path`
+  (102 checks, 0.008 % worst pixel diff).
+- `/industry/<vertical>/` — the shared 14-block vertical template: block count, h1, every h2,
+  service-card and slider-card count, and the CTA's hover roll. `cybersecurity` (15 blocks, 103
+  checks) was run at the full six-width × two-scheme matrix; the other four verticals at 1440 px /
+  light with the identical probe (33 checks each, 0.005–0.118 % pixel diff). All six pages were
+  additionally diffed element-by-element against the live server HTML (0 tree, 0 attribute and 0
+  text differences outside the documented URL rewrites).
+- `pnpm verify --all` now runs all 74 content routes (four index pages + Vibe, Studio, Forge,
+  Inference, Compute + `/customers/` + `/industry/` + 16 use-case details + 42 customer stories +
+  5 industry verticals) in one browser session.
 - Adding the four landings changed the shared navbar links, so the six earlier routes (`/products/`,
   `/our-method/`, `/use-cases/`, `/sovereign-ai/`, `/products/vibe/` and one detail page) were
   re-checked at 1440 px / light: identical copy, identical resolved link targets (the new local paths
@@ -401,5 +497,7 @@ program, measures geometry/computed style and screenshots. Point `ORIGIN`/`CLONE
 pages and extend `GEOMETRY` plus the `scenarios` map in `run.mjs` with the landmarks and
 interactions for the page you are cloning. The content routes are added through the `DEFINITIONS`
 map in `tests/verify/site.mjs` (landmarks, motion regions, page-specific interaction probe); the 16
-use-case details share one definition factory and differ only by route and report directory.
-`run.mjs` dispatches `--page <name>` (including `use-cases/<slug>`) and `--all` to it.
+use-case details and the 42 customer stories each share one definition factory, and the five
+industry verticals do too, so a new slug is picked up from the capture directories without editing
+the harness. `run.mjs` dispatches `--page <name>` (including `use-cases/<slug>`, `customers/<slug>`
+and `industry/<vertical>`) and `--all` to it.

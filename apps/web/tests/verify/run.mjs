@@ -648,13 +648,17 @@ const SITE_PAGES = [
   'products/forge',
   'cloud/inference',
   'cloud/compute',
+  'customers',
+  'industry',
   'all',
 ]
 const isUseCaseDetail = /^use-cases\/[a-z0-9-]+$/.test(pageArg ?? '')
+const isCustomerStory = /^customers\/[a-z0-9-]+$/.test(pageArg ?? '')
+const isIndustry = /^industry\/[a-z0-9-]+$/.test(pageArg ?? '')
 const allPages = process.argv.includes('--all')
 if (pageArg === 'research') {
   await import('./research.mjs')
-} else if (allPages || SITE_PAGES.includes(pageArg) || isUseCaseDetail) {
+} else if (allPages || SITE_PAGES.includes(pageArg) || isUseCaseDetail || isCustomerStory || isIndustry) {
   await import('./site.mjs')
 } else {
   main().catch(async (e) => {

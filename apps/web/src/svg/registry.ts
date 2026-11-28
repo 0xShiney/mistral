@@ -21,6 +21,7 @@ import Globalnavigation03 from '../components/svg/Globalnavigation03.astro'
 import IconCastle from '../components/svg/IconCastle.astro'
 import IconFactory from '../components/svg/IconFactory.astro'
 import IconGrapple from '../components/svg/IconGrapple.astro'
+import IndustryExperts01 from '../components/svg/IndustryExperts01.astro'
 import InferenceApis01 from '../components/svg/InferenceApis01.astro'
 import InferenceHero01 from '../components/svg/InferenceHero01.astro'
 import InferenceHero02 from '../components/svg/InferenceHero02.astro'
@@ -136,6 +137,7 @@ export const SVG_COMPONENTS: Record<string, any> = {
   IconCastle,
   IconFactory,
   IconGrapple,
+  IndustryExperts01,
   InferenceApis01,
   InferenceHero01,
   InferenceHero02,
